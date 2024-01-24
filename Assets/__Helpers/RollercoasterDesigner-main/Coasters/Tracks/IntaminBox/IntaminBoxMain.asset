@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbdd4109253bd54b8eb5a8d13936bfb, type: 3}
+  m_Name: IntaminBoxMain
+  m_EditorClassIdentifier: 
+  HeartlineOffset: 0.9
+  TrackWidth: 0.9
+  TrackMesh: {fileID: -5788289259856097591, guid: 7a2b83e0b6b44a345a530fea59b3b854, type: 3}
+  TrackMeshLod: {fileID: 919132149155446097, guid: dd778991b50470c4794bceb8ea8dc7e1, type: 3}
+  MeshLength: 2
+  UseLods: 1
+  LodSectionSize: 4
+  TrackGizmoColor: {r: 0, g: 1, b: 0, a: 1}
+  TrackObjects: []
