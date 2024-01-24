@@ -8,6 +8,10 @@ public class CameraMovement : MonoBehaviour
     float rotationY = 0f;
  
     public Vector2 sensitivity = Vector2.one * 360f;
+
+    private void Start() {
+        Cursor.visible = false;
+    }
  
     void Update()
     {
