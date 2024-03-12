@@ -15,6 +15,10 @@ public class CameraMovement : MonoBehaviour
  
     void Update()
     {
+
+        if(Input.GetMouseButtonDown(0)){
+            Cursor.visible = false;
+        }
         rotationY += Input.GetAxis("Mouse X") * Time.deltaTime * sensitivity.x;
         rotationX += Input.GetAxis("Mouse Y") * Time.deltaTime * -1 * sensitivity.y;
         transform.localEulerAngles = new Vector3(rotationX, rotationY, 0);
