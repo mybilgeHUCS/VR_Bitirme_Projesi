@@ -6,8 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/__Helpers/VRSamples/SampleScene/SampleScene.unity
-    guid: 55daccc09a3b69647bbab145b54a3ab3
+    path: Assets/_General/Scenes/MainMenu.unity
+    guid: eef2d90619dfd064eb9e8bdb068163dd
+  - enabled: 1
+    path: Assets/BoatTrip/Scenes/BoatTripScene.unity
+    guid: 67a45fa08b6fc8844af2cf4d7f0fd5aa
+  - enabled: 1
+    path: Assets/__Helpers/RollercoasterDesigner-main/Coasters/Geforce/RollerCoaster.unity
+    guid: 3bae95ce3fab6634d8e8d26b978d8caf
+  - enabled: 1
+    path: Assets/360VideoPlayer/Skydive.unity
+    guid: 066e370438a43e94fa577f8d925646ef
+  - enabled: 1
+    path: Assets/__Helpers/EasyRoads3D scenes/CarScene.unity
+    guid: c72c9c2ab43b0e94aa321290470ebbd5
+  - enabled: 1
+    path: Assets/360VideoPlayer/CookieMan.unity
+    guid: dfbde7cbfbdd0f54caa78bdb45bbffb5
+  - enabled: 1
+    path: Assets/360VideoPlayer/Horror.unity
+    guid: 244f39b9fb589b94da038777524f947b
+  - enabled: 1
+    path: Assets/360VideoPlayer/Everest.unity
+    guid: dd73dcd31e99d964290dc28d16eb9405
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
