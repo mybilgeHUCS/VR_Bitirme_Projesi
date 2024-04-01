@@ -2,6 +2,7 @@
   "dependencies": {
     "com.meta.xr.sdk.all": "62.0.0",
     "com.meta.xr.sdk.interaction.ovr.samples": "63.0.0",
+    "com.unity.cinemachine": "2.9.7",
     "com.unity.collab-proxy": "2.2.0",
     "com.unity.feature.development": "1.0.1",
     "com.unity.feature.vr": "1.0.0",
