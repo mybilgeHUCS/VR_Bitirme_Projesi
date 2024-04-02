@@ -80,6 +80,9 @@ crashlytics-build.properties
 # Too Large Files
 /[Aa]ssets/[Ll]unaparkAll/*
 /[Aa]ssets/[Kk]itbash3D/*
-
-!/[Aa]ssets/[Mm]ainScenes/360VideoPlayer/[Vv]ideos
 /[Aa]ssets/[Mm]ainScenes/360VideoPlayer/[Vv]ideos/*
+
+#Dosyalar gitte gozuksun diye hepsinin icinde README dosyasi koydum oylesine yer kaplasin diye
+!/[Aa]ssets/[Ll]unaparkAll/README.txt
+!/[Aa]ssets/[Kk]itbash3D/README.txt
+!/[Aa]ssets/[Mm]ainScenes/360VideoPlayer/[Vv]ideos/README.txt

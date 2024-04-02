@@ -1,0 +1,1 @@
+bu txt KitBash3D dosyası git'de gözüksün diye var

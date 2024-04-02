@@ -1,0 +1,1 @@
+bu txt LunaparkAll dosyası git'de gözüksün diye var
