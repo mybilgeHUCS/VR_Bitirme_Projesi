@@ -35,21 +35,9 @@ public class SelectVideo : MonoBehaviour
 #if UNITY_EDITOR
         path = UnityEditor.EditorUtility.OpenFilePanel("Select Video", "Assets/MainScenes/360VideoPlayer/Videos/", "mp4");
 #elif UNITY_STANDALONE_WIN
-        OpenFileDialog fileDialog = new OpenFileDialog();
-        fileDialog.Title = "Select Video";
-        fileDialog.Filter = "MP4 Files (*.mp4)|*.mp4";
-        if (fileDialog.ShowDialog() == DialogResult.OK)
-        {
-            path = fileDialog.FileName;
-        }
-#elif UNITY_STANDALONE_OSX || UNITY_STANDALONE_LINUX
-        // You need to implement the file dialog for macOS and Linux
-        Debug.LogError("File selection not supported on this platform.");
-        yield break;
-#else
-        // Handle file selection for other platforms
-        Debug.LogError("File selection not supported on this platform.");
-        yield break;
+        
+    // burayi doldur
+
 #endif
 
         if (!string.IsNullOrEmpty(path))
