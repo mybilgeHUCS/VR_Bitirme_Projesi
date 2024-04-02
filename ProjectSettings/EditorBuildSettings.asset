@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/MainScenes/RollerCoaster/RollercoasterDesigner-main/Coasters/Geforce/RollerCoaster.unity
     guid: 3bae95ce3fab6634d8e8d26b978d8caf
   - enabled: 1
-    path: Assets/MainScenes/360VideoPlayer/Scenes/Skydive.unity
+    path: Assets/MainScenes/360VideoPlayer/Scenes/360VideoPlayerScene.unity
     guid: 066e370438a43e94fa577f8d925646ef
   - enabled: 1
     path: Assets/MainScenes/F1_Race/Scenes/F1_RaceScene.unity
