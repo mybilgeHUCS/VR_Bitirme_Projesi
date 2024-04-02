@@ -75,8 +75,11 @@ crashlytics-build.properties
 
 # Meta Filelar da alinmamali benim bildigim
 *.meta
+/[Aa]ssets/*.meta
 
 # Too Large Files
 /[Aa]ssets/[Ll]unaparkAll/*
 /[Aa]ssets/[Kk]itbash3D/*
+
+!/[Aa]ssets/[Mm]ainScenes/360VideoPlayer/[Vv]ideos
 /[Aa]ssets/[Mm]ainScenes/360VideoPlayer/[Vv]ideos/*
