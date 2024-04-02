@@ -70,17 +70,13 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-Assets/360VideoPlayer/San Francisco, USA. Aerial 360 video in 12K..mp4
-Assets/360VideoPlayer/VR 360° GIANT GINGERBREAD MAN in the City.mp4
-/Assets/ThemePark Package
-/Assets/KitBash3D
-Assets/KitBash3D.meta
-Assets/_TerrainAutoUpgrade.meta
-/Assets/_TerrainAutoUpgrade
-/Assets/Resources
-Assets/ThemePark Package.meta
-Assets/Resources.meta
-Assets/__Helpers/XR/Settings/Open XR Package Settings.asset
-Assets/__Helpers/XR/Settings/Open XR Package Settings.asset
-Assets/__Helpers/XR/Settings/Open XR Package Settings.asset
-/Assets/Resources
+
+
+
+# Meta Filelar da alinmamali benim bildigim
+*.meta
+
+# Too Large Files
+/[Aa]ssets/[Ll]unaparkAll/*
+/[Aa]ssets/[Kk]itbash3D/*
+/[Aa]ssets/[Mm]ainScenes/360VideoPlayer/[Vv]ideos/*
