@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 474422320840218736}
-  - component: {fileID: 1739110187777770224}
+  - component: {fileID: 8133464192692042000}
   m_Layer: 0
   m_Name: SelectVideo
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1739110187777770224
+--- !u!114 &8133464192692042000
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,8 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 137718575448060470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4508f3969d839840a77529ced38609e, type: 3}
+  m_Script: {fileID: 11500000, guid: ca55e110a6306044d92e1ae3b55edfd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 0}
-  skyboxVideoMaterial: {fileID: 2100000, guid: d5e9f6769bd33434d918b77f0fd25ceb, type: 2}
+  skyboxVideoMaterial: {fileID: 2100000, guid: 9a9357cc6059dfd4abb09e9eadb82fdc, type: 2}
