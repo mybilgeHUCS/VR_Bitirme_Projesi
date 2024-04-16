@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.meta.xr.sdk.all": "62.0.0",
+    "com.meta.xr.sdk.all": "63.0.0",
     "com.meta.xr.sdk.interaction.ovr.samples": "63.0.0",
     "com.unity.cinemachine": "2.9.7",
     "com.unity.collab-proxy": "2.2.0",
@@ -10,7 +10,7 @@
     "com.unity.render-pipelines.universal": "14.0.9",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.7.6",
-    "com.unity.xr.interaction.toolkit": "2.5.2",
+    "com.unity.xr.interaction.toolkit": "2.5.4",
     "com.unity.xr.management": "4.4.1",
     "com.unity.xr.oculus": "4.1.2",
     "com.unity.xr.openxr": "1.9.1",
