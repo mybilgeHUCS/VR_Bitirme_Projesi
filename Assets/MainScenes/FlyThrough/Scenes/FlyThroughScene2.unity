@@ -6802,15 +6802,67 @@ MonoBehaviour:
   - position: {x: 130.09, y: 287.24, z: 18.472015}
     roll: 0
   - position: {x: 0, y: 48.28, z: -5}
-    roll: 1336.5
+    roll: 0
   - position: {x: -18.19931, y: -0.34238434, z: 11.870651}
     roll: 0
   - position: {x: -14.603943, y: 5.0101376, z: 41.421143}
     roll: 0
   - position: {x: -14.777527, y: 5.289604, z: 44.115814}
-    roll: 244.73
-  - position: {x: -14.777527, y: 5.221939, z: 46.306152}
     roll: 0
+  - position: {x: -14.852203, y: 5.155319, z: 44.686417}
+    roll: 0
+  - position: {x: -14.172546, y: 5.221939, z: 46.306152}
+    roll: 0
+  - position: {x: -10.639557, y: 5.154274, z: 48.49649}
+    roll: 0
+  - position: {x: -9.327332, y: 5.200836, z: 54.09807}
+    roll: 0
+  - position: {x: -9.56543, y: 5.2473984, z: 69.15123}
+    roll: 0
+  - position: {x: -9.803528, y: 14.91357, z: 84.20439}
+    roll: 0
+  - position: {x: -10.094696, y: 29.906761, z: 116.15227}
+    roll: 0
+  - position: {x: -10.279724, y: 52.9507, z: 79.64058}
+    roll: 0
+  - position: {x: -10.517822, y: 28.671944, z: 70.494644}
+    roll: 0
+  - position: {x: -18.536804, y: 20.635536, z: 81.762344}
+    roll: 0
+  - position: {x: -22.755768, y: 17.061695, z: 87.899796}
+    roll: 0
+  - position: {x: -29.348526, y: 12.599129, z: 93.030045}
+    roll: 0
+  - position: {x: -33.913895, y: 8.136562, z: 98.16029}
+    roll: 0
+  - position: {x: -38.479263, y: 3.673996, z: 103.29054}
+    roll: 0
+  - position: {x: -43.044632, y: 2.6847496, z: 108.42079}
+    roll: 0
+  - position: {x: -43.420258, y: 5.2601013, z: 117.40224}
+    roll: 0
+  - position: {x: -25.607056, y: 5.2967587, z: 125.56996}
+    roll: 0
+  - position: {x: -7.7938538, y: 5.333416, z: 131.61592}
+    roll: 0
+  - position: {x: 34.310364, y: 5.3700733, z: 137.66188}
+    roll: 0
+  - position: {x: 49.728363, y: 5.4067307, z: 137.12297}
+    roll: 0
+  - position: {x: 51.35611, y: 5.443388, z: 126.04918}
+    roll: 0
+  - position: {x: 38.186462, y: 5.4800453, z: 114.97539}
+    roll: 0
+  - position: {x: 1.266449, y: 98.7974, z: 78.126144}
+    roll: 0
+  - position: {x: -35.653564, y: 102.88346, z: 41.2769}
+    roll: 0
+  - position: {x: -72.57358, y: -7.906044, z: 4.427658}
+    roll: 0
+  - position: {x: -26.243378, y: 23.70916, z: 108.31062}
+    roll: 0
+  - position: {x: -9.460815, y: 19.943878, z: 137.92323}
+    roll: 0.01
 --- !u!4 &1014942529
 Transform:
   m_ObjectHideFlags: 0
@@ -10951,13 +11003,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681961183}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.43694282, y: -0.5190553, z: 0.35162508, w: 0.644998}
-  m_LocalPosition: {x: 411.06046, y: 309.0414, z: 206.9243}
+  m_LocalRotation: {x: 0.3206083, y: 0.09591564, z: -0.03265247, w: 0.9417772}
+  m_LocalPosition: {x: 271.2097, y: 44.23307, z: 326.38834}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 16.709, y: 156.3, z: 0}
+  m_LocalEulerAnglesHint: {x: 68.23, y: 282.6, z: 0}
 --- !u!1 &1686845746
 GameObject:
   m_ObjectHideFlags: 0
@@ -14484,7 +14536,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: df80252b6872db147a506a295dcdcc12, type: 2}
+  - {fileID: 2100000, guid: 065a3f32f15eafa4c8ade8c33a885e9d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14716,7 +14768,7 @@ PlayableDirector:
   m_GameObject: {fileID: 2091644428}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 1fec2001d55a574458a18e77c52722d5, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 9729d2db80fa3884db4b7312963a4cc5, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -14725,6 +14777,8 @@ PlayableDirector:
   - key: {fileID: -9176088451208678904, guid: 8686b1769c2db11488c1030ae2abad85, type: 2}
     value: {fileID: 2091644431}
   - key: {fileID: -9176088451208678904, guid: 1fec2001d55a574458a18e77c52722d5, type: 2}
+    value: {fileID: 2091644431}
+  - key: {fileID: -9176088451208678904, guid: 9729d2db80fa3884db4b7312963a4cc5, type: 2}
     value: {fileID: 2091644431}
   m_ExposedReferences:
     m_References:
