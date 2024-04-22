@@ -14,6 +14,7 @@
     "com.unity.xr.management": "4.4.1",
     "com.unity.xr.oculus": "4.1.2",
     "com.unity.xr.openxr": "1.9.1",
+    "com.verasl.water-system": "file:C:/Users/bitirme24/Desktop/BoatAttack-master/Packages/com.verasl.water-system",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
