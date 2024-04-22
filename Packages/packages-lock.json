@@ -456,9 +456,9 @@
       "url": "https://packages.unity.com"
     },
     "com.verasl.water-system": {
-      "version": "file:C:/Users/bitirme24/Desktop/BoatAttack-master/Packages/com.verasl.water-system",
+      "version": "file:com.verasl.water-system",
       "depth": 0,
-      "source": "local",
+      "source": "embedded",
       "dependencies": {
         "com.unity.mathematics": "1.1.0",
         "com.unity.burst": "1.2.3",

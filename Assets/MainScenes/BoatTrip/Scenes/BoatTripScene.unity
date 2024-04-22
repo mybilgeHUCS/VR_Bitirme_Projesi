@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!84 &731223773
+--- !u!84 &504573908
 RenderTexture:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -230,7 +230,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e31c37329b935e543818c5c311665bb8, type: 3}
---- !u!1001 &1510760180
+--- !u!1001 &1901515801
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -285,7 +285,7 @@ PrefabInstance:
     - target: {fileID: 114943683913522278, guid: 2cac2e60f3f6f2447ad9b550450f60ed, type: 3}
       propertyPath: _depthTex
       value: 
-      objectReference: {fileID: 731223773}
+      objectReference: {fileID: 504573908}
     - target: {fileID: 114943683913522278, guid: 2cac2e60f3f6f2447ad9b550450f60ed, type: 3}
       propertyPath: _waves.Array.data[0].direction
       value: -157.6966
@@ -579,5 +579,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1996308339}
   - {fileID: 1279628474}
-  - {fileID: 1510760180}
   - {fileID: 1942394295}
+  - {fileID: 1901515801}
