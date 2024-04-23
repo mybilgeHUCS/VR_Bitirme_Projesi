@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!84 &504573908
+--- !u!84 &839587954
 RenderTexture:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,7 +153,7 @@ RenderTexture:
   m_TextureSettings:
     serializedVersion: 2
     m_FilterMode: 1
-    m_Aniso: 0
+    m_Aniso: 1
     m_MipBias: 0
     m_WrapU: 1
     m_WrapV: 1
@@ -161,76 +161,7 @@ RenderTexture:
   m_Dimension: 2
   m_VolumeDepth: 1
   m_ShadowSamplingMode: 2
---- !u!1001 &1279628474
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 123280848677066110, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_Name
-      value: SliderAdjuster
-      objectReference: {fileID: 0}
-    - target: {fileID: 549541158969246828, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717855480724551095, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2909894816904120552, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 815.2178
-      objectReference: {fileID: 0}
-    - target: {fileID: 2909894816904120552, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 557.3728
-      objectReference: {fileID: 0}
-    - target: {fileID: 2909894816904120552, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10.427569
-      objectReference: {fileID: 0}
-    - target: {fileID: 2909894816904120552, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2909894816904120552, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2909894816904120552, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2909894816904120552, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2909894816904120552, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2909894816904120552, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2909894816904120552, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7978824010695802096, guid: e31c37329b935e543818c5c311665bb8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e31c37329b935e543818c5c311665bb8, type: 3}
---- !u!1001 &1901515801
+--- !u!1001 &1354177294
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -285,7 +216,7 @@ PrefabInstance:
     - target: {fileID: 114943683913522278, guid: 2cac2e60f3f6f2447ad9b550450f60ed, type: 3}
       propertyPath: _depthTex
       value: 
-      objectReference: {fileID: 504573908}
+      objectReference: {fileID: 839587954}
     - target: {fileID: 114943683913522278, guid: 2cac2e60f3f6f2447ad9b550450f60ed, type: 3}
       propertyPath: _waves.Array.data[0].direction
       value: -157.6966
@@ -578,6 +509,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1996308339}
-  - {fileID: 1279628474}
   - {fileID: 1942394295}
-  - {fileID: 1901515801}
+  - {fileID: 1354177294}
