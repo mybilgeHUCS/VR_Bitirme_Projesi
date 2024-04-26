@@ -72,11 +72,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 
-
-# Meta Filelar da alinmamali benim bildigim
-*.meta
-/[Aa]ssets/*.meta
-
 # Too Large Files
 /[Aa]ssets/[Ll]unaparkAll/*
 /[Aa]ssets/[Kk]itbash3D/*
@@ -86,5 +81,4 @@ crashlytics-build.properties
 !/[Aa]ssets/[Ll]unaparkAll/README.txt
 !/[Aa]ssets/[Kk]itbash3D/README.txt
 !/[Aa]ssets/[Mm]ainScenes/360VideoPlayer/[Vv]ideos/README.txt
-*.meta
-ProjectSettings/EditorBuildSettings.asset
+
