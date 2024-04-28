@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a6db46ea1f40743af6eb0ed0193136, type: 3}
+  m_Name: Sky
+  m_EditorClassIdentifier: 
+  environmentLightingExposure: 1
+  environmentLightingSaturation: 1
+  periodsOfDay:
+  - description: Night
+    startTime: 6
+    horizonColor: {r: 0.14117648, g: 0.08235294, b: 0.14117648, a: 1}
+    zenithColor: {r: 0.13725491, g: 0.015686275, b: 0.18039216, a: 1}
+    groundColor: {r: 0.101960786, g: 0.09019608, b: 0.101960786, a: 1}
+  - description: Day
+    startTime: 7
+    horizonColor: {r: 0.48235294, g: 0.6, b: 0.6784314, a: 1}
+    zenithColor: {r: 0.07058824, g: 0.09803922, b: 0.23137255, a: 1}
+    groundColor: {r: 0.05490196, g: 0.047058824, b: 0.039215688, a: 1}
+  - description: Day
+    startTime: 18
+    horizonColor: {r: 0.48235294, g: 0.6, b: 0.6784314, a: 1}
+    zenithColor: {r: 0.07058824, g: 0.09803922, b: 0.23137255, a: 1}
+    groundColor: {r: 0.05490196, g: 0.047058824, b: 0.039215688, a: 1}
+  - description: Night
+    startTime: 19
+    horizonColor: {r: 0.14117648, g: 0.08235294, b: 0.14117648, a: 1}
+    zenithColor: {r: 0.13725491, g: 0.015686275, b: 0.18039216, a: 1}
+    groundColor: {r: 0.101960786, g: 0.09019608, b: 0.101960786, a: 1}
+  initialTime: 12
+  editorTime: 12
+  timeSystem: 0
+  dayNightCycleDuration: 1

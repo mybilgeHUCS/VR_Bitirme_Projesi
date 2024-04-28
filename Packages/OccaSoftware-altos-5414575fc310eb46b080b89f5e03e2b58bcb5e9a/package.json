@@ -1,0 +1,18 @@
+{
+  "name": "com.occasoftware.altos",
+  "description": "Altos provides volumetric clouds and dynamic skies for Unity URP",
+  "version": "7.13.0",
+  "displayName": "Altos",
+  "packageType": "package",
+  "author": {
+    "name": "OccaSoftware",
+    "email": "hello@occasoftware.com",
+    "url": "https://www.occasoftware.com/"
+  },
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "14.0.7",
+    "com.unity.visualeffectgraph": "14.0.7"
+  },
+  "hideInEditor": false,
+  "unity": "2022.3"
+}
