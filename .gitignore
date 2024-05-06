@@ -82,3 +82,7 @@ crashlytics-build.properties
 !/[Aa]ssets/[Kk]itbash3D/README.txt
 !/[Aa]ssets/[Mm]ainScenes/360VideoPlayer/[Vv]ideos/README.txt
 
+/Assets/HiRezSpaceshipsCreatorFree
+/Assets/MainScenes/F1_Race/EasyRoads3D
+/Assets/MainScenes/F1_Race/EasyRoads3D
+/Assets/MainScenes/F1_Race
