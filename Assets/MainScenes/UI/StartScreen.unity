@@ -20,12 +20,12 @@ RenderSettings:
   m_FogDensity: 0
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
+  m_AmbientSkyColor: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 2.56
   m_AmbientMode: 3
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -278,6 +278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 40329274}
   - component: {fileID: 40329273}
+  - component: {fileID: 40329275}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -362,6 +363,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 27.79, y: 0, z: 0}
+--- !u!114 &40329275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40329272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &62545114
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,8 +445,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Videos
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -555,8 +579,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -689,8 +713,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Fly Through
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -823,8 +847,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1102,8 +1126,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Claw
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1324,10 +1348,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 426861197}
+  m_TargetGraphic: {fileID: 1357948329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100683424}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadLunaparkScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 11
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &426861197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,7 +1453,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &486381146
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1643,10 +1679,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 574756859}
+  m_TargetGraphic: {fileID: 1357948329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100683424}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadLunaparkScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &574756859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1700,7 +1748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &598804706
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1782,8 +1830,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CliffHanger
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1936,10 +1984,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 684950979}
+  m_TargetGraphic: {fileID: 1357948329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100683424}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadLunaparkScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 12
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &684950979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2157,7 +2217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -3, y: -0.9}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &803107715
@@ -2182,8 +2242,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Scenes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2316,8 +2376,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Trebuchet
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2450,8 +2510,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Boat Trip
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2834,8 +2894,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: LunaPark
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2988,10 +3048,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1000052208}
+  m_TargetGraphic: {fileID: 1357948329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100683424}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadLunaparkScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1000052208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3109,10 +3181,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1052486010}
+  m_TargetGraphic: {fileID: 1357948329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100683424}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadLunaparkScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1052486010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3163,6 +3247,7 @@ GameObject:
   - component: {fileID: 1074763278}
   - component: {fileID: 1074763277}
   - component: {fileID: 1074763280}
+  - component: {fileID: 1074763281}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3257,6 +3342,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
+--- !u!114 &1074763281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074763276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &1097123826
 GameObject:
   m_ObjectHideFlags: 0
@@ -3336,10 +3465,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1097123829}
+  m_TargetGraphic: {fileID: 1357948329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100683424}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadLunaparkScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1097123829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3571,8 +3712,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Trumble Bug
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3705,8 +3846,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: F1 Race
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3859,10 +4000,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1189035680}
+  m_TargetGraphic: {fileID: 1357948329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100683424}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadLunaparkScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1189035680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3916,7 +4069,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1239781554
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4020,10 +4173,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1307585115}
+  m_TargetGraphic: {fileID: 1357948329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100683424}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadLunaparkScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1307585115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4121,8 +4286,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Windseeker
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4275,10 +4440,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1330455294}
+  m_TargetGraphic: {fileID: 1357948329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100683424}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadLunaparkScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1330455294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4399,7 +4576,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1357948329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100683424}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadLunaparkScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1357948329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4497,8 +4686,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Enterprise
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4631,8 +4820,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Wheel
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4765,8 +4954,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Octopus
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4900,7 +5089,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 065a3f32f15eafa4c8ade8c33a885e9d, type: 2}
+  - {fileID: 2100000, guid: 362f920c4bd49b045a412929b1de53f3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5294,8 +5483,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '>'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5718,8 +5907,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Wipeout
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5997,8 +6186,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Troika
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6296,10 +6485,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1863335591}
+  m_TargetGraphic: {fileID: 1357948329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100683424}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadLunaparkScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1863335591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6438,8 +6639,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Roller Coaster
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6592,10 +6793,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1888590887}
+  m_TargetGraphic: {fileID: 1357948329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2100683424}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadLunaparkScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1888590887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6693,8 +6906,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '>'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6827,8 +7040,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Go Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7082,8 +7295,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tea Cup
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7167,6 +7380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2092399593}
   - component: {fileID: 2092399592}
+  - component: {fileID: 2092399594}
   m_Layer: 0
   m_Name: Spot Light (1)
   m_TagString: Untagged
@@ -7251,6 +7465,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 27.79, y: 0, z: 0}
+--- !u!114 &2092399594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092399591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &2093435979
 GameObject:
   m_ObjectHideFlags: 0
@@ -7310,8 +7547,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Go Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 00b3454983700af44af2be821fa9fa08, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 141e2bb9871894d4db267e795ab0f6ad, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7385,6 +7622,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093435979}
   m_CullTransparentMesh: 1
+--- !u!1 &2100683423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2100683425}
+  - component: {fileID: 2100683424}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2100683424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100683423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00635b55cc1b0c4468eaf3821bb2967e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2100683425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100683423}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.266907, y: 7.7059746, z: -19.887161}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2110139998
 GameObject:
   m_ObjectHideFlags: 0
@@ -7561,7 +7842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2139480568
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7593,3 +7874,4 @@ SceneRoots:
   - {fileID: 40329274}
   - {fileID: 2092399593}
   - {fileID: 1538505045}
+  - {fileID: 2100683425}
