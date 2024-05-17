@@ -11,4 +11,10 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadScene("RollerCoasterScene");
     }
+    public void Load360Scene()
+    {
+        SceneManager.LoadScene("360VideoPlayerScene");
+    }
+
 }
+
