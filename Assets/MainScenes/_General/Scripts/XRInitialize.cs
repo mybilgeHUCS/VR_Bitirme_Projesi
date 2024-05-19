@@ -12,7 +12,7 @@ public class XRInitialize : MonoBehaviour
 
         private void Start()
         {
-            //EnableXR();
+            EnableXR();
         }
 
         private void OnDestroy()
