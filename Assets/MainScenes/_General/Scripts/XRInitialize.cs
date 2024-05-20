@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.XR.Management;
+//using UnityEngine.XR.Management;
 using System.Collections;
 
 public class XRInitialize : MonoBehaviour
@@ -9,7 +9,7 @@ public class XRInitialize : MonoBehaviour
 
 
     #if UNITY_EDITOR
-
+    /*
         private void Start()
         {
             EnableXR();
@@ -24,7 +24,7 @@ public class XRInitialize : MonoBehaviour
         {
             StartCoroutine(StartXRCoroutine());
         }
-
+    
         public void DisableXR()
         {
             XRGeneralSettings.Instance?.Manager?.StopSubsystems();
@@ -55,7 +55,7 @@ public class XRInitialize : MonoBehaviour
                 XRGeneralSettings.Instance?.Manager?.StartSubsystems();
             }
         }
-
+    */
     #endif
 
 }
