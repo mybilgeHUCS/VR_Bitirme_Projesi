@@ -40,7 +40,10 @@ public class LunaparkSceneManager : MonoBehaviour
 
         // Activate the selected camera
         if (cameras[index] != null)
+        {
             cameras[index].gameObject.SetActive(true);
+        }
+            
     }
     
 }

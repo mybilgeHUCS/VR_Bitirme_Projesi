@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 920016613128308945}
   - component: {fileID: 5172774638826498352}
   - component: {fileID: 791197771858463136}
+  - component: {fileID: 2562929741047267234}
   m_Layer: 0
   m_Name: InputReader
   m_TagString: Untagged
@@ -57,3 +58,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 513504fa2b747c64e82fb7642517db8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2562929741047267234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3672728657941502320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6113bad6bfef2e4ea8b37077b5ef841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseUI: {fileID: 0}
+  maxCyberSicknessValue: 5
+  cyberSicknessValueText: {fileID: 0}
+  axisThreshold: 0.5

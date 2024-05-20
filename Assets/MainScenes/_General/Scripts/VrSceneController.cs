@@ -3,31 +3,72 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.XR;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class VrSceneController : MonoBehaviour
 {
     public static bool gameIsPaused = false;
     public GameObject pauseUI;
-    public GameObject sliderObj;
-    public Slider slider;
-    
+    int cyberSicknessValue = 0;
+    public int maxCyberSicknessValue = 5;
+    public TextMeshProUGUI cyberSicknessValueText;
+    public float axisThreshold = 0.5f;
+
+    public bool canEvaluate = true;
+    public bool canPause = true;
+
+    private InputData _inputData;
+
+    private void Start()
+    {
+        _inputData = GetComponent<InputData>();
+    }
+
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        _inputData._leftController.TryGetFeatureValue(CommonUsages.menuButton, out bool isMenuButtonPressed);
+
+        Debug.Log(isMenuButtonPressed);
+
+        _inputData._leftController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 rightAxis);
+        
+        //Debug.Log("right axis " + rightAxis);
+        
+
+
+
+
+
+
+        if (Input.GetKeyDown(KeyCode.UpArrow) || (rightAxis.y >= axisThreshold && canEvaluate))
         {
-            slider.value += 1f;
+            cyberSicknessValue = Math.Min(maxCyberSicknessValue, cyberSicknessValue+1);
+            cyberSicknessValueText.text = cyberSicknessValue.ToString();
+            canEvaluate = false; 
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow) || (rightAxis.y <= -axisThreshold && canEvaluate))
         {
-            slider.value -= 1f;
+            cyberSicknessValue = Math.Max(0, cyberSicknessValue - 1);
+            cyberSicknessValueText.text = cyberSicknessValue.ToString();
+            canEvaluate = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+
+        if ( rightAxis.y >= -axisThreshold/2f && rightAxis.y <= axisThreshold/2f)
         {
+            canEvaluate = true;
+        }
+
+
+
+        if (Input.GetKeyDown(KeyCode.Escape) || (isMenuButtonPressed && canPause))
+        {
+            canPause = false;
             if (gameIsPaused)
             {
                 Resume();
@@ -36,13 +77,19 @@ public class VrSceneController : MonoBehaviour
             {
                 Pause();
             }
+            
+        }
+
+        if (!isMenuButtonPressed)
+        {
+            canPause = true;
         }
     }
 
     void Pause()
     {
+        Debug.Log("PAUSE");
         pauseUI.SetActive(true);
-        sliderObj.SetActive(false);
         Time.timeScale = 0f;
         gameIsPaused = true;
     }
@@ -50,13 +97,12 @@ public class VrSceneController : MonoBehaviour
     public void Resume()
     {
         pauseUI.SetActive(false);
-        sliderObj.SetActive(true);
         Time.timeScale = 1f;
         gameIsPaused = false;
     }
 
     public void Menu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MainMenu");
     }
 }
