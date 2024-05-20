@@ -21,9 +21,11 @@ public class VrSceneController : MonoBehaviour
     public bool canPause = true;
 
     private InputData _inputData;
+    AudioSource[] audios;
 
     private void Start()
     {
+         audios = GameObject.FindObjectsOfType<AudioSource>();
         _inputData = GetComponent<InputData>();
     }
 
@@ -85,6 +87,11 @@ public class VrSceneController : MonoBehaviour
         pauseUI.SetActive(true);
         Time.timeScale = 0f;
         gameIsPaused = true;
+
+        foreach (var item in audios)
+        {
+            item.Pause();
+        }
     }
 
     public void Resume()
@@ -93,6 +100,10 @@ public class VrSceneController : MonoBehaviour
         pauseUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
+        foreach (var item in audios)
+        {
+            item.UnPause();
+        }
     }
 
     public void Menu()
