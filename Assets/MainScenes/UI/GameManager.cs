@@ -6,15 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject mainMenu;
-    private void Start()
-    {
-        if (SceneManager.GetActiveScene().name == "MainMenu")
-        {
-            mainMenu.SetActive(true);
-        }
-    }
-
     public void LoadLunaparkScene(int CameraNumber)
     {
         PlayerPrefs.SetInt("CameraNumber", CameraNumber);
