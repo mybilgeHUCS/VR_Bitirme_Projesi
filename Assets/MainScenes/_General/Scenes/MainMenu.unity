@@ -1076,6 +1076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Interaction Setup Centerda
       objectReference: {fileID: 0}
+    - target: {fileID: 449767325918207155, guid: 2388a85e05c649b4287d80c395666717, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1872709125413060932, guid: 2388a85e05c649b4287d80c395666717, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1116,7 +1120,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2224924538721431566, guid: 2388a85e05c649b4287d80c395666717, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3319812542271680376, guid: 2388a85e05c649b4287d80c395666717, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3636786290009604503, guid: 2388a85e05c649b4287d80c395666717, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4884158250449121690, guid: 2388a85e05c649b4287d80c395666717, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603828710639512398, guid: 2388a85e05c649b4287d80c395666717, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5957997812454307279, guid: 2388a85e05c649b4287d80c395666717, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496467811640868610, guid: 2388a85e05c649b4287d80c395666717, type: 3}
+      propertyPath: m_UpdateTrackingType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7530399421410772399, guid: 2388a85e05c649b4287d80c395666717, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}

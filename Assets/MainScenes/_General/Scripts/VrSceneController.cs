@@ -69,14 +69,7 @@ public class VrSceneController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape) || (isMenuButtonPressed && canPause))
         {
             canPause = false;
-            if (gameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
                 Pause();
-            }
             
         }
 
@@ -96,6 +89,7 @@ public class VrSceneController : MonoBehaviour
 
     public void Resume()
     {
+        Debug.Log("Resume");
         pauseUI.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
@@ -103,6 +97,7 @@ public class VrSceneController : MonoBehaviour
 
     public void Menu()
     {
+        Resume();
         SceneManager.LoadScene("MainMenu");
     }
 }

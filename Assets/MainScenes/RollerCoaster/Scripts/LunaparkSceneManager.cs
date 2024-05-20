@@ -8,7 +8,7 @@ public class LunaparkSceneManager : MonoBehaviour
     public GameObject[] cameras = new GameObject[13];
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         // Initialize by deactivating all cameras except the first one
         for (int i = 1; i < cameras.Length; i++)
@@ -17,8 +17,8 @@ public class LunaparkSceneManager : MonoBehaviour
                 cameras[i].gameObject.SetActive(false);
         }
 
-        if (cameras[0] != null)
-            cameras[0].gameObject.SetActive(true);
+        //if (cameras[0] != null)
+          //  cameras[0].gameObject.SetActive(true);
         SetActiveCamera(PlayerPrefs.GetInt("CameraNumber"));
     }
 
