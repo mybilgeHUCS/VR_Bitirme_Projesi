@@ -21,7 +21,7 @@ public class VrSceneController : MonoBehaviour
     public bool canPause = true;
 
     private InputData _inputData;
-    AudioSource[] audios;
+    public AudioSource[] audios;
 
     private void Start()
     {
