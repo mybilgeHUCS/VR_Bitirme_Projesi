@@ -39,9 +39,10 @@ public class VrSceneController : MonoBehaviour
         _inputData._leftController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 rightAxis);
         
         //Debug.Log("right axis " + rightAxis);
+
+        _inputData._rightController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 rightControllerAxis);
         
-
-
+        Debug.Log(rightControllerAxis);
 
 
 
