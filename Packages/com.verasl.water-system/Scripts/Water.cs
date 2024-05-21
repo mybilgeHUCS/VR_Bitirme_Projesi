@@ -85,7 +85,11 @@ namespace WaterSystem
 
         private void OnApplicationQuit()
         {
-            GerstnerWavesJobs.Cleanup();
+            if(!GerstnerWavesJobs.isCleanUpExecuted){
+                GerstnerWavesJobs.isCleanUpExecuted = true;
+                GerstnerWavesJobs.Cleanup();
+            }
+            
         }
 
         void Cleanup()

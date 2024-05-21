@@ -6,15 +6,49 @@ using Unity.Mathematics;
 using Unity.Collections;
 using UnityEngine.Rendering.Universal;
 using WaterSystem.Data;
+using UnityEditor;
 
 namespace WaterSystem
 {
 	/// <summary>
+    /// 
+    /// 
+
+
+    #if UNITY_EDITOR
+    
+
+    [InitializeOnLoad]
+    class PlayModeStateChanged
+    {
+        static PlayModeStateChanged()
+        {
+            EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
+        }
+
+        private static void OnPlayModeStateChanged(PlayModeStateChange state)
+        {
+            if ( !GerstnerWavesJobs.isCleanUpExecuted&& state == PlayModeStateChange.ExitingPlayMode)
+            {
+                GerstnerWavesJobs.isCleanUpExecuted = true;
+                GerstnerWavesJobs.Cleanup();
+            }
+        }
+    }
+    #endif
+
+
+
+
+
+    
 	/// C# Jobs system version of the Gerstner waves implimentation
 	/// </summary>
     public static class GerstnerWavesJobs
     {
         //General variables
+
+        public static bool isCleanUpExecuted = false;
         public static bool Initialized;
         private static bool _firstFrame = true;
         private static bool _processing;
@@ -52,13 +86,37 @@ namespace WaterSystem
         {
             if(Debug.isDebugBuild)
                 Debug.Log("Cleaning up Gerstner Wave Jobs");
-            _waterHeightHandle.Complete();
-
+            //_waterHeightHandle.Complete();
+            /*
             //Cleanup native arrays
+        
             _waveData.Dispose();
             _positions.Dispose();
             _wavePos.Dispose();
-            _waveNormal.Dispose();
+            _waveNormal.Dispose();*/
+
+            if (_waterHeightHandle.IsCompleted == false)
+            {
+                _waterHeightHandle.Complete();
+            }
+
+    // Dispose of the native arrays
+            if (_waveData.IsCreated)
+            {
+                _waveData.Dispose();
+            }
+            if (_positions.IsCreated)
+            {
+                _positions.Dispose();
+            }
+            if (_wavePos.IsCreated)
+            {
+                _wavePos.Dispose();
+            }
+            if (_waveNormal.IsCreated)
+            {
+                _waveNormal.Dispose();
+            }
         }
 
         public static void UpdateSamplePoints(ref NativeArray<float3> samplePoints, int guid)
