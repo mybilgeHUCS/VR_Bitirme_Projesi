@@ -16,6 +16,8 @@ public class CarController : MonoBehaviour
         Rear
     }
 
+    public GameObject steeringWheel;
+
     [Serializable]
     public struct Wheel
     {
