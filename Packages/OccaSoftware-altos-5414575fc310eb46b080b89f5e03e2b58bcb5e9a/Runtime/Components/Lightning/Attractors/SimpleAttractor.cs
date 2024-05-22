@@ -18,6 +18,7 @@ namespace OccaSoftware.Altos.Runtime
 
     public override void Strike(BoltEvent boltEvent)
     {
+      Debug.Log("eeee");
       LightningEventDispatcher.DispatchStrikeEvent(
         new StrikeEvent()
         {

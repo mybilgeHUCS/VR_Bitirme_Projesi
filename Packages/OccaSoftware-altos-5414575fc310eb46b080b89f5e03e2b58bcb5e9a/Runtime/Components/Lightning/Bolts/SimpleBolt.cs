@@ -23,6 +23,7 @@ namespace OccaSoftware.Altos.Runtime
     public override void GenerateLightning()
     {
       LightningData response = SpawnLightning();
+      //Debug.Log(response.success  + " " + response.data);
 
       if (response.success)
       {
@@ -78,6 +79,8 @@ namespace OccaSoftware.Altos.Runtime
     public float lightFlickerFrequency = 2f;
     public float lightFlickerIntensity = 0.5f;
 
+   
+
     private void Reset()
     {
       FetchComponents();
@@ -121,6 +124,7 @@ namespace OccaSoftware.Altos.Runtime
 
       if (precipitationIntensity < precipitationThreshold)
       {
+        Debug.Log(precipitationIntensity);
         return new LightningData() { success = false, data = null };
       }
 
@@ -130,6 +134,8 @@ namespace OccaSoftware.Altos.Runtime
         data = new LightningData.Data() { position = position }
       };
     }
+
+    LightningAttractorStrategy lightningAttractorStrategyLast;
 
     private void OnEnable()
     {
@@ -152,14 +158,21 @@ namespace OccaSoftware.Altos.Runtime
       LightningAttractorStrategy attractorStrategy =
         LightningAttractorSystem.GetHighestPriorityAttractor(this);
 
+      lightningAttractorStrategyLast = attractorStrategy;
+
+        //Debug.Log(attractorStrategy);
+
       if (attractorStrategy)
       {
         pos = attractorStrategy.GetTarget();
+        //pos = transform.position;
       }
       else
       {
         Vector2 xz = Random.insideUnitCircle * 100f;
         pos = new Vector3(transform.position.x + xz.x, 0, transform.position.z + xz.y);
+
+        pos = transform.position;
       }
 
       visualEffect.SetFloat("altos_LightningLifetime", lifetime);
@@ -177,11 +190,17 @@ namespace OccaSoftware.Altos.Runtime
       float r = Mathf.PerlinNoise1D(pos);
       r = Mathf.Lerp(1, r, lightFlickerIntensity);
       _light.intensity = maxIntensity * r;
-
+      
       age += Time.deltaTime;
 
       if (age > lifetime)
       {
+
+         LightningEventDispatcher.DispatchStrikeEvent(new StrikeEvent(){position = lightningAttractorStrategyLast.GetTarget(),
+         attractor = lightningAttractorStrategyLast, boltEvent = new BoltEvent(){ bolt = this, position = transform.position }
+         }
+      );
+
         Dispose();
       }
     }

@@ -45,7 +45,10 @@ namespace OccaSoftware.Altos.Runtime
         timer += frequency; // Add randomness
         if (strategies.Count > 0)
         {
-          strategies[Random.Range(0, strategies.Count)].GenerateLightning();
+          int a = Random.Range(0, strategies.Count);
+          strategies[a].GenerateLightning();
+          //Debug.Log(strategies[a]);
+          
         }
       }
     }

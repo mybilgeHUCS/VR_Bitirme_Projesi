@@ -4893,20 +4893,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468766573028529298}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e8a6257865674c219fc5cdb6145cc12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wakes:
-  - origin: {x: 0, y: 0, z: 0}
-    lines:
-    - lineRenderer: {fileID: 0}
-      points: []
-    - lineRenderer: {fileID: 0}
-      points: []
-    - lineRenderer: {fileID: 0}
-      points: []
+  wakes: []
   wakePrefab:
     m_AssetGUID: dd07c82db50e943ca8314f2c407ea841
     m_SubObjectName: 
@@ -19793,7 +19785,7 @@ Transform:
   m_GameObject: {fileID: 3053877986702270582}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: -2.54}
+  m_LocalPosition: {x: 0, y: 0, z: -1.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24690,7 +24682,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4052471301301911018}
   serializedVersion: 4
-  m_Mass: 3400
+  m_Mass: 200
   m_Drag: 0.35
   m_AngularDrag: 0.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -24816,8 +24808,8 @@ MonoBehaviour:
   density: 513.98334
   volume: 6.6150007
   voxelResolution: 0.3
-  centerOfMass: {x: 0, y: -0.15, z: -0.9}
-  waterLevelOffset: 0.25
+  centerOfMass: {x: 0, y: 0.14, z: 0.17}
+  waterLevelOffset: 0
   colliders:
   - {fileID: 0}
 --- !u!1 &4234303836348254747
@@ -25236,8 +25228,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 4
-      minScalar: 2
+      scalar: 10
+      minScalar: 10
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -34800,6 +34792,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   engineSound: {fileID: 8535437384991336339}
   waterSound: {fileID: 1026979740468168589}
-  steeringTorque: 5
+  steeringTorque: 2
   horsePower: 30
-  enginePosition: {x: 0, y: -0.091, z: -0.806}
+  enginePosition: {x: 0, y: 0, z: 0}

@@ -23,8 +23,15 @@ public class VrSceneController : MonoBehaviour
 
     private InputData _inputData;
     public AudioSource[] audios;
+    [SerializeField ] AudioSource warningAudioSource;
+    [SerializeField ] AudioClip warningAudio;
     [SerializeField] float cyberSicknessValueDetectInterval = 2f;
-    float timer = 0;
+    float timerCSVDI = 0;
+
+    [SerializeField] float cyberSicknessInputWarningInterval = 5f;
+    float lastCSValueGiven = 0;
+
+    bool isWarningAlreadyGiving = false;
 
     List<int> cyberSicknessValueList;
 
@@ -58,6 +65,8 @@ public class VrSceneController : MonoBehaviour
             cyberSicknessValue = Math.Min(maxCyberSicknessValue, cyberSicknessValue+1);
             cyberSicknessValueText.text = cyberSicknessValue.ToString();
             canEvaluate = false; 
+            lastCSValueGiven = Time.time;
+            isWarningAlreadyGiving = false;
         }
 
         if (Input.GetKeyDown(KeyCode.DownArrow) || (leftControllerAxis.y <= -axisThreshold && canEvaluate))
@@ -65,6 +74,8 @@ public class VrSceneController : MonoBehaviour
             cyberSicknessValue = Math.Max(0, cyberSicknessValue - 1);
             cyberSicknessValueText.text = cyberSicknessValue.ToString();
             canEvaluate = false;
+            lastCSValueGiven = Time.time;
+            isWarningAlreadyGiving = false;
         }
 
 
@@ -87,14 +98,27 @@ public class VrSceneController : MonoBehaviour
             canPause = true;
         }
 
-        timer += Time.deltaTime;
-        if(timer >= cyberSicknessValueDetectInterval){
-            timer = 0;
+        timerCSVDI += Time.deltaTime;
+        if(timerCSVDI >= cyberSicknessValueDetectInterval){
             if(!gameIsPaused){
+                timerCSVDI = 0;
                 cyberSicknessValueList.Add(cyberSicknessValue);
             }
         }
 
+
+        if(Time.time >= cyberSicknessInputWarningInterval  + lastCSValueGiven){
+            if(!gameIsPaused && !isWarningAlreadyGiving){
+                //isWarningAlreadyGiving = true;
+                lastCSValueGiven = Time.time;
+                GiveWarning();
+            }
+        }
+
+    }
+
+    void GiveWarning(){
+        warningAudioSource.PlayOneShot(warningAudio);
     }
 
     void Pause()
@@ -148,13 +172,19 @@ public class VrSceneController : MonoBehaviour
         string filePath = Path.Combine(folderPath, SceneManager.GetActiveScene().name + "__"
                         + DateTime.Now.ToString("dd_MMM_yyyy__HH_mm_ss")  +".txt");
 
+
+        int total = 0;
+
         using (StreamWriter writer = new StreamWriter(filePath))
         {
             writer.WriteLine("Interval: " + cyberSicknessValueDetectInterval + " seconds" );
             foreach (int score in cyberSicknessValueList)
             {
+                total += score;
                 writer.WriteLine(score);
             }
+            //total /= cyberSicknessValueList.Count;
+            writer.WriteLine("Average: " + total/(float) cyberSicknessValueList.Count);
         }
 
         Debug.Log("Values saved to " + filePath);
