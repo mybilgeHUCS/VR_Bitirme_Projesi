@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,9 @@ public class FlyingControl : MonoBehaviour
     public float pitch_multiplier;
     new Rigidbody rigidbody;
 
+    public float pitch;
+    public float yaw;
+
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
@@ -17,12 +21,21 @@ public class FlyingControl : MonoBehaviour
 
     void FixedUpdate()
     {
-        float pitch = Input.GetAxis("Vertical");
-        float yaw = Input.GetAxis("Horizontal");
+        transform.position = new Vector3(transform.position.x, Math.Clamp(transform.position.y,10f,200f), transform.position.z);
 
-        rigidbody.AddRelativeForce(0f, 0f, thrust * thrust_multiplier * Time.deltaTime);
+
+        // pitch = Input.GetAxis("Vertical");
+         //yaw = Input.GetAxis("Horizontal");
+
+
+        float speed = thrust * thrust_multiplier * Time.deltaTime;
+
+
+        rigidbody.velocity = transform.forward * speed;
         rigidbody.AddRelativeTorque(pitch * pitch_multiplier * Time.deltaTime,
                                    yaw * yaw_multiplier * Time.deltaTime,
                                    -yaw * yaw_multiplier * 2 * Time.deltaTime);
+
+        Debug.Log(rigidbody.velocity.magnitude);
     }
 }

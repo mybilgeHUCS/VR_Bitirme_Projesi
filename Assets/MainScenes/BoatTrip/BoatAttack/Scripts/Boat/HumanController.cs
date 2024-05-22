@@ -8,8 +8,8 @@ namespace BoatAttack
     public class HumanController : BaseController
     {
 
-        private float _throttle;
-        private float _steering;
+        public float _throttle;
+        public float _steering;
         
 
         public override void OnEnable()

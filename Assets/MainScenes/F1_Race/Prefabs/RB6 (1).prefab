@@ -5718,7 +5718,7 @@ MonoBehaviour:
   steeringWheel: {fileID: 7849722830058724762}
   audioSource: {fileID: 7367536240386388170}
   maxRPMForVolume: 2000
-  control: 0
+  control: 1
   maxAcceleration: 30
   brakeAcceleration: 100
   turnSensitivity: 1
@@ -5740,6 +5740,7 @@ MonoBehaviour:
   moveInput: 0
   steerInput: 0
   isVrBraking: 0
+  direksiyon: {fileID: 5459627034240255681}
 --- !u!54 &4641201302063075038
 Rigidbody:
   m_ObjectHideFlags: 0

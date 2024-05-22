@@ -43,6 +43,7 @@ public class CarController : MonoBehaviour
     public float moveInput;
     public float steerInput;
     public bool isVrBraking;
+    [SerializeField] Transform direksiyon;
 
     private Rigidbody carRb;
 
@@ -65,8 +66,14 @@ public class CarController : MonoBehaviour
         Move();
         Steer();
         Brake();
+        TurnDireksiyon();
 
          
+    }
+    void TurnDireksiyon()
+    {
+        var _steerAngle = steerInput * turnSensitivity * maxSteerAngle;
+        direksiyon.localRotation = Quaternion.Euler(90, _steerAngle, 0);
     }
 
     void GetInputs()
@@ -93,6 +100,7 @@ public class CarController : MonoBehaviour
             if (wheel.axel == Axel.Front)
             {
                 var _steerAngle = steerInput * turnSensitivity * maxSteerAngle;
+                Debug.Log(_steerAngle);
                 wheel.wheelCollider.steerAngle = Mathf.Lerp(wheel.wheelCollider.steerAngle, _steerAngle, 0.6f);
             }
         }

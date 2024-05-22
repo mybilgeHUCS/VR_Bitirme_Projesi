@@ -9,10 +9,12 @@ public class PlaneOffsetControl : MonoBehaviour
     private Vector3 startPos = Vector3.zero;
     private Renderer planeRenderer;
 
-    private int XPlayerMove => (int)(player.transform.position.x - startPos.x);
-    private int ZPlayerMove => (int)(player.transform.position.z - startPos.z);
-    private int XPlayerLocation => (int)Mathf.Floor(player.transform.position.x);
-    private int ZPlayerLocation => (int)Mathf.Floor(player.transform.position.z);
+    private float XPlayerMove => (float)(player.transform.position.x - startPos.x);
+    private float ZPlayerMove => (float)(player.transform.position.z - startPos.z);
+    private float XPlayerLocation => (float)Mathf.Floor(player.transform.position.x);
+    private float ZPlayerLocation => (float)Mathf.Floor(player.transform.position.z);
+    [SerializeField] float offsetSpeed = 0.001f;
+
 
     void Start()
     {
@@ -35,17 +37,13 @@ public class PlaneOffsetControl : MonoBehaviour
             {
                 // Assuming the material has a "_MainTex" property for the texture offset
                 Material planeMaterial = planeRenderer.material;
-                Vector2 newOffset = new Vector2(-XPlayerLocation * 0.001f, -ZPlayerLocation * 0.001f); // Scale the offset change for visibility
+                Vector2 newOffset = new Vector2(-XPlayerLocation * offsetSpeed, -ZPlayerLocation * offsetSpeed); // Scale the offset change for visibility
                 planeMaterial.mainTextureOffset = newOffset;
-
-                // Debug logs
-                Debug.Log("New Plane Position: " + newPlanePosition);
-                Debug.Log("New Texture Offset: " + newOffset);
             }
         }
     }
 
-    private bool hasPlayerMoved(int playerX, int playerZ)
+    private bool hasPlayerMoved(float playerX, float playerZ)
     {
         if (Mathf.Abs(playerX) >= 1 || Mathf.Abs(playerZ) >= 1)
         {

@@ -1,0 +1,3 @@
+Interval: 2 seconds
+0
+Average: 0

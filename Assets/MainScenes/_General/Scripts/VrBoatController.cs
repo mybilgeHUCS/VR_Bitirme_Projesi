@@ -1,3 +1,4 @@
+using BoatAttack;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,17 +8,26 @@ public class VrBoatController : MonoBehaviour
 {
     
     private InputData _inputData;
-    //[SerializeField] CarController carController;
+    public HumanController boatHumanController;
      private void Awake()
     {
         _inputData = GetComponent<InputData>();
     }
 
+    private void Start()
+    {
+        boatHumanController = GameObject.FindObjectOfType<HumanController>();
+        if (boatHumanController == null)
+        {
+            Debug.LogError("HumanController bulunamadi");
+        }
+    }
+
     private void Update() {
 
-        /*if(carController == null){
+        if(boatHumanController == null){
             return;
-        }*/
+        }
 
         _inputData._rightController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 rightControllerAxis);
         
@@ -29,7 +39,11 @@ public class VrBoatController : MonoBehaviour
 
         _inputData._rightController.TryGetFeatureValue(CommonUsages.triggerButton, out bool triggerButton);
         
-        Debug.Log("triggerButton " + triggerButton);
-       
+        //Debug.Log("triggerButton " + triggerButton);
+
+
+        boatHumanController._throttle = rightControllerAxis.y;
+        boatHumanController._steering = rightControllerAxis.x;
+
     }
 }

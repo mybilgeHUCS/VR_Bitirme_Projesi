@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     public void LoadFlightScene()
     {
         Debug.Log("Uçak sahnesi açılıyor");
-        SceneManager.LoadScene("FlyThroughScene2");
+        SceneManager.LoadScene("PlaneScene");
     }
 
     public void LoadRaceScene()

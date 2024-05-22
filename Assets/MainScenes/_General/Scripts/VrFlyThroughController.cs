@@ -7,7 +7,7 @@ public class VrFlyThroughController : MonoBehaviour
 {
     
     private InputData _inputData;
-    //[SerializeField] CarController carController;
+    [SerializeField] FlyingControl flyController;
      private void Awake()
     {
         _inputData = GetComponent<InputData>();
@@ -15,9 +15,9 @@ public class VrFlyThroughController : MonoBehaviour
 
     private void Update() {
 
-        /*if(carController == null){
+        if(flyController == null){
             return;
-        }*/
+        }
 
         _inputData._rightController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 rightControllerAxis);
         
@@ -31,6 +31,10 @@ public class VrFlyThroughController : MonoBehaviour
         
         Debug.Log("triggerButton " + triggerButton);
 
-       
+
+
+        flyController.pitch = rightControllerAxis.y;
+        flyController.yaw = rightControllerAxis.x;
+
     }
 }
