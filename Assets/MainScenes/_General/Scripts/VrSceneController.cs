@@ -23,10 +23,12 @@ public class VrSceneController : MonoBehaviour
     private InputData _inputData;
     public AudioSource[] audios;
 
+    private void Awake() {
+        _inputData = GetComponent<InputData>();
+    }
     private void Start()
     {
          audios = GameObject.FindObjectsOfType<AudioSource>();
-        _inputData = GetComponent<InputData>();
     }
 
 
@@ -34,27 +36,25 @@ public class VrSceneController : MonoBehaviour
     {
         _inputData._leftController.TryGetFeatureValue(CommonUsages.menuButton, out bool isMenuButtonPressed);
 
-        Debug.Log(isMenuButtonPressed);
+        //Debug.Log(isMenuButtonPressed);
 
-        _inputData._leftController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 rightAxis);
+        _inputData._leftController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 leftControllerAxis);
         
-        //Debug.Log("right axis " + rightAxis);
+        //Debug.Log("leftControllerAxis " + leftControllerAxis);
 
-        _inputData._rightController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 rightControllerAxis);
         
-        Debug.Log(rightControllerAxis);
 
 
 
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) || (rightAxis.y >= axisThreshold && canEvaluate))
+        if (Input.GetKeyDown(KeyCode.UpArrow) || (leftControllerAxis.y >= axisThreshold && canEvaluate))
         {
             cyberSicknessValue = Math.Min(maxCyberSicknessValue, cyberSicknessValue+1);
             cyberSicknessValueText.text = cyberSicknessValue.ToString();
             canEvaluate = false; 
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow) || (rightAxis.y <= -axisThreshold && canEvaluate))
+        if (Input.GetKeyDown(KeyCode.DownArrow) || (leftControllerAxis.y <= -axisThreshold && canEvaluate))
         {
             cyberSicknessValue = Math.Max(0, cyberSicknessValue - 1);
             cyberSicknessValueText.text = cyberSicknessValue.ToString();
@@ -62,7 +62,7 @@ public class VrSceneController : MonoBehaviour
         }
 
 
-        if ( rightAxis.y >= -axisThreshold/2f && rightAxis.y <= axisThreshold/2f)
+        if ( leftControllerAxis.y >= -axisThreshold/2f && leftControllerAxis.y <= axisThreshold/2f)
         {
             canEvaluate = true;
         }

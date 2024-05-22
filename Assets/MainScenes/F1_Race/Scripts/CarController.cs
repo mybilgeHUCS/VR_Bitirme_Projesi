@@ -7,7 +7,7 @@ public class CarController : MonoBehaviour
     public enum ControlMode
     {
         Keyboard,
-        Buttons
+        VR
     };
 
     public enum Axel
@@ -38,13 +38,14 @@ public class CarController : MonoBehaviour
 
     public List<Wheel> wheels;
 
-    float moveInput;
-    float steerInput;
+    public float moveInput;
+    public float steerInput;
+    public bool isVrBraking;
 
     private Rigidbody carRb;
 
 
-    void Start()
+    void Awake()
     {
         carRb = GetComponent<Rigidbody>();
         carRb.centerOfMass = _centerOfMass;
@@ -94,7 +95,7 @@ public class CarController : MonoBehaviour
 
     void Brake()
     {
-        if (Input.GetKey(KeyCode.Space) || moveInput == 0)
+        if ((Input.GetKey(KeyCode.Space) || isVrBraking )|| moveInput == 0)
         {
             foreach (var wheel in wheels)
             {

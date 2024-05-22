@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 920016613128308945}
   - component: {fileID: 5172774638826498352}
   - component: {fileID: 2562929741047267234}
+  - component: {fileID: 4055886324179250987}
+  - component: {fileID: 4235948705440006629}
+  - component: {fileID: 6114263045660864131}
   m_Layer: 0
   m_Name: InputReader
   m_TagString: Untagged
@@ -63,3 +66,41 @@ MonoBehaviour:
   axisThreshold: 0.5
   canEvaluate: 1
   canPause: 1
+  audios: []
+--- !u!114 &4055886324179250987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3672728657941502320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0958426c91006f04dab938d3af12dee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carController: {fileID: 0}
+--- !u!114 &4235948705440006629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3672728657941502320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 144d338c8597425439b8cabf10ed3d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6114263045660864131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3672728657941502320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed164aaf466adc4a8fcb1f033caa5be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
