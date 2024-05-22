@@ -7,6 +7,7 @@ using UnityEngine.XR;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using System.IO;
 
 public class VrSceneController : MonoBehaviour
 {
@@ -22,8 +23,13 @@ public class VrSceneController : MonoBehaviour
 
     private InputData _inputData;
     public AudioSource[] audios;
+    [SerializeField] float cyberSicknessValueDetectInterval = 2f;
+    float timer = 0;
+
+    List<int> cyberSicknessValueList;
 
     private void Awake() {
+        cyberSicknessValueList = new List<int>();
         _inputData = GetComponent<InputData>();
     }
     private void Start()
@@ -80,6 +86,15 @@ public class VrSceneController : MonoBehaviour
         {
             canPause = true;
         }
+
+        timer += Time.deltaTime;
+        if(timer >= cyberSicknessValueDetectInterval){
+            timer = 0;
+            if(!gameIsPaused){
+                cyberSicknessValueList.Add(cyberSicknessValue);
+            }
+        }
+
     }
 
     void Pause()
@@ -111,5 +126,37 @@ public class VrSceneController : MonoBehaviour
     {
         Resume();
         SceneManager.LoadScene("MainMenu");
+    }
+
+    private void OnDestroy() {
+        SaveScoresToFile();
+    }
+
+    void SaveScoresToFile()
+    {
+        string folderPath = Application.dataPath + "/CyberSicknessData/"+ SceneManager.GetActiveScene().name ;
+
+        
+
+        
+
+        if (!Directory.Exists(folderPath))
+        {
+            Directory.CreateDirectory(folderPath);
+        }
+
+        string filePath = Path.Combine(folderPath, SceneManager.GetActiveScene().name + "__"
+                        + DateTime.Now.ToString("dd_MMM_yyyy__HH_mm_ss")  +".txt");
+
+        using (StreamWriter writer = new StreamWriter(filePath))
+        {
+            writer.WriteLine("Interval: " + cyberSicknessValueDetectInterval + " seconds" );
+            foreach (int score in cyberSicknessValueList)
+            {
+                writer.WriteLine(score);
+            }
+        }
+
+        Debug.Log("Values saved to " + filePath);
     }
 }

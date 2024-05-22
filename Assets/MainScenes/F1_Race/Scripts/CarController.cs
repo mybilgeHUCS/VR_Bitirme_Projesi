@@ -17,6 +17,8 @@ public class CarController : MonoBehaviour
     }
 
     public GameObject steeringWheel;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] float maxRPMForVolume = 5000;
 
     [Serializable]
     public struct Wheel
@@ -55,6 +57,7 @@ public class CarController : MonoBehaviour
     {
         GetInputs();
         AnimateWheels();
+        UpdateEngineSound();
     }
 
     void LateUpdate()
@@ -62,6 +65,8 @@ public class CarController : MonoBehaviour
         Move();
         Steer();
         Brake();
+
+         
     }
 
     void GetInputs()
@@ -121,6 +126,23 @@ public class CarController : MonoBehaviour
             wheel.wheelModel.transform.position = pos;
             wheel.wheelModel.transform.rotation = rot;
         }
+    }
+
+    void UpdateEngineSound()
+    {
+        // Calculate the average RPM of the wheels
+        float totalRPM = 0;
+        foreach (var wheel in wheels)
+        {
+            totalRPM += wheel.wheelCollider.rpm;
+        }
+        float averageRPM = totalRPM / wheels.Count;
+
+        // Normalize the RPM value (this range might need tuning based on the actual game)
+        float normalizedRPM = Mathf.InverseLerp(0, maxRPMForVolume, Mathf.Abs(averageRPM));
+
+        // Set the audio volume based on the normalized RPM
+        audioSource.volume = normalizedRPM;
     }
     
 }
