@@ -57,7 +57,7 @@ namespace OccaSoftware.Altos.Runtime
     private void OnStrikeEventHandler(StrikeEvent strikeEvent)
     {
       Debug.Log("aaaa");
-      OnStrikeUnityEvent?.Invoke(strikeEvent);
+      //OnStrikeUnityEvent?.Invoke(strikeEvent);
     }
   }
 }

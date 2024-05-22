@@ -43,12 +43,15 @@ namespace WaterSystem
         private float3[] _velocity; // voxel velocity for buoyancy
         [SerializeField] Collider[] colliders; // colliders attatched ot this object
         private Rigidbody _rb;
+        [SerializeField] float gravityScale;
+        float globalGravity = -9.81f;
         private DebugDrawing[] _debugInfo; // For drawing force gizmos
         [NonSerialized] public float PercentSubmerged;
 
         [ContextMenu("Initialize")]
         private void Init()
         {
+            
             _voxels = null;
 
             switch (_buoyancyType)
@@ -156,6 +159,10 @@ namespace WaterSystem
 
         private void FixedUpdate()
         {
+            Vector3 gravity = globalGravity * gravityScale * Vector3.up;
+            _rb.AddForce(gravity, ForceMode.Acceleration);
+
+
             var submergedAmount = 0f;
             
             switch (_buoyancyType)
@@ -324,6 +331,7 @@ namespace WaterSystem
                 _rb = gameObject.AddComponent<Rigidbody>();
                 Debug.LogError($"Buoyancy:Object \"{name}\" had no Rigidbody. Rigidbody has been added.");
             }
+            _rb.useGravity = false;
             _rb.centerOfMass = centerOfMass + _voxelBounds.center;
             _baseDrag = _rb.drag;
             _baseAngularDrag = _rb.angularDrag;

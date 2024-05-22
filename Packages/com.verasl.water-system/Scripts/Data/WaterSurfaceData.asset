@@ -121,8 +121,8 @@ MonoBehaviour:
   _basicWaveSettings:
     numWaves: 10
     amplitude: 30
-    direction: -176
-    wavelength: 139
+    direction: 0
+    wavelength: 200
   _foamSettings:
     foamType: 1
     basicFoam:

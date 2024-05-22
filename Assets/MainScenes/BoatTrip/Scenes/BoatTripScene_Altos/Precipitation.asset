@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c581f2e2e57e968468ed7cf8f88c46dd, type: 3}
   m_Name: Precipitation
   m_EditorClassIdentifier: 
-  precipitation: 0
+  precipitation: 1
   dynamicPrecipitation: 1
   precipitationMin: 0
   precipitationMax: 0
