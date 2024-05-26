@@ -1,24 +1,26 @@
 using System.Collections;
-using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class SelectVideo : MonoBehaviour
 {
-     VideoPlayer videoPlayer;
+    VideoPlayer videoPlayer;
     [SerializeField] Material skyboxVideoMaterial;
+    public VideoClip[] clipList;
 
     private void Awake()
     {
         RenderSettings.skybox = skyboxVideoMaterial;
     }
+
     private void Start()
     {
         videoPlayer = GameObject.FindObjectOfType<VideoPlayer>();
-        if(videoPlayer == null)
+        if (videoPlayer == null)
         {
-            Debug.LogError("Video Player couldn't found");
+            Debug.LogError("Video Player couldn't be found");
+            return;
         }
         SelectVideoCoroutine();
     }
@@ -30,34 +32,28 @@ public class SelectVideo : MonoBehaviour
 
     private IEnumerator LoadVideo()
     {
-        string path = "";
-
-#if UNITY_EDITOR
-        path = UnityEditor.EditorUtility.OpenFilePanel("Select Video", "Assets/MainScenes/360VideoPlayer/Videos/", "mp4");
-#elif UNITY_STANDALONE_WIN
-        
-    // burayi doldur
-
-#endif
-
-        if (!string.IsNullOrEmpty(path))
+        int selectedVideoIndex = PlayerPrefs.GetInt("SelectedVideoIndex", 0); // Default to the first video if not set
+        if (selectedVideoIndex < 0 || selectedVideoIndex >= clipList.Length)
         {
-            videoPlayer.url = "file://" + path;
-            videoPlayer.Prepare();
-
-            // Wait until video is prepared
-            while (!videoPlayer.isPrepared)
-            {
-                yield return null;
-            }
-
-            RenderTexture videoRenderTexture = new RenderTexture((int)videoPlayer.width, (int)videoPlayer.height, UnityEngine.Experimental.Rendering.GraphicsFormat.R8G8B8A8_UNorm, UnityEngine.Experimental.Rendering.GraphicsFormat.D32_SFloat_S8_UInt);
-            videoPlayer.targetTexture = videoRenderTexture;
-            skyboxVideoMaterial.mainTexture = videoRenderTexture;
-
-            videoPlayer.Play();
-            Debug.Log("Playing: " + Path.GetFileName(path));
+            Debug.LogError("Selected video index is out of range");
+            yield break;
         }
+
+        VideoClip selectedClip = clipList[selectedVideoIndex];
+        videoPlayer.clip = selectedClip;
+        videoPlayer.Prepare();
+
+        // Wait until video is prepared
+        while (!videoPlayer.isPrepared)
+        {
+            yield return null;
+        }
+
+        RenderTexture videoRenderTexture = new RenderTexture((int)videoPlayer.width, (int)videoPlayer.height, 0);
+        videoPlayer.targetTexture = videoRenderTexture;
+        skyboxVideoMaterial.mainTexture = videoRenderTexture;
+
+        videoPlayer.Play();
+        Debug.Log("Playing: " + selectedClip.name);
     }
 }
-
