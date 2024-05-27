@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9530163f45774fe58f21fb584c87e15, type: 3}
+  m_Name: DifficultyManagerData
+  m_EditorClassIdentifier: 
+  howManyCarAI: 8
+  difficultyParamsList:
+  - name: Easy
+    aICarParams:
+    - speedOffset: 1
+      aggressiveness: 0
+      chooseBestAltPath: 100
+      aiBooster: 40
+    - speedOffset: 0.5
+      aggressiveness: 0
+      chooseBestAltPath: 90
+      aiBooster: 40
+    - speedOffset: 0
+      aggressiveness: 1.5
+      chooseBestAltPath: 80
+      aiBooster: 40
+    - speedOffset: -0.5
+      aggressiveness: 0
+      chooseBestAltPath: 70
+      aiBooster: 40
+    - speedOffset: -1
+      aggressiveness: 0
+      chooseBestAltPath: 60
+      aiBooster: 40
+    - speedOffset: -1.25
+      aggressiveness: 0
+      chooseBestAltPath: 50
+      aiBooster: 40
+    - speedOffset: -1.5
+      aggressiveness: 0
+      chooseBestAltPath: 40
+      aiBooster: 40
+    - speedOffset: -2
+      aggressiveness: 0
+      chooseBestAltPath: 30
+      aiBooster: 40
+    folderTxt: 0
+    idTxt: 167
+  - name: Medium
+    aICarParams:
+    - speedOffset: 3.5
+      aggressiveness: 0
+      chooseBestAltPath: 100
+      aiBooster: 50
+    - speedOffset: 3
+      aggressiveness: 0
+      chooseBestAltPath: 90
+      aiBooster: 50
+    - speedOffset: 2.5
+      aggressiveness: 0
+      chooseBestAltPath: 80
+      aiBooster: 50
+    - speedOffset: 2
+      aggressiveness: 0
+      chooseBestAltPath: 70
+      aiBooster: 50
+    - speedOffset: 1.5
+      aggressiveness: 0
+      chooseBestAltPath: 60
+      aiBooster: 50
+    - speedOffset: 0.75
+      aggressiveness: 0
+      chooseBestAltPath: 50
+      aiBooster: 50
+    - speedOffset: -0.5
+      aggressiveness: 0
+      chooseBestAltPath: 40
+      aiBooster: 50
+    - speedOffset: -1
+      aggressiveness: 0
+      chooseBestAltPath: 30
+      aiBooster: 50
+    folderTxt: 0
+    idTxt: 168
+  - name: Hard
+    aICarParams:
+    - speedOffset: 5
+      aggressiveness: 0
+      chooseBestAltPath: 100
+      aiBooster: 75
+    - speedOffset: 4.5
+      aggressiveness: 0
+      chooseBestAltPath: 90
+      aiBooster: 75
+    - speedOffset: 4
+      aggressiveness: 0
+      chooseBestAltPath: 80
+      aiBooster: 75
+    - speedOffset: 3.5
+      aggressiveness: 0
+      chooseBestAltPath: 70
+      aiBooster: 75
+    - speedOffset: 3
+      aggressiveness: 0
+      chooseBestAltPath: 60
+      aiBooster: 75
+    - speedOffset: 2.5
+      aggressiveness: 0
+      chooseBestAltPath: 50
+      aiBooster: 75
+    - speedOffset: 2
+      aggressiveness: 0
+      chooseBestAltPath: 40
+      aiBooster: 75
+    - speedOffset: 1.5
+      aggressiveness: 0
+      chooseBestAltPath: 30
+      aiBooster: 75
+    folderTxt: 0
+    idTxt: 169
+  difficultyName: New Difficulty
+  bEditDifficultyName: 0
+  currentEditorDifficulty: 1
+  tabDifficulty: 0

@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1976946620094412369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1976946620094412372}
+  - component: {fileID: 1976946620094412371}
+  - component: {fileID: 1976946620094412370}
+  m_Layer: 0
+  m_Name: LoadSceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1976946620094412372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976946620094412369}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1976946620094412371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976946620094412369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7235c6728982a4f0b89a24ac3fc63946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SeeInspector: 0
+  b_EverythingDoneBeforeLoading: 0
+  b_IsLoadingFinished: 1
+  helpBox: 1
+  newScene: 0
+  methodsList: []
+  multiMethodList:
+  - methodsList:
+    - obj: {fileID: 1976946620094412369}
+      scriptRef: {fileID: 1976946620094412370}
+      indexScript: 1
+      indexMethod: 2
+      methodInfoName: A_S100_HideMouse
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      objValue: {fileID: 0}
+      audioValue: {fileID: 0}
+    - obj: {fileID: 1976946620094412369}
+      scriptRef: {fileID: 1976946620094412370}
+      indexScript: 1
+      indexMethod: 0
+      methodInfoName: A_S101_ShowLoadingScreen
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      objValue: {fileID: 0}
+      audioValue: {fileID: 0}
+    - obj: {fileID: 1976946620094412369}
+      scriptRef: {fileID: 1976946620094412370}
+      indexScript: 1
+      indexMethod: 3
+      methodInfoName: PlayLoadingPageMusic
+      intValue: -1
+      floatValue: 0
+      stringValue: 
+      objValue: {fileID: 0}
+      audioValue: {fileID: 0}
+    - obj: {fileID: 1976946620094412369}
+      scriptRef: {fileID: 1976946620094412370}
+      indexScript: 1
+      indexMethod: 1
+      methodInfoName: A_S102_CheckIfLoadingScreenIsDisplayed
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      objValue: {fileID: 0}
+      audioValue: {fileID: 0}
+--- !u!114 &1976946620094412370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976946620094412369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5625bd7c82aec40f99047fdcaab6291a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  b_InitDone: 0

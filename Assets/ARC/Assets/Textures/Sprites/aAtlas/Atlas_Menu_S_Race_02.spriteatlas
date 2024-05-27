@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atlas_Menu_S_Race_02
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 4ac900bebc1f94e6ea5f13d9b642c39f, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 30b38be0cea5a4d95a6b52fb8c4dcb54, type: 3}
+  - {fileID: 21300000, guid: ac0d4fa18d63244efb899d34f2eacf43, type: 3}
+  - {fileID: 21300000, guid: 5b5af0d2c1e934a71b298bbdfb86161a, type: 3}
+  - {fileID: 21300000, guid: e43060871906c4fb18c8df6a776bb318, type: 3}
+  - {fileID: 21300000, guid: 91c8497a8481c4d63b35a69ee576d963, type: 3}
+  - {fileID: 21300000, guid: 9698253ccb0eb4e7c988548c8b19f89f, type: 3}
+  - {fileID: 21300000, guid: 030c0ead7b4dc4c3d8a4171cf176ed78, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - SelectRace_Race_02
+  - SelectRace_Race_05
+  - Tuto_01_Thumb
+  - SelectRace_Race_01
+  - SelectRace_Race_06
+  - SelectRace_Race_04
+  - SelectRace_Race_03
+  m_RenderDataMap: {}
+  m_Tag: Atlas_Menu_S_Race_02
+  m_IsVariant: 0

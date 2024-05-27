@@ -1,0 +1,456 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a264a2d0f2e04c678d2430707e25181, type: 3}
+  m_Name: TracksData
+  m_EditorClassIdentifier: 
+  MoreOptions: 0
+  HelpBox: 1
+  tab: 1
+  minutes: 0
+  seconds: 0
+  milliseconds: 0
+  listTrackParams:
+  - selectedListMultiLanguage: 0
+    NameIDMultiLanguage: 93
+    sceneName: Track_00
+    isUnlockedArcade: 1
+    isUnlockedTimeTrial: 1
+    aIDifficulty: 0
+    trackSprite: {fileID: 21300000, guid: e43060871906c4fb18c8df6a776bb318, type: 3}
+    fullScreenSprite: {fileID: 21300000, guid: c24bd38bd6a724ee4a8f69d21910d6f7, type: 3}
+    listLeadeboardEntries:
+    - name: Jane
+      time: 138432
+      minutes: 2
+      seconds: 18
+      milliseconds: 432
+    - name: Elise
+      time: 142253
+      minutes: 2
+      seconds: 22
+      milliseconds: 253
+    - name: Aoki
+      time: 145146
+      minutes: 2
+      seconds: 25
+      milliseconds: 146
+    - name: Paul
+      time: 150712
+      minutes: 2
+      seconds: 30
+      milliseconds: 712
+    - name: Polo
+      time: 152561
+      minutes: 2
+      seconds: 32
+      milliseconds: 561
+    - name: Phil
+      time: 156125
+      minutes: 2
+      seconds: 36
+      milliseconds: 125
+    - name: Sara
+      time: 160842
+      minutes: 2
+      seconds: 40
+      milliseconds: 842
+    - name: Goto
+      time: 165312
+      minutes: 2
+      seconds: 45
+      milliseconds: 312
+    - name: John
+      time: 168729
+      minutes: 2
+      seconds: 48
+      milliseconds: 729
+    - name: Dan
+      time: 174451
+      minutes: 2
+      seconds: 54
+      milliseconds: 451
+    showInEditor: 1
+    showLeaderboardInEditor: 0
+    showCoinsInEditor: 0
+    listArcadeCoins: dc050000e8030000ee020000f4010000fa0000007d0000004b00000032000000
+    listTimeTrialCoins: dc050000e8030000ee020000
+    listTexts:
+    - paramName: Unlock Text
+      listID: 0
+      EntryID: 0
+    - paramName: Comment
+      listID: 0
+      EntryID: 112
+  - selectedListMultiLanguage: 0
+    NameIDMultiLanguage: 94
+    sceneName: Track_01
+    isUnlockedArcade: 1
+    isUnlockedTimeTrial: 1
+    aIDifficulty: 0
+    trackSprite: {fileID: 21300000, guid: 30b38be0cea5a4d95a6b52fb8c4dcb54, type: 3}
+    fullScreenSprite: {fileID: 21300000, guid: 0f4f9aa8d21ed457f9f8b0ba7463ffdd, type: 3}
+    listLeadeboardEntries:
+    - name: John
+      time: 164159
+      minutes: 2
+      seconds: 44
+      milliseconds: 159
+    - name: Dan
+      time: 167521
+      minutes: 2
+      seconds: 47
+      milliseconds: 521
+    - name: Sara
+      time: 170125
+      minutes: 2
+      seconds: 50
+      milliseconds: 125
+    - name: Goto
+      time: 172241
+      minutes: 2
+      seconds: 52
+      milliseconds: 241
+    - name: Polo
+      time: 174235
+      minutes: 2
+      seconds: 54
+      milliseconds: 235
+    - name: Phil
+      time: 177142
+      minutes: 2
+      seconds: 57
+      milliseconds: 142
+    - name: Aoki
+      time: 182472
+      minutes: 3
+      seconds: 2
+      milliseconds: 472
+    - name: Paul
+      time: 186147
+      minutes: 3
+      seconds: 6
+      milliseconds: 147
+    - name: Jane
+      time: 190684
+      minutes: 3
+      seconds: 10
+      milliseconds: 684
+    - name: Elise
+      time: 195972
+      minutes: 3
+      seconds: 15
+      milliseconds: 972
+    showInEditor: 0
+    showLeaderboardInEditor: 0
+    showCoinsInEditor: 0
+    listArcadeCoins: dc050000e8030000ee020000f4010000fa0000007d0000004b00000032000000
+    listTimeTrialCoins: dc050000e8030000ee020000
+    listTexts:
+    - paramName: Unlock Text
+      listID: 0
+      EntryID: 0
+    - paramName: Comment
+      listID: 0
+      EntryID: 112
+  - selectedListMultiLanguage: 0
+    NameIDMultiLanguage: 95
+    sceneName: Track_02
+    isUnlockedArcade: 1
+    isUnlockedTimeTrial: 1
+    aIDifficulty: 0
+    trackSprite: {fileID: 21300000, guid: 030c0ead7b4dc4c3d8a4171cf176ed78, type: 3}
+    fullScreenSprite: {fileID: 21300000, guid: 612e7030f038f40e8865f609c57fd0f0, type: 3}
+    listLeadeboardEntries:
+    - name: Polo
+      time: 146563
+      minutes: 2
+      seconds: 26
+      milliseconds: 563
+    - name: Sara
+      time: 149111
+      minutes: 2
+      seconds: 29
+      milliseconds: 111
+    - name: John
+      time: 151542
+      minutes: 2
+      seconds: 31
+      milliseconds: 542
+    - name: Goto
+      time: 154875
+      minutes: 2
+      seconds: 34
+      milliseconds: 875
+    - name: Phil
+      time: 157135
+      minutes: 2
+      seconds: 37
+      milliseconds: 135
+    - name: Paul
+      time: 160641
+      minutes: 2
+      seconds: 40
+      milliseconds: 641
+    - name: Aoki
+      time: 162321
+      minutes: 2
+      seconds: 42
+      milliseconds: 321
+    - name: Jane
+      time: 164275
+      minutes: 2
+      seconds: 44
+      milliseconds: 275
+    - name: Dan
+      time: 167546
+      minutes: 2
+      seconds: 47
+      milliseconds: 546
+    - name: Elise
+      time: 170452
+      minutes: 2
+      seconds: 50
+      milliseconds: 452
+    showInEditor: 0
+    showLeaderboardInEditor: 0
+    showCoinsInEditor: 0
+    listArcadeCoins: dc050000e8030000ee020000f4010000fa0000007d0000004b00000032000000
+    listTimeTrialCoins: dc050000e8030000ee020000
+    listTexts:
+    - paramName: Unlock Text
+      listID: 0
+      EntryID: 0
+    - paramName: Comment
+      listID: 0
+      EntryID: 112
+  - selectedListMultiLanguage: 0
+    NameIDMultiLanguage: 97
+    sceneName: Track_03
+    isUnlockedArcade: 1
+    isUnlockedTimeTrial: 1
+    aIDifficulty: 0
+    trackSprite: {fileID: 21300000, guid: 9698253ccb0eb4e7c988548c8b19f89f, type: 3}
+    fullScreenSprite: {fileID: 21300000, guid: 76ce1de2f852a4baf85c925d6049a9de, type: 3}
+    listLeadeboardEntries:
+    - name: Aoki
+      time: 120772
+      minutes: 2
+      seconds: 0
+      milliseconds: 772
+    - name: Sara
+      time: 123115
+      minutes: 2
+      seconds: 3
+      milliseconds: 115
+    - name: Dan
+      time: 126754
+      minutes: 2
+      seconds: 6
+      milliseconds: 754
+    - name: Phil
+      time: 131465
+      minutes: 2
+      seconds: 11
+      milliseconds: 465
+    - name: Paul
+      time: 137325
+      minutes: 2
+      seconds: 17
+      milliseconds: 325
+    - name: Elise
+      time: 141198
+      minutes: 2
+      seconds: 21
+      milliseconds: 198
+    - name: Goto
+      time: 144576
+      minutes: 2
+      seconds: 24
+      milliseconds: 576
+    - name: John
+      time: 147462
+      minutes: 2
+      seconds: 27
+      milliseconds: 462
+    - name: Polo
+      time: 151126
+      minutes: 2
+      seconds: 31
+      milliseconds: 126
+    - name: Jane
+      time: 154812
+      minutes: 2
+      seconds: 34
+      milliseconds: 812
+    showInEditor: 0
+    showLeaderboardInEditor: 0
+    showCoinsInEditor: 0
+    listArcadeCoins: dc050000e8030000ee020000f4010000fa0000007d0000004b00000032000000
+    listTimeTrialCoins: dc050000e8030000ee020000
+    listTexts:
+    - paramName: Unlock Text
+      listID: 0
+      EntryID: 0
+    - paramName: Comment
+      listID: 0
+      EntryID: 112
+  - selectedListMultiLanguage: 0
+    NameIDMultiLanguage: 96
+    sceneName: Track_04
+    isUnlockedArcade: 1
+    isUnlockedTimeTrial: 1
+    aIDifficulty: 0
+    trackSprite: {fileID: 21300000, guid: ac0d4fa18d63244efb899d34f2eacf43, type: 3}
+    fullScreenSprite: {fileID: 21300000, guid: 6b248aa6b2ae8415c905f81bcc8dd27e, type: 3}
+    listLeadeboardEntries:
+    - name: Elise
+      time: 176155
+      minutes: 2
+      seconds: 56
+      milliseconds: 155
+    - name: Paul
+      time: 179543
+      minutes: 2
+      seconds: 59
+      milliseconds: 543
+    - name: Phil
+      time: 182750
+      minutes: 3
+      seconds: 2
+      milliseconds: 750
+    - name: Goto
+      time: 188495
+      minutes: 3
+      seconds: 8
+      milliseconds: 495
+    - name: Dan
+      time: 192743
+      minutes: 3
+      seconds: 12
+      milliseconds: 743
+    - name: John
+      time: 195219
+      minutes: 3
+      seconds: 15
+      milliseconds: 219
+    - name: Sara
+      time: 200114
+      minutes: 3
+      seconds: 20
+      milliseconds: 114
+    - name: Polo
+      time: 205485
+      minutes: 3
+      seconds: 25
+      milliseconds: 485
+    - name: Aoki
+      time: 207451
+      minutes: 3
+      seconds: 27
+      milliseconds: 451
+    - name: Jane
+      time: 211742
+      minutes: 3
+      seconds: 31
+      milliseconds: 742
+    showInEditor: 0
+    showLeaderboardInEditor: 0
+    showCoinsInEditor: 0
+    listArcadeCoins: dc050000e8030000ee020000f4010000fa0000007d0000004b00000032000000
+    listTimeTrialCoins: dc050000e8030000ee020000
+    listTexts:
+    - paramName: Unlock Text
+      listID: 0
+      EntryID: 0
+    - paramName: Comment
+      listID: 0
+      EntryID: 112
+  - selectedListMultiLanguage: 0
+    NameIDMultiLanguage: 98
+    sceneName: Track_05
+    isUnlockedArcade: 1
+    isUnlockedTimeTrial: 1
+    aIDifficulty: 0
+    trackSprite: {fileID: 21300000, guid: 91c8497a8481c4d63b35a69ee576d963, type: 3}
+    fullScreenSprite: {fileID: 21300000, guid: e30467de605fd47f9a50cf6a3040e690, type: 3}
+    listLeadeboardEntries:
+    - name: Jane
+      time: 167759
+      minutes: 2
+      seconds: 47
+      milliseconds: 759
+    - name: Aoki
+      time: 173854
+      minutes: 2
+      seconds: 53
+      milliseconds: 854
+    - name: Polo
+      time: 179387
+      minutes: 2
+      seconds: 59
+      milliseconds: 387
+    - name: Sara
+      time: 182113
+      minutes: 3
+      seconds: 2
+      milliseconds: 113
+    - name: John
+      time: 187785
+      minutes: 3
+      seconds: 7
+      milliseconds: 785
+    - name: Dan
+      time: 192546
+      minutes: 3
+      seconds: 12
+      milliseconds: 546
+    - name: Goto
+      time: 200337
+      minutes: 3
+      seconds: 20
+      milliseconds: 337
+    - name: Phil
+      time: 206872
+      minutes: 3
+      seconds: 26
+      milliseconds: 872
+    - name: Paul
+      time: 220312
+      minutes: 3
+      seconds: 40
+      milliseconds: 312
+    - name: Elise
+      time: 232114
+      minutes: 3
+      seconds: 52
+      milliseconds: 114
+    showInEditor: 1
+    showLeaderboardInEditor: 0
+    showCoinsInEditor: 0
+    listArcadeCoins: dc050000e8030000ee020000f4010000fa0000007d0000004b00000032000000
+    listTimeTrialCoins: dc050000e8030000ee020000
+    listTexts:
+    - paramName: Unlock Text
+      listID: 0
+      EntryID: 0
+    - paramName: Comment
+      listID: 0
+      EntryID: 112
+  showGlobalParamsInEditor: 1
+  listCoinMultiplier:
+  - 1
+  - 1.5
+  - 2
+  whichTrackSelected: 1
+  whichScoreSelected: 1
+  listArcadeCoins: dc050000e8030000ee020000f4010000fa0000007d0000004b00000032000000
+  listTimeTrialCoins: dc050000e8030000ee020000

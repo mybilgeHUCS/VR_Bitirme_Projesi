@@ -1,0 +1,1446 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4007333408207929547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4007333408207929545}
+  - component: {fileID: 4007333408207929546}
+  - component: {fileID: 4007333407705811893}
+  - component: {fileID: 4007333407705811896}
+  - component: {fileID: 4007333407705811897}
+  m_Layer: 0
+  m_Name: SceneStepsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4007333408207929545
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007333408207929547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4007333408207929546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007333408207929547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 420f88b1dd99b4fd185021cd42b29811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SeeInspector: 0
+  moreOptions: 1
+  helpBox: 1
+  currentStepSequence: 0
+  currentStep: 0
+  b_IsSceneStepManagerRunning: 0
+  currentStepListDisplayedEditor: 6
+  multiMethodList: []
+  SceneStepsList:
+  - sName: Arcade
+    b_StepName:
+    - Init Mode
+    - Cam Pre Race
+    - Race Starts
+    - Race Complete
+    b_ShowBypass: 00010000
+    b_Bypass: 00000000
+    b_ShowAutoStart: 00010000
+    B_AutoStart: 00010000
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 1
+        methodInfoName: bStep1_TT_InitialiseGameModules
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 3
+        methodInfoName: bStep3_TT_Countdown
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 15
+        methodInfoName: BInitTuto
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 5
+        methodInfoName: BStep5CameraPreRace
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 6
+        methodInfoName: BStep6EnableLapAndPositionSystem
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 12
+        methodInfoName: BFlagAllowed
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811893}
+        indexScript: 1
+        indexMethod: 5
+        methodInfoName: PlayMusic
+        intValue: 2
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811893}
+        indexScript: 1
+        indexMethod: 5
+        methodInfoName: PlayMusic
+        intValue: -1
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 10
+        methodInfoName: BStep7RaceCompleteArcade
+        intValue: 0
+        floatValue: 3
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 16
+        methodInfoName: ShowCursor
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811893}
+        indexScript: 1
+        indexMethod: 6
+        methodInfoName: FadeOutVehiclesAudioSources
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811893}
+        indexScript: 1
+        indexMethod: 5
+        methodInfoName: PlayMusic
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: Time Trial
+    b_StepName:
+    - Init Mode
+    - Cam Pre Race
+    - Race Starts
+    - Race Complete
+    b_ShowBypass: 00010000
+    b_Bypass: 00000000
+    b_ShowAutoStart: 00010000
+    B_AutoStart: 00010000
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 1
+        methodInfoName: bStep1_TT_InitialiseGameModules
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 3
+        methodInfoName: bStep3_TT_Countdown
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811896}
+        indexScript: 2
+        indexMethod: 3
+        methodInfoName: DisablePowerUPs
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811896}
+        indexScript: 2
+        indexMethod: 4
+        methodInfoName: DisableUIPlayerPosition
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 15
+        methodInfoName: BInitTuto
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 5
+        methodInfoName: BStep5CameraPreRace
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 6
+        methodInfoName: BStep6EnableLapAndPositionSystem
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 12
+        methodInfoName: BFlagAllowed
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811893}
+        indexScript: 1
+        indexMethod: 5
+        methodInfoName: PlayMusic
+        intValue: 2
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811893}
+        indexScript: 1
+        indexMethod: 5
+        methodInfoName: PlayMusic
+        intValue: -1
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 9
+        methodInfoName: BStep7RaceCompleteTimeTrial
+        intValue: 0
+        floatValue: 3
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 16
+        methodInfoName: ShowCursor
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811893}
+        indexScript: 1
+        indexMethod: 6
+        methodInfoName: FadeOutVehiclesAudioSources
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811893}
+        indexScript: 1
+        indexMethod: 5
+        methodInfoName: PlayMusic
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: Championship
+    b_StepName:
+    - Init Mode
+    - Cam Pre Race
+    - Race Starts
+    - Race Complete
+    b_ShowBypass: 00010000
+    b_Bypass: 00000000
+    b_ShowAutoStart: 00010000
+    B_AutoStart: 00010000
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 1
+        methodInfoName: bStep1_TT_InitialiseGameModules
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 3
+        methodInfoName: bStep3_TT_Countdown
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 15
+        methodInfoName: BInitTuto
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 5
+        methodInfoName: BStep5CameraPreRace
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 6
+        methodInfoName: BStep6EnableLapAndPositionSystem
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 12
+        methodInfoName: BFlagAllowed
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811893}
+        indexScript: 1
+        indexMethod: 5
+        methodInfoName: PlayMusic
+        intValue: 2
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811893}
+        indexScript: 1
+        indexMethod: 5
+        methodInfoName: PlayMusic
+        intValue: -1
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 11
+        methodInfoName: BStep7RaceCompleteChampionship
+        intValue: 0
+        floatValue: 3
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 16
+        methodInfoName: ShowCursor
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811893}
+        indexScript: 1
+        indexMethod: 6
+        methodInfoName: FadeOutVehiclesAudioSources
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811893}
+        indexScript: 1
+        indexMethod: 5
+        methodInfoName: PlayMusic
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: Test Track P1 + AIs
+    b_StepName:
+    - Init Mode
+    - Cam Pre Race
+    - Race Starts
+    - Race Complete
+    b_ShowBypass: 01010101
+    b_Bypass: 00000000
+    b_ShowAutoStart: 00010000
+    B_AutoStart: 00010000
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 1
+        methodInfoName: bStep1_TT_InitialiseGameModules
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 3
+        methodInfoName: bStep3_TT_Countdown
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 15
+        methodInfoName: BInitTuto
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 5
+        methodInfoName: BStep5CameraPreRace
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 6
+        methodInfoName: BStep6EnableLapAndPositionSystem
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 12
+        methodInfoName: BFlagAllowed
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 7
+        methodInfoName: BStep7RaceComplete
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 16
+        methodInfoName: ShowCursor
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: Main Menu
+    b_StepName:
+    - Start
+    b_ShowBypass: 00
+    b_Bypass: 00
+    b_ShowAutoStart: 00
+    B_AutoStart: 00
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811893}
+        indexScript: 1
+        indexMethod: 4
+        methodInfoName: DisplayFirstMenuScreen
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 16
+        methodInfoName: ShowCursor
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: Test 1P + No Collision
+    b_StepName:
+    - Start
+    b_ShowBypass: 01
+    b_Bypass: 00
+    b_ShowAutoStart: 00
+    B_AutoStart: 00
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 13
+        methodInfoName: BModeFiveDisableStartLine
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: 06 Keep this slot empty
+    b_StepName:
+    - Start
+    - Disable Interface
+    - Race Starts
+    b_ShowBypass: 010101
+    b_Bypass: 000001
+    b_ShowAutoStart: 000101
+    B_AutoStart: 000101
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 17
+        methodInfoName: BInitModeSpectator
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 1
+        methodInfoName: bStep1_TT_InitialiseGameModules
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 18
+        methodInfoName: BDisableInGameCanvas
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 19
+        methodInfoName: BAllVehicleWithAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811896}
+        indexScript: 2
+        indexMethod: 3
+        methodInfoName: DisablePowerUPs
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: 07 Keep this slot empty
+    b_StepName:
+    - Start
+    b_ShowBypass: 01
+    b_Bypass: 00
+    b_ShowAutoStart: 00
+    B_AutoStart: 00
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: 08 Keep this slot empty
+    b_StepName:
+    - Start
+    b_ShowBypass: 01
+    b_Bypass: 00
+    b_ShowAutoStart: 00
+    B_AutoStart: 00
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: 09 Keep this slot empty
+    b_StepName:
+    - Start
+    b_ShowBypass: 01
+    b_Bypass: 00
+    b_ShowAutoStart: 
+    B_AutoStart: 00
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: 10 Keep this slot empty
+    b_StepName:
+    - Start
+    b_ShowBypass: 01
+    b_Bypass: 00
+    b_ShowAutoStart: 00
+    B_AutoStart: 00
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: 11 Keep this slot empty
+    b_StepName:
+    - Start
+    b_ShowBypass: 01
+    b_Bypass: 00
+    b_ShowAutoStart: 00
+    B_AutoStart: 00
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: 12 Keep this slot empty
+    b_StepName:
+    - Start
+    b_ShowBypass: 01
+    b_Bypass: 00
+    b_ShowAutoStart: 
+    B_AutoStart: 00
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: 13 Keep this slot empty
+    b_StepName:
+    - Start
+    b_ShowBypass: 01
+    b_Bypass: 00
+    b_ShowAutoStart: 00
+    B_AutoStart: 00
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: 14 Keep this slot empty
+    b_StepName:
+    - Start
+    b_ShowBypass: 01
+    b_Bypass: 00
+    b_ShowAutoStart: 00
+    B_AutoStart: 00
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: 15 Keep this slot empty
+    b_StepName:
+    - Start
+    b_ShowBypass: 01
+    b_Bypass: 00
+    b_ShowAutoStart: 
+    B_AutoStart: 00
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+  - sName: 16 Keep this slot empty
+    b_StepName:
+    - Start
+    b_ShowBypass: 01
+    b_Bypass: 00
+    b_ShowAutoStart: 00
+    B_AutoStart: 00
+    SceneStepsMultiList:
+    - methodsList:
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 8
+        methodInfoName: bInitTrackFolder
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 0
+        methodInfoName: bStep0_TT_InstantiateVehicle
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 2
+        methodInfoName: bStep2_TT_AllowVehiclesToMoveAllAI
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+      - obj: {fileID: 4007333408207929547}
+        scriptRef: {fileID: 4007333407705811897}
+        indexScript: 3
+        indexMethod: 4
+        methodInfoName: bStep4_TT_EnablePlayerToMove
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        objValue: {fileID: 0}
+        audioValue: {fileID: 0}
+--- !u!114 &4007333407705811893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007333408207929547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb46458ead8ca47b5a682687d840f51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4007333407705811896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007333408207929547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2656630eed645f596aa3411ae4e9e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  b_InitDone: 0
+--- !u!114 &4007333407705811897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007333408207929547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fba9371a90e5414fbba9fcd994282a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  b_InitDone: 0

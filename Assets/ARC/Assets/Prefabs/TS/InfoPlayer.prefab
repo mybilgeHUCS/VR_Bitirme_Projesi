@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2677025490167782969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2677025490167782971}
+  - component: {fileID: 2519614668016782926}
+  - component: {fileID: 2677025490167782970}
+  - component: {fileID: 2677025490167782964}
+  - component: {fileID: 955208148}
+  m_Layer: 0
+  m_Name: InfoPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2677025490167782971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2677025490167782969}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 525.80304, y: 238.94647, z: -860.16376}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2519614668016782926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2677025490167782969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bffe84a5df7c4bd89be58a546e15d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SeeInspector: 0
+  moreOptions: 0
+  helpBox: 1
+  playerMainMenuSelection: {fileID: 11400000, guid: 0537e6c86169c4af1b93bbd489767a74, type: 2}
+--- !u!114 &2677025490167782970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2677025490167782969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b84c100379c4d74b209aaea8035406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SeeInspector: 1
+  moreOptions: 0
+  helpBox: 1
+  NewCheckStateNameEditor: New Check State
+  currentCheckStateDisplayed: 0
+  editNameEditor: 0
+  b_IsSentenceInProcess: 0
+  b_ProcessToDisplayNewPageInProgress: 0
+  b_IsPageCustomPartInProcess: 0
+  b_IsAvailableToDoSomething: 1
+  listCheckStates:
+  - s_Name: Check if a button can be pressed
+    b_Use_IsSentenceInProcess: 0
+    b_IsSentenceInProcess: 0
+    b_Use_IsPageInProcess: 1
+    b_IsPageCustomPartInProcess: 0
+    b_Use_IsAvailableToDoSomething: 1
+    b_IsAvailableToDoSomething: 1
+    b_Use_ProcessToDisplayNewPageInProgress: 1
+    b_ProcessToDisplayNewPageInProgress: 0
+--- !u!114 &2677025490167782964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2677025490167782969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8562336820694765a8453304c37cc31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SeeInspector: 0
+  moreOptions: 0
+  helpBox: 1
+  currentSelectedSlot: 0
+  methodsListSave:
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 5
+    methodInfoName: SaveInfo01
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 4
+    methodInfoName: SaveVehicleInfo
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 14
+    methodInfoName: SaveGlobalModeInfo
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 8
+    methodInfoName: SaveChampionshipModeInfo
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 10
+    methodInfoName: SaveArcadeModeInfo
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 12
+    methodInfoName: SaveTimeTrialModeInfo
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 16
+    methodInfoName: SaveCoins
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  methodsListLoad:
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 7
+    methodInfoName: LoadInfo01
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 6
+    methodInfoName: LoadVehicleInfo
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 15
+    methodInfoName: LoadGlobalModeInfo
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 9
+    methodInfoName: LoadChampionshipModeInfo
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 11
+    methodInfoName: LoadArcadeModeInfo
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 13
+    methodInfoName: LoadTimeTrialModeInfo
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  - obj: {fileID: 2677025490167782969}
+    scriptRef: {fileID: 955208148}
+    indexScript: 3
+    indexMethod: 17
+    methodInfoName: LoadCoins
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    objValue: {fileID: 0}
+    audioValue: {fileID: 0}
+  SaveName: PP_
+  loadInProgress: 0
+--- !u!114 &955208148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2677025490167782969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cfe65d21efd54b39a7af446a40095f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  b_LoadInProgress: 0
+  b_LoadIsFinished: 0

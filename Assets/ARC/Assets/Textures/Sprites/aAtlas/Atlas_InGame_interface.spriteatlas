@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atlas_InGame_interface
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: a5f089921e9af4452b63f156b4e92eee, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b0c859509334a447b995b20817d58b71, type: 3}
+  - {fileID: 21300000, guid: dfacaff0a70744b2fadbd87fd6b34f5d, type: 3}
+  - {fileID: 21300000, guid: 345660a1861164f3db16088e82a8dc0a, type: 3}
+  - {fileID: 21300000, guid: 7ffb7e42bcc2245fb8890cef096e262e, type: 3}
+  - {fileID: 21300000, guid: a965a7832434e47e6b985fc6bf39fa4e, type: 3}
+  - {fileID: 21300000, guid: 13b3e4141ef684fc59e1f661f7e9cc12, type: 3}
+  - {fileID: 21300000, guid: 6d9431f49002f406ca931390d3ebce28, type: 3}
+  - {fileID: 21300000, guid: fd2fc13776bbb4d8faa6f94068682d01, type: 3}
+  - {fileID: 21300000, guid: 012cac37229d34b99aa9d71b2e7883e5, type: 3}
+  - {fileID: 21300000, guid: df7f6457b5ae94f9c9feb7b33ee7f2b9, type: 3}
+  - {fileID: 21300000, guid: 3927187741a3142fa9ca12cffab74750, type: 3}
+  - {fileID: 21300000, guid: a76aaea73aad54c299f91231f121d71c, type: 3}
+  - {fileID: 21300000, guid: cc6e5218e2d804c569ffa77cf0475db9, type: 3}
+  - {fileID: 21300000, guid: 08a07f486180147ea9d929b2dc2eca5a, type: 3}
+  - {fileID: 21300000, guid: 11de1ec8d77fe4ca89886b6f572ed7ce, type: 3}
+  - {fileID: 21300000, guid: f2d1325975d034cc9b8a8ba7014170b0, type: 3}
+  - {fileID: 21300000, guid: 1b17c80b5873d4ed2a63fc511dc161ac, type: 3}
+  - {fileID: 21300000, guid: 4b64da2d9cb214ff2adeb21295c90efd, type: 3}
+  - {fileID: 21300000, guid: 058d1aef56414412c835a36feae2d57d, type: 3}
+  - {fileID: 21300000, guid: 06914eeff83b84ef4b51318588f8abfc, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - PlaneFlag
+  - UI_Board_Text_02
+  - UI_Icon_MachineGun
+  - UI_Icon_Mine
+  - UI_Map_Board_02
+  - Circle
+  - UI_Line_Life
+  - Triangle
+  - UI_Icon_Missile
+  - UI_Icon_Repair
+  - UI_Icon_NoPU
+  - Dot_Base
+  - UI_Map_Board
+  - UI_Line
+  - UI_Board_Text_01
+  - Dot_Color
+  - Warning
+  - UI_Bullet
+  - UI_Line_Booster
+  - UI_Icon_Shield
+  m_RenderDataMap: {}
+  m_Tag: Atlas_InGame_interface
+  m_IsVariant: 0

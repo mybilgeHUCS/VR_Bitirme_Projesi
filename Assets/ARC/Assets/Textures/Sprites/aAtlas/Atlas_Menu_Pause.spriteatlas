@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atlas_Menu_Pause
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: e5fd7e7009da44accbaa115a734c6323, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 8e7f6710658e84011a215d3249444e1a, type: 3}
+  - {fileID: 21300000, guid: 02854ee1e0b9c4fbab8f82a450a5babf, type: 3}
+  - {fileID: 21300000, guid: f5adc1d641dbc4673b4952c492f39014, type: 3}
+  - {fileID: 21300000, guid: 8048b3b7776c041f588f9cd940882831, type: 3}
+  - {fileID: 21300000, guid: 172066b7b60664df69d59ec1e8e914c7, type: 3}
+  - {fileID: 21300000, guid: 802676692b7a34304a6c145001a07cc1, type: 3}
+  - {fileID: 21300000, guid: 78b8acea142bf445095a84f924d93a2e, type: 3}
+  - {fileID: 21300000, guid: 31e6134b62a554b80ae871c4208592c7, type: 3}
+  - {fileID: 21300000, guid: 80f2feeb6cde247459c0f77ac8c6bdab, type: 3}
+  - {fileID: 21300000, guid: a04ae61c8749f4080aedfaf2de874c5e, type: 3}
+  - {fileID: 21300000, guid: eb1ba74f001164048a501ff765008fd6, type: 3}
+  - {fileID: 21300000, guid: bc69947f3b60e484182c45bf379a8130, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Pause_Icon_Resume
+  - Pause_Text_Settings
+  - Pause_Board_Settings
+  - Pause_Icon_Quit
+  - Pause_Icon_Restart
+  - Pause_Board_Restart
+  - Pause_Board_Resume
+  - Pause_Board_Shadow
+  - Pause_Board_Quit
+  - Pause_Text_Restart_Resume
+  - Pause_Text_Quit
+  - Pause_Icon_Settings
+  m_RenderDataMap: {}
+  m_Tag: Atlas_Menu_Pause
+  m_IsVariant: 0

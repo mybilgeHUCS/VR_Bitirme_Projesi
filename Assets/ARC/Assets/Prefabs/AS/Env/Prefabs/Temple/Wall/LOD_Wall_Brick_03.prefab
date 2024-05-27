@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3194438923718050996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3274861411494490422}
+  - component: {fileID: 6626651808261781403}
+  m_Layer: 0
+  m_Name: LOD_Wall_Brick_03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3274861411494490422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194438923718050996}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3901231496446780231}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &6626651808261781403
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194438923718050996}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 9.281368
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.017385522
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 2767701376528635944}
+  m_Enabled: 1
+--- !u!1001 &8448962195624916727
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3274861411494490422}
+    m_Modifications:
+    - target: {fileID: 4855807537505359280, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855807537505359280, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855807537505359280, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855807537505359280, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855807537505359280, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855807537505359280, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855807537505359280, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855807537505359280, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855807537505359280, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855807537505359280, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855807537505359280, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199576842374975242, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+      propertyPath: m_Name
+      value: Wall_Brick_03
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+--- !u!4 &3901231496446780231 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4855807537505359280, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+  m_PrefabInstance: {fileID: 8448962195624916727}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2767701376528635944 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5992153545090281183, guid: 1033fc4e67756454fb69a80672f8bca0, type: 3}
+  m_PrefabInstance: {fileID: 8448962195624916727}
+  m_PrefabAsset: {fileID: 0}
