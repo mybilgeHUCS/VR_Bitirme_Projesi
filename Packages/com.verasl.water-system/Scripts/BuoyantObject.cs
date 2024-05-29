@@ -112,7 +112,8 @@ namespace WaterSystem
         private void SetupColliders()
         {
             // The object must have a Collider
-            colliders = GetComponentsInChildren<Collider>();
+            //colliders = GetComponentsInChildren<Collider>();
+            colliders = GetComponents<BoxCollider>();
             if (colliders.Length != 0) return;
             
             colliders = new Collider[1];
