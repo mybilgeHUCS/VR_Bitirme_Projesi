@@ -5771,18 +5771,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1872709125413060932}
     m_Modifications:
     - target: {fileID: 920016613128308945, guid: a3e38fa3e9223884dae88afbce204066, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 920016613128308945, guid: a3e38fa3e9223884dae88afbce204066, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 920016613128308945, guid: a3e38fa3e9223884dae88afbce204066, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 920016613128308945, guid: a3e38fa3e9223884dae88afbce204066, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -5834,10 +5822,6 @@ PrefabInstance:
       propertyPath: cyberSicknessValueText
       value: 
       objectReference: {fileID: 827283277799949998}
-    - target: {fileID: 2562929741047267234, guid: a3e38fa3e9223884dae88afbce204066, type: 3}
-      propertyPath: visualWarningBlinkingTime
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 3672728657941502320, guid: a3e38fa3e9223884dae88afbce204066, type: 3}
       propertyPath: m_Name
       value: InputReader
