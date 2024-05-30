@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/MainScenes/FlyThrough/Scenes/PlaneScene.unity
     guid: 72ee5b56cb1222c479f588357d3b072a
   - enabled: 1
+    path: Assets/MainScenes/FlyThrough/Scenes/PlaneNormal.unity
+    guid: fdeeefd045f7cd94ba00a891b407680e
+  - enabled: 1
     path: Assets/MainScenes/FlyThrough/Scenes/PlaneAutoPath.unity
     guid: b97afc5ea84183e44a18fcb6437ed791
   m_configObjects:

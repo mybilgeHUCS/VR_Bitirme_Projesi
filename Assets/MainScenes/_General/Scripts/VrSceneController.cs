@@ -12,14 +12,22 @@ using System.IO;
 public class VrSceneController : MonoBehaviour
 {
     public static bool gameIsPaused = false;
+    public bool canEvaluate = true;
+
+
+
+    public bool canPauseOrResume = true;
+
+
+
+
     public GameObject pauseUI;
     int cyberSicknessValue = 0;
     public int maxCyberSicknessValue = 5;
     public TextMeshProUGUI cyberSicknessValueText;
     public float axisThreshold = 0.5f;
 
-    public bool canEvaluate = true;
-    public bool canPause = true;
+    
     
 
     private InputData _inputData;
@@ -72,7 +80,7 @@ public class VrSceneController : MonoBehaviour
         warningAudioSource.enabled = false;
         warningAudioSource.volume = 0;
         cyberSicknessValueText.enabled = false;
-        canPause = false;
+        canPauseOrResume = false;
         canEvaluate = false;
         pauseUI.SetActive(false);
         visualWarningImage.gameObject.SetActive(false);
@@ -84,7 +92,9 @@ public class VrSceneController : MonoBehaviour
 
         //VisualWarningImageBlinking();
 
-        _inputData._leftController.TryGetFeatureValue(CommonUsages.menuButton, out bool isMenuButtonPressed);
+        _inputData._leftController.TryGetFeatureValue(CommonUsages.menuButton, out bool isLeftMenuButtonPressed);
+
+        _inputData._rightController.TryGetFeatureValue(CommonUsages.menuButton, out bool isRightMenuButtonPressed);
 
         //Debug.Log(isMenuButtonPressed);
 
@@ -92,18 +102,41 @@ public class VrSceneController : MonoBehaviour
         
         //Debug.Log("leftControllerAxis " + leftControllerAxis);
 
-        if (Input.GetKeyDown(KeyCode.Escape) || (isMenuButtonPressed && canPause))
+        if ((Input.GetKeyDown(KeyCode.Escape) || isLeftMenuButtonPressed) && canPauseOrResume)
         {
-            canPause = false;
+            /*if(canPause){
+                canPause = false;
                 Pause();
+            }
+            else{
+                canPause = true;
+                Resume();
+            }*/
+
+            if(gameIsPaused){
+                Resume();
+            }
+            else{
+                Pause();
+            }
+            canPauseOrResume = false;
             
         }
 
-        if (!isMenuButtonPressed)
+        if (!isLeftMenuButtonPressed || Input.GetKeyUp(KeyCode.Escape))
         {
-            canPause = true;
+            canPauseOrResume = true;
+        }
+
+        if (isRightMenuButtonPressed|| Input.GetKeyDown(KeyCode.PageDown))
+        {
+            Menu();
         }
         
+
+
+
+
 
         if(!isCyberSicknessValueDetectEnabled){
             return;
@@ -143,14 +176,14 @@ public class VrSceneController : MonoBehaviour
 
         timerCSVDI += Time.deltaTime;
         if(timerCSVDI >= cyberSicknessValueDetectInterval){
-            if(!gameIsPaused){
+            if(!gameIsPaused && isCyberSicknessValueDetectEnabled){
                 timerCSVDI = 0;
                 cyberSicknessValueList.Add(cyberSicknessValue);
             }
         }
 
         if(Time.time >= cyberSicknessInputWarningInterval  + lastCSValueGiven){
-            if(!gameIsPaused && !isWarningAlreadyGiving){
+            if(!gameIsPaused  && isCyberSicknessValueDetectEnabled){
                 //isWarningAlreadyGiving = true;
                 lastCSValueGiven = Time.time;
                 GiveWarning();
@@ -221,7 +254,7 @@ public class VrSceneController : MonoBehaviour
     void SaveScoresToFile()
     {
 
-        if(SceneManager.GetActiveScene().name == "MainMenu"){
+        if(SceneManager.GetActiveScene().name == "MainMenu" || !isCyberSicknessValueDetectEnabled){
             return;
         }
 

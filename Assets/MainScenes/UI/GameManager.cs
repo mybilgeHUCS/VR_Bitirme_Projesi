@@ -21,7 +21,15 @@ public class GameManager : MonoBehaviour
     }
 
     public void OnToggleChanged(Toggle t){
+        
         PlayerPrefs.SetFloat(t.name, t.isOn ? 1f : 0f);
+        if(t.name == "DataInputToggle" && !t.isOn){
+            visualWarning.isOn = false;
+            soundWarning.isOn = false;
+        }
+        if(t.name != "DataInputToggle" && !dataInput.isOn && t.isOn){
+            t.isOn = false;
+        }
     }
     public void OnSliderChanged(Slider s){
         PlayerPrefs.SetFloat(s.name, s.value);
@@ -63,8 +71,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadFlightScene()
     {
-        Debug.Log("Uçak sahnesi açılıyor");
-        SceneManager.LoadScene("PlaneScene");
+        SceneManager.LoadScene("PlaneNormal");
     }
 
     public void LoadRaceScene()
