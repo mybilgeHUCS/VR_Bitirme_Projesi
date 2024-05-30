@@ -10,7 +10,7 @@ namespace BoatAttack
 
         public float _throttle;
         public float _steering;
-        
+        [SerializeField] bool canKeyboardControl = false;
 
         public override void OnEnable()
         {
@@ -18,6 +18,10 @@ namespace BoatAttack
         }
 
         private void Update() {
+            if (!canKeyboardControl)
+            {
+                return;
+            }
             //Debug.Log(_throttle  + " "+ _steering);
             _steering = Input.GetAxis("Horizontal");
             _throttle = Input.GetAxis("Vertical");

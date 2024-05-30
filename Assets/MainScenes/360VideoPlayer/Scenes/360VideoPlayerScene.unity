@@ -132,10 +132,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2231749715935494943, guid: 617251decc6e77a4fb54bc2649616c79, type: 3}
-      propertyPath: m_TimeUpdateMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2231749715935494943, guid: 617251decc6e77a4fb54bc2649616c79, type: 3}
       propertyPath: m_TargetAudioSources.Array.data[0]
       value: 
       objectReference: {fileID: 2137991274}
@@ -240,26 +236,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4559979397714243206, guid: 6f8fde07292df614db34159e691042ff, type: 3}
-      propertyPath: clipList.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559979397714243206, guid: 6f8fde07292df614db34159e691042ff, type: 3}
-      propertyPath: clipList.Array.data[0]
-      value: 
-      objectReference: {fileID: 32900000, guid: f99354889245d9c45a16af88d3a4eabc, type: 3}
-    - target: {fileID: 4559979397714243206, guid: 6f8fde07292df614db34159e691042ff, type: 3}
-      propertyPath: clipList.Array.data[1]
-      value: 
-      objectReference: {fileID: 32900000, guid: da4e9905c57416a4bbb575b278f04e98, type: 3}
-    - target: {fileID: 4559979397714243206, guid: 6f8fde07292df614db34159e691042ff, type: 3}
-      propertyPath: clipList.Array.data[2]
-      value: 
-      objectReference: {fileID: 32900000, guid: fa9fd397f5eb1e84ea8b8f575a30ddac, type: 3}
-    - target: {fileID: 4559979397714243206, guid: 6f8fde07292df614db34159e691042ff, type: 3}
-      propertyPath: clipList.Array.data[3]
-      value: 
-      objectReference: {fileID: 32900000, guid: 7380f61194d3ac44c83cfc312208f628, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

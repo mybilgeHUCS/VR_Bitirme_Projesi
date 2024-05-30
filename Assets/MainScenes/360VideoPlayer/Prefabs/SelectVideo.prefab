@@ -45,3 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skyboxVideoMaterial: {fileID: 2100000, guid: 9a9357cc6059dfd4abb09e9eadb82fdc, type: 2}
+  clipList:
+  - {fileID: 32900000, guid: f99354889245d9c45a16af88d3a4eabc, type: 3}
+  - {fileID: 32900000, guid: da4e9905c57416a4bbb575b278f04e98, type: 3}
+  - {fileID: 32900000, guid: fa9fd397f5eb1e84ea8b8f575a30ddac, type: 3}
+  - {fileID: 32900000, guid: 7380f61194d3ac44c83cfc312208f628, type: 3}
