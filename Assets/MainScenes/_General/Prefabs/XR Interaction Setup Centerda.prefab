@@ -403,7 +403,6 @@ Transform:
   - {fileID: 3092150639870185493}
   - {fileID: 7494460923848152510}
   - {fileID: 7499368864994879783}
-  - {fileID: 5855461866886572864}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &425466576608409882
@@ -672,7 +671,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7245305227237138918}
-  m_Father: {fileID: 1872709125413060932}
+  m_Father: {fileID: 6110496357388190399}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -688,9 +687,9 @@ Canvas:
   m_GameObject: {fileID: 1496183340213649426}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 6457151686242524096}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 0.1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -3067,6 +3066,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3412928611189678430}
+  - {fileID: 5855461866886572864}
   m_Father: {fileID: 5949438782879117055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &6457151686242524096

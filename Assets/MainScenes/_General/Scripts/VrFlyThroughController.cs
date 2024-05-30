@@ -20,20 +20,41 @@ public class VrFlyThroughController : MonoBehaviour
         }
 
         _inputData._rightController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 rightControllerAxis);
-        
+
         Debug.Log("rightControllerAxisPrimary " + rightControllerAxis);
 
-        _inputData._rightController.TryGetFeatureValue(CommonUsages.secondary2DAxis, out Vector2 rightControllerAxisSecondary);
+        //_inputData._rightController.TryGetFeatureValue(CommonUsages.secondary2DAxis, out Vector2 rightControllerAxisSecondary);
         
-        Debug.Log("rightControllerAxisSecondary " + rightControllerAxisSecondary);
+        //Debug.Log("rightControllerAxisSecondary " + rightControllerAxisSecondary);
 
         _inputData._rightController.TryGetFeatureValue(CommonUsages.triggerButton, out bool triggerButton);
-        
-        Debug.Log("triggerButton " + triggerButton);
+
+        _inputData._rightController.TryGetFeatureValue(CommonUsages.trigger, out float triggerButtonFloat);
 
 
+        _inputData._rightController.TryGetFeatureValue(CommonUsages.gripButton, out bool gripButton);
 
-        flyController.pitch = rightControllerAxis.y;
+        _inputData._rightController.TryGetFeatureValue(CommonUsages.grip, out float gripButtonFloat);
+
+        Debug.Log("triggerButton " + triggerButtonFloat);
+        Debug.Log("gripButton " + gripButtonFloat);
+
+        if (triggerButton)
+        {
+            flyController.pitch = triggerButtonFloat;
+        }
+        else if (gripButton)
+        {
+            flyController.pitch = -gripButtonFloat;
+        }
+        else if (!gripButton && !triggerButton)
+        {
+            flyController.pitch = 0f;
+        }
+
+        //flyController.pitch = rightControllerAxis.y;
+
+
         flyController.yaw = rightControllerAxis.x;
 
     }

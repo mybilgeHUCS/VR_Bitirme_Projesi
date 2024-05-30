@@ -35,7 +35,7 @@ public class VrBoatController : MonoBehaviour
 
         _inputData._rightController.TryGetFeatureValue(CommonUsages.secondary2DAxis, out Vector2 rightControllerAxisSecondary);
         
-        Debug.Log("rightControllerAxisSecondary " + rightControllerAxisSecondary);
+        //Debug.Log("rightControllerAxisSecondary " + rightControllerAxisSecondary);
 
         _inputData._rightController.TryGetFeatureValue(CommonUsages.triggerButton, out bool triggerButton);
         

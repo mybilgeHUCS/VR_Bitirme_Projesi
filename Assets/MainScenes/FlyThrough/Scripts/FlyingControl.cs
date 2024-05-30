@@ -25,8 +25,8 @@ public class FlyingControl : MonoBehaviour
         //transform.position = new Vector3(transform.position.x, Math.Clamp(transform.position.y,10f,200f), transform.position.z);
 
         if(canKeyboardControl){
-            pitch = Input.GetAxis("Vertical");
-            yaw = Input.GetAxis("Horizontal");
+           // pitch = Input.GetAxis("Vertical");
+            //yaw = Input.GetAxis("Horizontal");
         }
         
 

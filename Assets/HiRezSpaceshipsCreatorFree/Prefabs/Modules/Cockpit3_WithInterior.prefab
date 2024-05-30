@@ -942,7 +942,7 @@ MonoBehaviour:
   thrust_multiplier: 10
   yaw_multiplier: 10
   pitch_multiplier: 50
-  canKeyboardControl: 1
+  canKeyboardControl: 0
   pitch: 0
   yaw: 0
 --- !u!54 &7800242655953100154
@@ -5758,7 +5758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5282411264568208083, guid: 2388a85e05c649b4287d80c395666717, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5282411264568208083, guid: 2388a85e05c649b4287d80c395666717, type: 3}
       propertyPath: flyController
@@ -5771,10 +5771,6 @@ PrefabInstance:
     - target: {fileID: 6457151686242524096, guid: 2388a85e05c649b4287d80c395666717, type: 3}
       propertyPath: far clip plane
       value: 50000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8923019782335310162, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -94,7 +94,7 @@ public class VrSceneController : MonoBehaviour
 
         _inputData._leftController.TryGetFeatureValue(CommonUsages.menuButton, out bool isLeftMenuButtonPressed);
 
-        _inputData._rightController.TryGetFeatureValue(CommonUsages.menuButton, out bool isRightMenuButtonPressed);
+        _inputData._rightController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool isRightMenuButtonPressed);
 
         //Debug.Log(isMenuButtonPressed);
 
