@@ -1286,10 +1286,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Interaction Setup Centerda
       objectReference: {fileID: 0}
-    - target: {fileID: 449767325918207155, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1872709125413060932, guid: 2388a85e05c649b4287d80c395666717, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1328,58 +1324,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1872709125413060932, guid: 2388a85e05c649b4287d80c395666717, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2224924538721431566, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2836634657929479605, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3319812542271680376, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497917328841625700, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_Volume
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3497917328841625700, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3636786290009604503, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_InteractionLayers.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4884158250449121690, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282411264568208083, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5462478178092745757, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5603828710639512398, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5957997812454307279, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6496467811640868610, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_UpdateTrackingType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7530399421410772399, guid: 2388a85e05c649b4287d80c395666717, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2312,7 +2256,7 @@ GameObject:
   - component: {fileID: 298156535}
   - component: {fileID: 298156536}
   m_Layer: 0
-  m_Name: Sound
+  m_Name: SoundWarningToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2385,7 +2329,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1393717444}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnToggleChanged
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 298156536}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &335405180
 GameObject:
@@ -3222,7 +3178,7 @@ GameObject:
   - component: {fileID: 503891876}
   - component: {fileID: 503891877}
   m_Layer: 0
-  m_Name: DataInput
+  m_Name: DataInputToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3295,7 +3251,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1393717444}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnToggleChanged
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 503891877}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &508062108
 GameObject:
@@ -5353,7 +5321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &942772728
 Transform:
   m_ObjectHideFlags: 0
@@ -7375,7 +7343,7 @@ GameObject:
   - component: {fileID: 1338950417}
   - component: {fileID: 1338950418}
   m_Layer: 0
-  m_Name: DataSlider
+  m_Name: DataInputIntervalSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7455,7 +7423,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1393717444}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnSliderChanged
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1338950418}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1340676689
 GameObject:
   m_ObjectHideFlags: 0
@@ -7467,7 +7447,7 @@ GameObject:
   - component: {fileID: 1340676691}
   - component: {fileID: 1340676690}
   m_Layer: 0
-  m_Name: WarningSlider
+  m_Name: WarningIntervalSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7523,7 +7503,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1393717444}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnSliderChanged
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1340676690}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &1340676691
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7978,6 +7970,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308b1539566243445bb489cba87946d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visualWarning: {fileID: 1625834421}
+  soundWarning: {fileID: 298156536}
+  dataInput: {fileID: 503891877}
+  warningInterval: {fileID: 1340676690}
+  dataInputInterval: {fileID: 1338950418}
 --- !u!4 &1393717445
 Transform:
   m_ObjectHideFlags: 0
@@ -9490,7 +9487,7 @@ GameObject:
   - component: {fileID: 1625834420}
   - component: {fileID: 1625834421}
   m_Layer: 0
-  m_Name: Visual
+  m_Name: VisualWarningToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9563,7 +9560,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1393717444}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnToggleChanged
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1625834421}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &1633930016
 GameObject:

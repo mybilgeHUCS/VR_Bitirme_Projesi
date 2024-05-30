@@ -10,6 +10,7 @@ public class FlyingControl : MonoBehaviour
     public float yaw_multiplier;
     public float pitch_multiplier;
     new Rigidbody rigidbody;
+    [SerializeField]  bool canKeyboardControl = false;
 
     public float pitch;
     public float yaw;
@@ -21,11 +22,13 @@ public class FlyingControl : MonoBehaviour
 
     void FixedUpdate()
     {
-        transform.position = new Vector3(transform.position.x, Math.Clamp(transform.position.y,10f,200f), transform.position.z);
+        //transform.position = new Vector3(transform.position.x, Math.Clamp(transform.position.y,10f,200f), transform.position.z);
 
-
-        // pitch = Input.GetAxis("Vertical");
-         //yaw = Input.GetAxis("Horizontal");
+        if(canKeyboardControl){
+            pitch = Input.GetAxis("Vertical");
+            yaw = Input.GetAxis("Horizontal");
+        }
+        
 
 
         float speed = thrust * thrust_multiplier * Time.deltaTime;
@@ -36,6 +39,6 @@ public class FlyingControl : MonoBehaviour
                                    yaw * yaw_multiplier * Time.deltaTime,
                                    -yaw * yaw_multiplier * 2 * Time.deltaTime);
 
-        Debug.Log(rigidbody.velocity.magnitude);
+        //Debug.Log(rigidbody.velocity.magnitude);
     }
 }

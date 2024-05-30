@@ -20,9 +20,16 @@ public class VrSceneController : MonoBehaviour
 
     public bool canEvaluate = true;
     public bool canPause = true;
+    
 
     private InputData _inputData;
     public AudioSource[] audios;
+
+    [SerializeField] Image visualWarningImage;
+    [SerializeField] float visualWarningBlinkingTime  = 1f;
+    float targetAlpha = 1f;
+    float dir = 1f;
+
     [SerializeField ] AudioSource warningAudioSource;
     [SerializeField ] AudioClip warningAudio;
     [SerializeField] float cyberSicknessValueDetectInterval = 2f;
@@ -33,6 +40,10 @@ public class VrSceneController : MonoBehaviour
 
     bool isWarningAlreadyGiving = false;
 
+    bool isVisualWarningEnabled = false;
+    bool isSoundWarningEnabled = false;
+    bool isCyberSicknessValueDetectEnabled = false;
+
     List<int> cyberSicknessValueList;
 
     private void Awake() {
@@ -41,12 +52,38 @@ public class VrSceneController : MonoBehaviour
     }
     private void Start()
     {
-         audios = GameObject.FindObjectsOfType<AudioSource>();
+        visualWarningImage.enabled = false;
+        audios = GameObject.FindObjectsOfType<AudioSource>();
+        cyberSicknessValueDetectInterval = PlayerPrefs.GetFloat("DataInputIntervalSlider");
+        cyberSicknessInputWarningInterval = PlayerPrefs.GetFloat("WarningIntervalSlider");
+        isVisualWarningEnabled = PlayerPrefs.GetFloat("VisualWarningToggle") ==1f ? true : false;
+        isSoundWarningEnabled = PlayerPrefs.GetFloat("SoundWarningToggle") ==1f ? true : false;
+        isCyberSicknessValueDetectEnabled = PlayerPrefs.GetFloat("DataInputToggle") ==1f ? true : false;
+
+
+        cyberSicknessValueText.enabled = isCyberSicknessValueDetectEnabled;
+
+        if(SceneManager.GetActiveScene().name == "MainMenu") {
+            MainMenuVrControllerSettings();
+        }
+    }
+
+    void MainMenuVrControllerSettings(){
+        warningAudioSource.enabled = false;
+        warningAudioSource.volume = 0;
+        cyberSicknessValueText.enabled = false;
+        canPause = false;
+        canEvaluate = false;
+        pauseUI.SetActive(false);
+        visualWarningImage.gameObject.SetActive(false);
     }
 
 
     private void Update()
     {
+
+        //VisualWarningImageBlinking();
+
         _inputData._leftController.TryGetFeatureValue(CommonUsages.menuButton, out bool isMenuButtonPressed);
 
         //Debug.Log(isMenuButtonPressed);
@@ -54,37 +91,6 @@ public class VrSceneController : MonoBehaviour
         _inputData._leftController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 leftControllerAxis);
         
         //Debug.Log("leftControllerAxis " + leftControllerAxis);
-
-        
-
-
-
-
-        if (Input.GetKeyDown(KeyCode.UpArrow) || (leftControllerAxis.y >= axisThreshold && canEvaluate))
-        {
-            cyberSicknessValue = Math.Min(maxCyberSicknessValue, cyberSicknessValue+1);
-            cyberSicknessValueText.text = cyberSicknessValue.ToString();
-            canEvaluate = false; 
-            lastCSValueGiven = Time.time;
-            isWarningAlreadyGiving = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.DownArrow) || (leftControllerAxis.y <= -axisThreshold && canEvaluate))
-        {
-            cyberSicknessValue = Math.Max(0, cyberSicknessValue - 1);
-            cyberSicknessValueText.text = cyberSicknessValue.ToString();
-            canEvaluate = false;
-            lastCSValueGiven = Time.time;
-            isWarningAlreadyGiving = false;
-        }
-
-
-        if ( leftControllerAxis.y >= -axisThreshold/2f && leftControllerAxis.y <= axisThreshold/2f)
-        {
-            canEvaluate = true;
-        }
-
-
 
         if (Input.GetKeyDown(KeyCode.Escape) || (isMenuButtonPressed && canPause))
         {
@@ -97,6 +103,43 @@ public class VrSceneController : MonoBehaviour
         {
             canPause = true;
         }
+        
+
+        if(!isCyberSicknessValueDetectEnabled){
+            return;
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.UpArrow) || (leftControllerAxis.y >= axisThreshold && canEvaluate))
+        {
+            cyberSicknessValue = Math.Min(maxCyberSicknessValue, cyberSicknessValue+1);
+            cyberSicknessValueText.text = cyberSicknessValue.ToString();
+            canEvaluate = false; 
+            lastCSValueGiven = Time.time;
+            visualWarningImage.enabled = false;
+            //isWarningAlreadyGiving = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow) || (leftControllerAxis.y <= -axisThreshold && canEvaluate))
+        {
+            cyberSicknessValue = Math.Max(0, cyberSicknessValue - 1);
+            cyberSicknessValueText.text = cyberSicknessValue.ToString();
+            canEvaluate = false;
+            lastCSValueGiven = Time.time;
+            visualWarningImage.enabled = false;
+            //isWarningAlreadyGiving = false;
+        }
+
+        if ( leftControllerAxis.y >= -axisThreshold/2f && leftControllerAxis.y <= axisThreshold/2f)
+        {
+            canEvaluate = true;
+        }
+
+
+        
+        VisualWarningImageBlinking();
+
+
 
         timerCSVDI += Time.deltaTime;
         if(timerCSVDI >= cyberSicknessValueDetectInterval){
@@ -105,7 +148,6 @@ public class VrSceneController : MonoBehaviour
                 cyberSicknessValueList.Add(cyberSicknessValue);
             }
         }
-
 
         if(Time.time >= cyberSicknessInputWarningInterval  + lastCSValueGiven){
             if(!gameIsPaused && !isWarningAlreadyGiving){
@@ -117,8 +159,28 @@ public class VrSceneController : MonoBehaviour
 
     }
 
+    void VisualWarningImageBlinking(){
+        if(!isVisualWarningEnabled){
+            return;
+        }
+        float alpha = Mathf.Lerp(visualWarningImage.color.a, targetAlpha, Time.deltaTime * visualWarningBlinkingTime);
+        Color color = visualWarningImage.color;
+        color.a = alpha;
+        visualWarningImage.color = color;
+        if (Mathf.Abs(alpha - targetAlpha) < 0.01f)
+        {
+            targetAlpha = targetAlpha == 0f ? 1f : 0f;
+        }       
+    }
+
     void GiveWarning(){
-        warningAudioSource.PlayOneShot(warningAudio);
+        if(isSoundWarningEnabled){
+            warningAudioSource.PlayOneShot(warningAudio);
+        }
+        if(isVisualWarningEnabled){
+            visualWarningImage.enabled = true;
+        }
+        
     }
 
     void Pause()
@@ -158,6 +220,12 @@ public class VrSceneController : MonoBehaviour
 
     void SaveScoresToFile()
     {
+
+        if(SceneManager.GetActiveScene().name == "MainMenu"){
+            return;
+        }
+
+
         string folderPath = Application.dataPath + "/CyberSicknessData/"+ SceneManager.GetActiveScene().name ;
 
         
