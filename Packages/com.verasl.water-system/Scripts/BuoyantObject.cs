@@ -157,12 +157,13 @@ namespace WaterSystem
             GerstnerWavesJobs.UpdateSamplePoints(ref _samplePoints, _guid);
             GerstnerWavesJobs.GetData(_guid, ref Heights, ref _normals);
         }
-
+        [SerializeField] Transform maxWaterLevel;
         private void FixedUpdate()
         {
-            Vector3 gravity = globalGravity * gravityScale * Vector3.up;
-            _rb.AddForce(gravity, ForceMode.Acceleration);
+            //Vector3 gravity = globalGravity * gravityScale * Vector3.up;
+           // _rb.AddForce(gravity, ForceMode.Acceleration);
 
+            
 
             var submergedAmount = 0f;
             
@@ -193,6 +194,16 @@ namespace WaterSystem
                 default:
                     throw new ArgumentOutOfRangeException();
             }
+
+            foreach (var height in Heights)
+            {
+                if(height.y >= maxWaterLevel.position.y){
+                transform.position += Math.Max(0f,Heights[29].y - maxWaterLevel.position.y)*Vector3.up;
+            }
+            }
+
+            
+
         }
 
         private void LateUpdate() { LocalToWorldConversion(); }
@@ -332,7 +343,6 @@ namespace WaterSystem
                 _rb = gameObject.AddComponent<Rigidbody>();
                 Debug.LogError($"Buoyancy:Object \"{name}\" had no Rigidbody. Rigidbody has been added.");
             }
-            _rb.useGravity = false;
             _rb.centerOfMass = centerOfMass + _voxelBounds.center;
             _baseDrag = _rb.drag;
             _baseAngularDrag = _rb.angularDrag;
@@ -345,6 +355,8 @@ namespace WaterSystem
 
         private void OnDrawGizmosSelected()
         {
+            
+
 			const float gizmoSize = 0.05f;
             var t = transform;
             var matrix = Matrix4x4.TRS(t.position, t.rotation, t.lossyScale);
@@ -382,10 +394,17 @@ namespace WaterSystem
 
             Gizmos.matrix = Matrix4x4.identity;Gizmos.matrix = Matrix4x4.identity;
 
+            Gizmos.DrawCube(new Vector3(_debugInfo[29].Position.x, Heights[29].y,_debugInfo[29].Position.z), Vector3.one*1f);
             if (_debugInfo != null)
             {
+                int index = 0;
                 foreach (DebugDrawing debug in _debugInfo)
                 {
+                    index++;
+                    if(aaa != index){
+                        continue;
+                    }
+
                     Gizmos.color = Color.cyan;
                     Gizmos.DrawCube(debug.Position, new Vector3(gizmoSize, gizmoSize, gizmoSize)); // drawCenter
                     var water = debug.Position;
@@ -401,7 +420,7 @@ namespace WaterSystem
             }
 
         }
-
+        [SerializeField] int aaa;
         private struct DebugDrawing
         {
             public Vector3 Force;

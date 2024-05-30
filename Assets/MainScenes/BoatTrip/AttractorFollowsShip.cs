@@ -9,7 +9,8 @@ public class AttractorFollowsShip : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        boat = GameObject.Find("boatName");
+        boat = GameObject.Find(boatName);
+        Debug.Log(boat);
         transform.parent = boat.transform;
     }
 }

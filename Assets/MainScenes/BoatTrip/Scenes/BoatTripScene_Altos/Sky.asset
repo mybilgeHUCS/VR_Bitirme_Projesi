@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a6db46ea1f40743af6eb0ed0193136, type: 3}
+  m_Name: Sky
+  m_EditorClassIdentifier: 
+  environmentLightingExposure: 0
+  environmentLightingSaturation: 1
+  skyColorBlend: 4
+  periodsOfDay:
+  - description: Night
+    startTime: 6
+    horizonColor: {r: 0.036889452, g: 0.001517635, b: 0.049706575, a: 1}
+    zenithColor: {r: 0.03657206, g: 0.0013883857, b: 0.04905659, a: 1}
+    groundColor: {r: 0.036889452, g: 0.001517635, b: 0.049706575, a: 1}
+  initialTime: 0
+  editorTime: 0
+  timeSystem: 0
+  dayNightCycleDuration: 0
