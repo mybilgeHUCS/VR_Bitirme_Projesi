@@ -6,6 +6,24 @@ public class ToggleShip : MonoBehaviour
 {
     public GameObject[] shipParts;
 
+    private void Start()
+    {
+        bool isPlaneVisible = PlayerPrefs.GetFloat("PlaneVisibilityToggle") == 1f ? true : false;
+
+        for (int i = 0; i < shipParts.Length; i++)
+        {
+            if (isPlaneVisible)
+            {
+                shipParts[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                shipParts[i].gameObject.SetActive(false);
+            }
+        }
+
+    }
+
     public void shipPartToggle()
     {
         for (int i = 0; i < shipParts.Length; i++)
