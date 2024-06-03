@@ -32120,6 +32120,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 5189831315594136667, guid: 5baea63592fad6d4d8e48245f703ca40, type: 3}
+      propertyPath: control
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6595085149954709807, guid: 5baea63592fad6d4d8e48245f703ca40, type: 3}
       propertyPath: m_Name
       value: RB6 (1)

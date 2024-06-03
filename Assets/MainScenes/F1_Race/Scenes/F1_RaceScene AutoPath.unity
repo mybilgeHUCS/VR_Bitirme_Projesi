@@ -32194,7 +32194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4744db4df75b54f4cbc563e6b59eb898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canRead: 0
+  canRead: 1
   playSpeed: 1
   recordedPath: {fileID: 4900000, guid: dfc6024fb4dac9345b53f482b93575bd, type: 3}
   recordTransforms: []
