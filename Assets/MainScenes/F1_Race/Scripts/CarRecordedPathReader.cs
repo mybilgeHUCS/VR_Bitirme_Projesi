@@ -7,8 +7,16 @@ public class CarRecordedPathReader : MonoBehaviour
 {
     [SerializeField] bool canRead = false;
     [SerializeField] float playSpeed = 1f;
+    [SerializeField] TextAsset recordedPath;
+
+    int totalFrameCount;
     float recordInterval;
     public List<Transform> recordTransforms;
+
+    float timer = 0;
+    int playFrameIndex = 0;
+    int recordTransformsLength;
+
 
     List<Quaternion> rotationList;
     List<Vector3> positionList;
@@ -17,15 +25,15 @@ public class CarRecordedPathReader : MonoBehaviour
     
     Quaternion[] targetRotationArr ;
     Vector3[] targetPositionArr;
+    float targetEngineVolume;
 
     Quaternion[] initRotationArr ;
     Vector3[] initPositionArr;
-    float targetEngineVolume;
     float initEngineVolume;
 
     AudioSource engineAudioSource;
 
-    [SerializeField] TextAsset recordedPath;
+    Vector3 steerInitLocalPos;
 
     private void Start() {
 
@@ -37,7 +45,6 @@ public class CarRecordedPathReader : MonoBehaviour
         GetComponent<Rigidbody>().isKinematic = true;
 
         recordTransforms = new List<Transform>();
-
         rotationList = new List<Quaternion>();
         positionList = new List<Vector3>();
         engineVolumeList = new List<float>();
@@ -45,7 +52,7 @@ public class CarRecordedPathReader : MonoBehaviour
         
         ReadRecordedPath();
         
-
+        steerInitLocalPos = recordTransforms[1].localPosition;
         Debug.Log(rotationList.Count);
         Debug.Log(positionList.Count);
         Debug.Log(engineVolumeList.Count);
@@ -66,9 +73,7 @@ public class CarRecordedPathReader : MonoBehaviour
 
     }
 
-    float timer = 0;
-    int playFrameIndex = 0;
-    int recordTransformsLength;
+    
 
 
     
@@ -92,20 +97,30 @@ public class CarRecordedPathReader : MonoBehaviour
 
                 initRotationArr[i] = recordTransforms[i].rotation;
                 initPositionArr[i] = recordTransforms[i].position;
+                
             }
            
             //engineAudioSource.volume = engineVolumeList[playFrameIndex];
             targetEngineVolume = engineVolumeList[playFrameIndex];
+            initEngineVolume = engineAudioSource.volume;
 
             playFrameIndex += (int)(Math.Sign(playSpeed)*timer/recordInterval);
 
            // Debug.Log(positionList.Count + " " + recordTransformsLength);
 
-            playFrameIndex %= positionList.Count/recordTransformsLength;
+
+
+
+
+            playFrameIndex %= totalFrameCount;
             if(playFrameIndex<0){
-                playFrameIndex+= positionList.Count/recordTransformsLength;
+                playFrameIndex+= totalFrameCount;
             }
             timer = 0;
+
+
+
+            
         }
         else{
             for (int i = 0; i < recordTransformsLength; i++)
@@ -116,6 +131,12 @@ public class CarRecordedPathReader : MonoBehaviour
             }
             engineAudioSource.volume = Mathf.Lerp(initEngineVolume, targetEngineVolume, timer/recordInterval);
         }
+
+
+        recordTransforms[1].localPosition = steerInitLocalPos;
+
+
+
     }
 
     void ReadRecordedPath(){
@@ -145,6 +166,7 @@ public class CarRecordedPathReader : MonoBehaviour
 
         for (int i = index+1; i < lines.Length-1; i++)
         {
+            totalFrameCount++;
             string line = lines[i];
 
             string[] transforms = line.Split("\t");
