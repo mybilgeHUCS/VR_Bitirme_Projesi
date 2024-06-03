@@ -8,12 +8,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    [SerializeField] Toggle planeVisibility;
+    [SerializeField] Toggle cockpitVisibility;
     [SerializeField] Toggle visualWarning;
     [SerializeField] Toggle soundWarning;
     [SerializeField] Toggle dataInput;
     [SerializeField] Slider warningInterval;
     [SerializeField] Slider dataInputInterval;
+    [SerializeField] Slider speedMultiplier;
     
 
 
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void OnPlaneVisibilityToggleChanged(Toggle t)
+    public void OnCockpitVisibilityToggleChanged(Toggle t)
     {
         PlayerPrefs.SetFloat(t.name, t.isOn ? 1f : 0f);
     }
@@ -45,11 +46,12 @@ public class GameManager : MonoBehaviour
         visualWarning.isOn = PlayerPrefs.GetFloat(visualWarning.name) == 1f ? true:false;
         soundWarning.isOn = PlayerPrefs.GetFloat(soundWarning.name) == 1f ? true:false;
         dataInput.isOn = PlayerPrefs.GetFloat(dataInput.name) == 1f ? true:false;
-        planeVisibility.isOn = PlayerPrefs.GetFloat(planeVisibility.name) == 1f ? true : false;
+        cockpitVisibility.isOn = PlayerPrefs.GetFloat(cockpitVisibility.name) == 1f ? true : false;
 
         warningInterval.value = PlayerPrefs.GetFloat(warningInterval.name);
         dataInputInterval.value = PlayerPrefs.GetFloat(dataInputInterval.name);
-        
+        speedMultiplier.value = PlayerPrefs.GetFloat(speedMultiplier.name);
+
     }
 
     public void LoadLunaparkScene(int CameraNumber)

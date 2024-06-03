@@ -9,6 +9,8 @@ public class CarRecordedPathReader : MonoBehaviour
     [SerializeField] float playSpeed = 1f;
     [SerializeField] TextAsset recordedPath;
 
+    float globalSpeedMultiplier;
+
     int totalFrameCount;
     float recordInterval;
     public List<Transform> recordTransforms;
@@ -40,6 +42,9 @@ public class CarRecordedPathReader : MonoBehaviour
         if(!canRead){
             return;
         }
+
+        globalSpeedMultiplier = PlayerPrefs.GetFloat("SpeedMultiplierSlider");
+
         engineAudioSource = GetComponent<AudioSource>();  
         GetComponent<CarController>().enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;
@@ -84,7 +89,7 @@ public class CarRecordedPathReader : MonoBehaviour
         if(!canRead){
             return;
         }
-        timer+= Time.deltaTime* Math.Abs(playSpeed);
+        timer+= Time.deltaTime* Math.Abs(playSpeed)*globalSpeedMultiplier;
         if(timer >=  recordInterval){
 
 

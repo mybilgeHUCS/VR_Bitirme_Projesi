@@ -5739,6 +5739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8111923900947076472}
   - component: {fileID: 5189831315594136667}
+  - component: {fileID: 3351119869230902541}
   - component: {fileID: 4641201302063075038}
   - component: {fileID: 1985647692475742768}
   - component: {fileID: 7367536240386388170}
@@ -5805,6 +5806,20 @@ MonoBehaviour:
   steerInput: 0
   isVrBraking: 0
   direksiyon: {fileID: 5459627034240255681}
+--- !u!114 &3351119869230902541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6595085149954709807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 499f697e6deba434b9508837d713c351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipParts:
+  - {fileID: 5271092862036374211}
 --- !u!54 &4641201302063075038
 Rigidbody:
   m_ObjectHideFlags: 0

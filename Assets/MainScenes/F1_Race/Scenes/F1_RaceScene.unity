@@ -32108,6 +32108,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3509193419351651042, guid: 5baea63592fad6d4d8e48245f703ca40, type: 3}
+      propertyPath: m_ForwardFriction.m_Stiffness
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4125700844958515509, guid: 5baea63592fad6d4d8e48245f703ca40, type: 3}
+      propertyPath: m_ForwardFriction.m_Stiffness
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4441113302454854939, guid: 5baea63592fad6d4d8e48245f703ca40, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1
@@ -32123,6 +32131,18 @@ PrefabInstance:
     - target: {fileID: 5189831315594136667, guid: 5baea63592fad6d4d8e48245f703ca40, type: 3}
       propertyPath: control
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5189831315594136667, guid: 5baea63592fad6d4d8e48245f703ca40, type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5210267737250387235, guid: 5baea63592fad6d4d8e48245f703ca40, type: 3}
+      propertyPath: m_ForwardFriction.m_Stiffness
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6282420204231405889, guid: 5baea63592fad6d4d8e48245f703ca40, type: 3}
+      propertyPath: m_ForwardFriction.m_Stiffness
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6595085149954709807, guid: 5baea63592fad6d4d8e48245f703ca40, type: 3}
       propertyPath: m_Name

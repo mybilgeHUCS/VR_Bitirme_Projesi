@@ -10,8 +10,12 @@ namespace PathCreation.Examples
         public EndOfPathInstruction endOfPathInstruction;
         public float speed = 5;
         float distanceTravelled;
+        float globalSpeedMultiplier;
 
         void Start() {
+
+            globalSpeedMultiplier = PlayerPrefs.GetFloat("SpeedMultiplierSlider");
+
             if (pathCreator != null)
             {
                 // Subscribed to the pathUpdated event so that we're notified if the path changes during the game
@@ -23,7 +27,7 @@ namespace PathCreation.Examples
         {
             if (pathCreator != null)
             {
-                distanceTravelled += speed * Time.deltaTime;
+                distanceTravelled += speed * Time.deltaTime * globalSpeedMultiplier;
                 transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
                 transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction);
             }

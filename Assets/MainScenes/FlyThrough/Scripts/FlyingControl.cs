@@ -14,10 +14,12 @@ public class FlyingControl : MonoBehaviour
 
     public float pitch;
     public float yaw;
+    float globalSpeedMultiplier;
 
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
+        globalSpeedMultiplier = PlayerPrefs.GetFloat("SpeedMultiplierSlider");
     }
 
     void FixedUpdate()
@@ -31,7 +33,7 @@ public class FlyingControl : MonoBehaviour
         
 
 
-        float speed = thrust * thrust_multiplier * Time.deltaTime;
+        float speed = thrust * thrust_multiplier * Time.deltaTime * globalSpeedMultiplier;
 
 
         rigidbody.velocity = transform.forward * speed;

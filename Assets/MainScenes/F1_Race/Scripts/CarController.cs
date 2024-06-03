@@ -47,9 +47,12 @@ public class CarController : MonoBehaviour
 
     private Rigidbody carRb;
 
+    float globalSpeedMultiplier;
+
 
     void Awake()
     {
+        globalSpeedMultiplier = PlayerPrefs.GetFloat("SpeedMultiplierSlider");
         carRb = GetComponent<Rigidbody>();
         carRb.centerOfMass = _centerOfMass;
     }
@@ -89,7 +92,7 @@ public class CarController : MonoBehaviour
     {
         foreach(var wheel in wheels)
         {
-            wheel.wheelCollider.motorTorque = moveInput * 600 * maxAcceleration * Time.deltaTime;
+            wheel.wheelCollider.motorTorque = moveInput * 600 * maxAcceleration * Time.deltaTime * globalSpeedMultiplier;
         }
     }
 

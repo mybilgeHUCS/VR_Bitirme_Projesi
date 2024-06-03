@@ -8,23 +8,32 @@ public class ToggleShip : MonoBehaviour
 
     private void Start()
     {
-        bool isPlaneVisible = PlayerPrefs.GetFloat("PlaneVisibilityToggle") == 1f ? true : false;
+        bool isPlaneVisible = PlayerPrefs.GetFloat("CockpitVisibilityToggle") == 1f ? true : false;
 
         for (int i = 0; i < shipParts.Length; i++)
         {
             if (isPlaneVisible)
             {
-                shipParts[i].gameObject.SetActive(true);
+                //shipParts[i].gameObject.SetActive(true);
+
+                foreach (var item in shipParts[i].GetComponentsInChildren<MeshRenderer>())
+                {
+                    item.enabled = true;
+                }
             }
             else
             {
-                shipParts[i].gameObject.SetActive(false);
+                foreach (var item in shipParts[i].GetComponentsInChildren<MeshRenderer>())
+                {
+                    item.enabled = false;
+                }
+                //shipParts[i].gameObject.SetActive(false);
             }
         }
 
     }
 
-    public void shipPartToggle()
+    /*public void shipPartToggle()
     {
         for (int i = 0; i < shipParts.Length; i++)
         {
@@ -37,5 +46,5 @@ public class ToggleShip : MonoBehaviour
                 shipParts[i].gameObject.SetActive(true);
             }
         }
-    }
+    }*/
 }

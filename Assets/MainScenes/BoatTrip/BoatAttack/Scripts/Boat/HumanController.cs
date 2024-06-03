@@ -11,6 +11,12 @@ namespace BoatAttack
         public float _throttle;
         public float _steering;
         [SerializeField] bool canKeyboardControl = false;
+        float globalSpeedMultiplier;
+
+        private void Start()
+        {
+            globalSpeedMultiplier = PlayerPrefs.GetFloat("SpeedMultiplierSlider");
+        }
 
         public override void OnEnable()
         {
@@ -29,7 +35,7 @@ namespace BoatAttack
 
         void FixedUpdate()
         {
-            engine.Accelerate(_throttle);
+            engine.Accelerate(_throttle * globalSpeedMultiplier);
             engine.Turn(_steering);
         }
     }
