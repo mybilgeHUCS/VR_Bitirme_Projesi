@@ -38,7 +38,7 @@ public class VrF1RaceController : MonoBehaviour
         _inputData._rightController.TryGetFeatureValue(CommonUsages.grip, out float gripButtonFloat);
 
 
-        Debug.Log(triggerButtonFloat +" aaa "+ gripButtonFloat);
+        //Debug.Log(triggerButtonFloat +" aaa "+ gripButtonFloat);
 
 
         if (carController.control == CarController.ControlMode.VR){

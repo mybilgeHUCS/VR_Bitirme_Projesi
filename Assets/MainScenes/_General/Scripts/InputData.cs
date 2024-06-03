@@ -39,7 +39,7 @@ public class InputData : MonoBehaviour
         {
             inputDevice = devices[0];
         }
-        Debug.Log(devices.Count);
+        //Debug.Log(devices.Count);
     }
 
 }
