@@ -68,6 +68,8 @@ public class CarRecordedPathReader : MonoBehaviour
         {
             initRotationArr[i] = recordTransforms[i].rotation;
             initPositionArr[i] = recordTransforms[i].position;
+            targetRotationArr[i] = recordTransforms[i].rotation;
+            targetPositionArr[i] = recordTransforms[i].position;
         }
         
 
@@ -171,7 +173,7 @@ public class CarRecordedPathReader : MonoBehaviour
 
             string[] transforms = line.Split("\t");
             //Debug.LogError(float.Parse( transforms[transforms.Length-1]) + " " + i);
-            engineVolumeList.Add( float.Parse( transforms[transforms.Length-1]));
+            engineVolumeList.Add( float.Parse( transforms[transforms.Length-1].Replace(",",".")));
             transforms[transforms.Length-1] = "";
             //Debug.Log(line);
 
@@ -183,8 +185,8 @@ public class CarRecordedPathReader : MonoBehaviour
 
                 string[] components = tf.Substring(1, tf.Length-2).Split(") (");
                 
-                string[] vec3 = components[0].Replace(",","_").Replace(".",",").Split("_ ");
-                string[] qua = components[1].Replace(",","_").Replace(".",",").Split("_ ");
+                string[] vec3 = components[0].Replace(",","_").Replace(".",".").Split("_ ");
+                string[] qua = components[1].Replace(",","_").Replace(".",".").Split("_ ");
 
                 positionList.Add(new Vector3(float.Parse(vec3[0]),float.Parse(vec3[1]),float.Parse(vec3[2])));
                 rotationList.Add(new Quaternion(float.Parse(qua[0]),float.Parse(qua[1]),float.Parse(qua[2]),float.Parse(qua[3])));

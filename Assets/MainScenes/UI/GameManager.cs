@@ -86,5 +86,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("F1_RaceScene");
     }
 
+    public void LoadAutoPathRaceScene()
+    {
+        SceneManager.LoadScene("F1_RaceScene AutoPath");
+    }
+
 }
 
