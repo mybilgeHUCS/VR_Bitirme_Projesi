@@ -48,13 +48,17 @@ public class CarController : MonoBehaviour
     private Rigidbody carRb;
 
     float globalSpeedMultiplier;
-
+    InputData _inputData;
 
     void Awake()
     {
         globalSpeedMultiplier = PlayerPrefs.GetFloat("SpeedMultiplierSlider");
         carRb = GetComponent<Rigidbody>();
         carRb.centerOfMass = _centerOfMass;
+    }
+    private void Start()
+    {
+        _inputData = FindObjectOfType<InputData>();
     }
 
     void Update()
@@ -81,7 +85,12 @@ public class CarController : MonoBehaviour
 
     void GetInputs()
     {
-        if(control == ControlMode.Keyboard)
+        if (_inputData.IsVRControlled)
+        {
+            return;
+        }
+
+        if (control == ControlMode.Keyboard)
         {
             moveInput = Input.GetAxis("Vertical");
             steerInput = Input.GetAxis("Horizontal");

@@ -15,18 +15,23 @@ public class FlyingControl : MonoBehaviour
     public float pitch;
     public float yaw;
     float globalSpeedMultiplier;
+    InputData _inputData;
 
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
         globalSpeedMultiplier = PlayerPrefs.GetFloat("SpeedMultiplierSlider");
     }
+    private void Start()
+    {
+        _inputData = FindObjectOfType<InputData>();
+    }
 
     void FixedUpdate()
     {
         //transform.position = new Vector3(transform.position.x, Math.Clamp(transform.position.y,10f,200f), transform.position.z);
 
-        if(canKeyboardControl){
+        if(canKeyboardControl && !_inputData.IsVRControlled){
             pitch = Input.GetAxis("Vertical");
             yaw = Input.GetAxis("Horizontal");
         }

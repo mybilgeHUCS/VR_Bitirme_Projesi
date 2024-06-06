@@ -10,12 +10,14 @@ namespace BoatAttack
 
         public float _throttle;
         public float _steering;
-        [SerializeField] bool canKeyboardControl = false;
+        private InputData _inputData;
+        //[SerializeField] bool canKeyboardControl = false;
         float globalSpeedMultiplier;
 
         private void Start()
         {
             globalSpeedMultiplier = PlayerPrefs.GetFloat("SpeedMultiplierSlider");
+            _inputData = FindObjectOfType<InputData>();
         }
 
         public override void OnEnable()
@@ -24,7 +26,7 @@ namespace BoatAttack
         }
 
         private void Update() {
-            if (!canKeyboardControl)
+            if (_inputData.IsVRControlled)
             {
                 return;
             }

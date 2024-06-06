@@ -9,6 +9,9 @@ public class InputData : MonoBehaviour
     public InputDevice _leftController;
     public InputDevice _HMD;
 
+    bool isVRControlled = false;
+
+    public bool IsVRControlled { get => isVRControlled;}
 
     void Update()
     {
@@ -38,6 +41,17 @@ public class InputData : MonoBehaviour
         if (devices.Count > 0)
         {
             inputDevice = devices[0];
+            if (inputCharacteristics == InputDeviceCharacteristics.HeadMounted)
+            {
+                isVRControlled = true;
+            }
+        }
+        else
+        {
+            if (inputCharacteristics == InputDeviceCharacteristics.HeadMounted)
+            {
+                isVRControlled = false;
+            }
         }
         //Debug.Log(devices.Count);
     }

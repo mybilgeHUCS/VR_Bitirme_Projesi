@@ -24,7 +24,7 @@ public class VrF1RaceController : MonoBehaviour
         
         //Debug.Log("rightControllerAxisPrimary " + rightControllerAxis);
 
-        _inputData._rightController.TryGetFeatureValue(CommonUsages.secondary2DAxis, out Vector2 rightControllerAxisSecondary);
+        //_inputData._rightController.TryGetFeatureValue(CommonUsages.secondary2DAxis, out Vector2 rightControllerAxisSecondary);
         
         //Debug.Log("rightControllerAxisSecondary " + rightControllerAxisSecondary);
 

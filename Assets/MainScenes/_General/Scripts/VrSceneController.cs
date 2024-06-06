@@ -94,7 +94,7 @@ public class VrSceneController : MonoBehaviour
 
         _inputData._leftController.TryGetFeatureValue(CommonUsages.menuButton, out bool isLeftMenuButtonPressed);
 
-        _inputData._rightController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool isRightMenuButtonPressed);
+        _inputData._leftController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool isLeftSecondaryButtonPressed);
 
         //Debug.Log(isMenuButtonPressed);
 
@@ -128,7 +128,7 @@ public class VrSceneController : MonoBehaviour
             canPauseOrResume = true;
         }
 
-        if (isRightMenuButtonPressed|| Input.GetKeyDown(KeyCode.PageDown))
+        if (isLeftSecondaryButtonPressed|| Input.GetKeyDown(KeyCode.PageDown))
         {
             Menu();
         }

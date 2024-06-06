@@ -21,7 +21,7 @@ public class VrFlyThroughController : MonoBehaviour
 
         _inputData._rightController.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 rightControllerAxis);
 
-        Debug.Log("rightControllerAxisPrimary " + rightControllerAxis);
+        //Debug.Log("rightControllerAxisPrimary " + rightControllerAxis);
 
         //_inputData._rightController.TryGetFeatureValue(CommonUsages.secondary2DAxis, out Vector2 rightControllerAxisSecondary);
         
@@ -36,8 +36,8 @@ public class VrFlyThroughController : MonoBehaviour
 
         _inputData._rightController.TryGetFeatureValue(CommonUsages.grip, out float gripButtonFloat);
 
-        Debug.Log("triggerButton " + triggerButtonFloat);
-        Debug.Log("gripButton " + gripButtonFloat);
+        //Debug.Log("triggerButton " + triggerButtonFloat);
+        //Debug.Log("gripButton " + gripButtonFloat);
 
         if (triggerButton)
         {

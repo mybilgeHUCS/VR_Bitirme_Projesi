@@ -50,6 +50,9 @@ public class GameManager : MonoBehaviour
 
         warningInterval.value = PlayerPrefs.GetFloat(warningInterval.name);
         dataInputInterval.value = PlayerPrefs.GetFloat(dataInputInterval.name);
+
+        PlayerPrefs.SetFloat(speedMultiplier.name, Math.Max(PlayerPrefs.GetFloat(speedMultiplier.name), 1f));
+
         speedMultiplier.value = PlayerPrefs.GetFloat(speedMultiplier.name);
 
     }
@@ -91,6 +94,11 @@ public class GameManager : MonoBehaviour
     public void LoadAutoPathRaceScene()
     {
         SceneManager.LoadScene("F1_RaceScene AutoPath");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 
 }
