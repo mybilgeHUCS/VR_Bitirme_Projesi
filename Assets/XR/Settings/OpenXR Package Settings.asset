@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b862ee14fb479fbfe5fffe655d3ed3, type: 3}
   m_Name: MetaQuestTouchProControllerProfile Android
   m_EditorClassIdentifier: 
-  m_enabled: 1
+  m_enabled: 0
   nameUi: Meta Quest Touch Pro Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.metaquestpro
@@ -564,8 +564,8 @@ MonoBehaviour:
   - {fileID: -4792880859914924524}
   - {fileID: 8981712684810202194}
   - {fileID: 469445301313628029}
-  m_renderMode: 1
-  m_depthSubmissionMode: 2
+  m_renderMode: 0
+  m_depthSubmissionMode: 0
   m_symmetricProjection: 0
 --- !u!114 &3572565010401255629
 MonoBehaviour:
