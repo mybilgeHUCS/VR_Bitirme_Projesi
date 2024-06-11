@@ -190,8 +190,8 @@ public class CarRecordedPathReader : MonoBehaviour
 
                 string[] components = tf.Substring(1, tf.Length-2).Split(") (");
                 
-                string[] vec3 = components[0].Replace(", ","_ ").Replace(".",",").Split("_ ");
-                string[] qua = components[1].Replace(", ","_ ").Replace(".",",").Split("_ ");
+                string[] vec3 = components[0].Replace(", ","_ ").Replace(".",".").Split("_ ");
+                string[] qua = components[1].Replace(", ","_ ").Replace(".",".").Split("_ ");
 
                 positionList.Add(new Vector3(float.Parse(vec3[0]),float.Parse(vec3[1]),float.Parse(vec3[2])));
                 rotationList.Add(new Quaternion(float.Parse(qua[0]),float.Parse(qua[1]),float.Parse(qua[2]),float.Parse(qua[3])));
