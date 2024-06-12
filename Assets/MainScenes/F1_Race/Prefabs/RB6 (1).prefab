@@ -5739,6 +5739,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8111923900947076472}
   - component: {fileID: 5189831315594136667}
+  - component: {fileID: 5638337502934186789}
+  - component: {fileID: 7918535158294954431}
   - component: {fileID: 3351119869230902541}
   - component: {fileID: 4641201302063075038}
   - component: {fileID: 1985647692475742768}
@@ -5806,6 +5808,41 @@ MonoBehaviour:
   steerInput: 0
   isVrBraking: 0
   direksiyon: {fileID: 5459627034240255681}
+--- !u!114 &5638337502934186789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6595085149954709807}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d0ce2095ce12ef45ab7db791bc44c63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recordTransforms:
+  - {fileID: 8111923900947076472}
+  - {fileID: 5459627034240255681}
+  - {fileID: 2972177658500978153}
+  - {fileID: 5152423614357246066}
+  recordInterval: 0.1
+  canRecord: 0
+--- !u!114 &7918535158294954431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6595085149954709807}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4744db4df75b54f4cbc563e6b59eb898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRead: 1
+  playSpeed: 1
+  recordedPath: {fileID: 4900000, guid: dfc6024fb4dac9345b53f482b93575bd, type: 3}
+  recordTransforms: []
 --- !u!114 &3351119869230902541
 MonoBehaviour:
   m_ObjectHideFlags: 0

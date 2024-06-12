@@ -79,6 +79,7 @@ public class CarPathRecorder : MonoBehaviour
 
         using (StreamWriter writer = new StreamWriter(filePath))
         {
+            writer.WriteLine("0,5"); // dont touch this line
             writer.WriteLine(recordInterval);
             foreach (var item in recordTransforms)
             {

@@ -2,6 +2,7 @@ using BoatAttack;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR;
 
 public class VrBoatController : MonoBehaviour
@@ -17,9 +18,9 @@ public class VrBoatController : MonoBehaviour
     private void Start()
     {
         boatHumanController = GameObject.FindObjectOfType<HumanController>();
-        if (boatHumanController == null)
+        if (boatHumanController == null && SceneManager.GetActiveScene().name == "BoatTripScene")
         {
-            Debug.LogError("HumanController bulunamadi");
+            Debug.Log("HumanController bulunamadi");
         }
     }
 

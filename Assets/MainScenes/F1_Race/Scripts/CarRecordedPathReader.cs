@@ -8,6 +8,7 @@ public class CarRecordedPathReader : MonoBehaviour
     [SerializeField] bool canRead = false;
     [SerializeField] float playSpeed = 1f;
     [SerializeField] TextAsset recordedPath;
+    bool isComma;
 
     float globalSpeedMultiplier;
 
@@ -90,10 +91,8 @@ public class CarRecordedPathReader : MonoBehaviour
             return;
         }
         timer+= Time.deltaTime* Math.Abs(playSpeed)*globalSpeedMultiplier;
+        
         if(timer >=  recordInterval){
-
-
-
             for (int i = 0; i < recordTransformsLength; i++)
             {
                 //Debug.Log(positionList[i + playFrameIndex*recordTransformsLength] + " " + rotationList[i + playFrameIndex*recordTransformsLength]);
@@ -146,15 +145,39 @@ public class CarRecordedPathReader : MonoBehaviour
 
     }
 
+    string FixFloatString(string _input)
+    {
+        if (isComma)
+        {
+            return _input.Replace(".",",");
+        }
+        else
+        {
+            return _input.Replace(",",".");
+        }
+    }
+
     void ReadRecordedPath(){
 
         //Debug.Log(recordedPath.text);
 
         string[] lines = recordedPath.text.Split("\n");
 
-        recordInterval = float.Parse(lines[0]);
 
-        int index = 1;
+        float isCommaIndicator = float.Parse(lines[0]);
+
+        if (isCommaIndicator == 0.5f)
+        {
+            isComma = true;
+        }
+        else if (isCommaIndicator == 5f)
+        {
+            isComma = false;
+        }
+
+        recordInterval = float.Parse(FixFloatString(lines[1]));
+
+        int index = 2;
         while(lines[index].Trim() != "START"){
 
                 //Debug.Log(index  + " "+lines.Length + " "+ lines[index]);
@@ -178,7 +201,7 @@ public class CarRecordedPathReader : MonoBehaviour
 
             string[] transforms = line.Split("\t");
             //Debug.LogError(float.Parse( transforms[transforms.Length-1]) + " " + i);
-            engineVolumeList.Add( float.Parse( transforms[transforms.Length-1].Replace(".",",")));
+            engineVolumeList.Add( float.Parse( FixFloatString(transforms[transforms.Length-1])));
             transforms[transforms.Length-1] = "";
             //Debug.Log(line);
 
@@ -190,8 +213,8 @@ public class CarRecordedPathReader : MonoBehaviour
 
                 string[] components = tf.Substring(1, tf.Length-2).Split(") (");
                 
-                string[] vec3 = components[0].Replace(", ","_ ").Replace(".",".").Split("_ ");
-                string[] qua = components[1].Replace(", ","_ ").Replace(".",".").Split("_ ");
+                string[] vec3 = FixFloatString(components[0].Replace(", ","_ ")).Split("_ ");
+                string[] qua = FixFloatString(components[1].Replace(", ","_ ")).Split("_ ");
 
                 positionList.Add(new Vector3(float.Parse(vec3[0]),float.Parse(vec3[1]),float.Parse(vec3[2])));
                 rotationList.Add(new Quaternion(float.Parse(qua[0]),float.Parse(qua[1]),float.Parse(qua[2]),float.Parse(qua[3])));
