@@ -59,7 +59,7 @@ public class CarPathRecorder : MonoBehaviour
     {
 
 
-        string folderPath = Application.dataPath + "/F1RaceRecordedPath/";
+        string folderPath = Application.dataPath + "/MainScenes/F1_Race/F1RaceRecordedPath/";
 
 
 
