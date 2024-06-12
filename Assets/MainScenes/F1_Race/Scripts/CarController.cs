@@ -90,11 +90,9 @@ public class CarController : MonoBehaviour
             return;
         }
 
-        if (control == ControlMode.Keyboard)
-        {
-            moveInput = Input.GetAxis("Vertical");
-            steerInput = Input.GetAxis("Horizontal");
-        }
+        moveInput = Input.GetAxis("Vertical");
+        steerInput = Input.GetAxis("Horizontal");
+        
     }
 
     void Move()
