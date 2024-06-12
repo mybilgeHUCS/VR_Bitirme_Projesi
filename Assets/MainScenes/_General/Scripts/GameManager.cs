@@ -61,39 +61,39 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("CameraNumber", CameraNumber);
 
-        SceneManager.LoadScene("RollerCoasterScene");
+        SceneManager.LoadScene("LunaparkScene");
     }
 
-    public void Load360Scene(int selectedVideo)
+    public void Load360VideoPlayerScene(int selectedVideo)
     {
         PlayerPrefs.SetInt("SelectedVideoIndex", selectedVideo);
 
         SceneManager.LoadScene("360VideoPlayerScene");
     }
 
-    public void LoadBoatScene()
+    public void LoadBoatTripScene()
     {
         SceneManager.LoadScene("BoatTripScene");
     }
 
-    public void LoadAuthoPathPlaneScene()
+    public void LoadFlyThroughAutoPathScene()
     {
-        SceneManager.LoadScene("PlaneAutoPath");
+        SceneManager.LoadScene("FlyThrough_AutoPathScene");
     }
 
-    public void LoadFlightScene()
+    public void LoadFlyThroughScene()
     {
-        SceneManager.LoadScene("PlaneNormal");
+        SceneManager.LoadScene("FlyThroughScene");
     }
 
-    public void LoadRaceScene()
+    public void LoadF1_RaceScene()
     {
         SceneManager.LoadScene("F1_RaceScene");
     }
 
-    public void LoadAutoPathRaceScene()
+    public void LoadF1_RaceAutoPathScene()
     {
-        SceneManager.LoadScene("F1_RaceScene AutoPath");
+        SceneManager.LoadScene("F1_Race_AutoPathScene");
     }
 
     public void Quit()

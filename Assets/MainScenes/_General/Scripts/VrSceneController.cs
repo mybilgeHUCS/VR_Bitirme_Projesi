@@ -71,7 +71,7 @@ public class VrSceneController : MonoBehaviour
 
         cyberSicknessValueText.enabled = isCyberSicknessValueDetectEnabled;
 
-        if(SceneManager.GetActiveScene().name == "MainMenu") {
+        if(SceneManager.GetActiveScene().name == "MainMenuScene") {
             MainMenuVrControllerSettings();
         }
     }
@@ -244,7 +244,7 @@ public class VrSceneController : MonoBehaviour
     public void Menu()
     {
         Resume();
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenuScene");
     }
 
     private void OnDestroy() {
@@ -254,7 +254,7 @@ public class VrSceneController : MonoBehaviour
     void SaveScoresToFile()
     {
 
-        if(SceneManager.GetActiveScene().name == "MainMenu" || !isCyberSicknessValueDetectEnabled){
+        if(SceneManager.GetActiveScene().name == "MainMenuScene" || !isCyberSicknessValueDetectEnabled){
             return;
         }
 

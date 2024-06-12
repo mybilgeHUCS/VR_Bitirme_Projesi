@@ -18,10 +18,10 @@ EditorBuildSettings:
     path: Assets/MainScenes/F1_Race/Scenes/F1_RaceScene.unity
     guid: e7af1070a867af94c85174b2d6f84095
   - enabled: 1
-    path: Assets/MainScenes/F1_Race/Scenes/F1_RaceScene_AutoPathScene.unity
+    path: Assets/MainScenes/F1_Race/Scenes/F1_Race_AutoPathScene.unity
     guid: 6d6513a9e6d6bd7499f163a98ba1ba22
   - enabled: 1
-    path: Assets/MainScenes/Lunapark/Scenes/RollerCoasterScene.unity
+    path: Assets/MainScenes/Lunapark/Scenes/LunaparkScene.unity
     guid: 7fcbe3ce06845204097bdcebd62229de
   - enabled: 1
     path: Assets/MainScenes/FlyThrough/Scenes/FlyThroughScene.unity
