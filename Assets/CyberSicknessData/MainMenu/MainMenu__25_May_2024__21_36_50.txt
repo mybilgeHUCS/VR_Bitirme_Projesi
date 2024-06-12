@@ -1,2 +1,0 @@
-Interval: 2 seconds
-Average: NaN
