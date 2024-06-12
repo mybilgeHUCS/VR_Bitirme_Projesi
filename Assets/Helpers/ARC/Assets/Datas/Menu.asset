@@ -1,0 +1,587 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d882a57f576124a17ac3154b39a4b667, type: 3}
+  m_Name: Menu
+  m_EditorClassIdentifier: 
+  TextsList:
+  - multiLanguage:
+    - "Start\x03"
+    - "D\xE9but"
+  - multiLanguage:
+    - Back
+    - Retour
+  - multiLanguage:
+    - 
+    - 
+  - multiLanguage:
+    - Validation
+    - Validation
+  - multiLanguage:
+    - Pause
+    - Pause
+  - multiLanguage:
+    - Left
+    - Gauche
+  - multiLanguage:
+    - Right
+    - Droite
+  - multiLanguage:
+    - Up
+    - Haut
+  - multiLanguage:
+    - Down
+    - Bas
+  - multiLanguage:
+    - Booster
+    - Booster
+  - multiLanguage:
+    - Power Up
+    - Power Up
+  - multiLanguage:
+    - Invert Left/Right
+    - Inverser Gauche/Droite
+  - multiLanguage:
+    - Invert Up/Down
+    - Inverser Haut/Bas
+  - multiLanguage:
+    - Gyroscope sensibility
+    - "Sensibilit\xE9 du gyroscope"
+  - multiLanguage:
+    - Leaderboard
+    - "Classement\x03"
+  - multiLanguage:
+    - Example
+    - Exemple
+  - multiLanguage:
+    - Credits
+    - "Cr\xE9dits"
+  - multiLanguage:
+    - Quit Game
+    - Quitter le jeu
+  - multiLanguage:
+    - Quit
+    - Quitter
+  - multiLanguage:
+    - Options
+    - Options
+  - multiLanguage:
+    - Inputs
+    - Commandes
+  - multiLanguage:
+    - Graphics
+    - "Qualit\xE9"
+  - multiLanguage:
+    - Audio
+    - Audio
+  - multiLanguage:
+    - Game Options
+    - Options de jeu
+  - multiLanguage:
+    - Solo
+    - Solo
+  - multiLanguage:
+    - Game Mode
+    - Mode de Jeu
+  - multiLanguage:
+    - Arcade
+    - Arcade
+  - multiLanguage:
+    - Time Trial
+    - Time Trial
+  - multiLanguage:
+    - Championship
+    - Championnat
+  - multiLanguage:
+    - Airplane Selection
+    - "S\xE9lection de l'avion"
+  - multiLanguage:
+    - Airplane Selection
+    - "S\xE9lection de l'avion"
+  - multiLanguage:
+    - Garage
+    - Garage
+  - multiLanguage:
+    - Global
+    - Global
+  - multiLanguage:
+    - Music
+    - Musique
+  - multiLanguage:
+    - Ambiance
+    - Ambiance
+  - multiLanguage:
+    - Sfx
+    - Sfx
+  - multiLanguage:
+    - Select Language
+    - "S\xE9lectionner votre langue"
+  - multiLanguage:
+    - Coins
+    - "Pi\xE8ces"
+  - multiLanguage:
+    - You must use a button.
+    - Il faut utiliser un bouton.
+  - multiLanguage:
+    - The input is already used.
+    - "La commande est d\xE9j\xE0 utilis\xE9e."
+  - multiLanguage:
+    - You must use keyboard input.
+    - Vous devez utiliser une touche du clavier.
+  - multiLanguage:
+    - Canceled.
+    - "Annul\xE9."
+  - multiLanguage:
+    - "?\t"
+    - '?'
+  - multiLanguage:
+    - Yes
+    - Oui
+  - multiLanguage:
+    - No
+    - Non
+  - multiLanguage:
+    - Back
+    - Retour
+  - multiLanguage:
+    - Low
+    - Basse
+  - multiLanguage:
+    - Medium
+    - Medium
+  - multiLanguage:
+    - High
+    - Haute
+  - multiLanguage:
+    - Apply
+    - Appliquer
+  - multiLanguage:
+    - 3
+    - 3
+  - multiLanguage:
+    - 2
+    - 2
+  - multiLanguage:
+    - 1
+    - 1
+  - multiLanguage:
+    - GO
+    - GO
+  - multiLanguage:
+    - Score
+    - Score
+  - multiLanguage:
+    - Speed
+    - Vitesse
+  - multiLanguage:
+    - Damage Resistance
+    - "R\xE9sistance"
+  - multiLanguage:
+    - Booster duration
+    - "Dur\xE9e du booster"
+  - multiLanguage:
+    - Booster Cooldown
+    - "Dur\xE9e de charge"
+  - multiLanguage:
+    - Buy
+    - Acheter
+  - multiLanguage:
+    - Brake
+    - "Frein\x03"
+  - multiLanguage:
+    - Camera view
+    - Camera
+  - multiLanguage:
+    - 'You must use gamepad:'
+    - 'Vous devez utiliser la manette :'
+  - multiLanguage:
+    - Exit
+    - Quitter
+  - multiLanguage:
+    - The input can't be remapped
+    - "L'input ne peut \xEAtre modifi\xE9"
+  - multiLanguage:
+    - Next
+    - Suivant
+  - multiLanguage:
+    - Last
+    - "Pr\xE9c\xE9dent"
+  - multiLanguage:
+    - Versus
+    - Versus
+  - multiLanguage:
+    - Track selection
+    - "S\xE9lection de la course"
+  - multiLanguage:
+    - First Track
+    - "Premi\xE8re Piste"
+  - multiLanguage:
+    - Second Track
+    - "Deuxi\xE8me Piste"
+  - multiLanguage:
+    - New Track
+    - Nom de la track
+  - multiLanguage:
+    - Settings
+    - Options
+  - multiLanguage:
+    - Choose
+    - Choisissez
+  - multiLanguage:
+    - Quality
+    - "Qualit\xE9"
+  - multiLanguage:
+    - Resolution
+    - "R\xE9solution"
+  - multiLanguage:
+    - 
+    - 
+  - multiLanguage:
+    - Apply
+    - Appliquer
+  - multiLanguage:
+    - Language
+    - Langue
+  - multiLanguage:
+    - Not Enough Credits
+    - "Pas assez de cr\xE9dits"
+  - multiLanguage:
+    - Next Track
+    - Piste Suivante
+  - multiLanguage:
+    - Play Arcade, Time Trial or Championship Mode.  Practice to become the new champion
+      and beat scores.
+    - "Jouez en mode Solo, Arcade ou Championnat. Entra\xEEnez-vous sur les circuits,
+      devenez le nouveau champion et battez les meilleurs scores."
+  - multiLanguage:
+    - Challenge a friend in Championship or in Arcade mode. Who will be the best?
+    - "Jouez avec un ami en \xE9cran partag\xE9. Affrontez-vous sur une course ou
+      sur un championnat. Qui sera le meilleur ?"
+  - multiLanguage:
+    - Go to the garage and buy new vehicles.
+    - "Faites un tour au garage et d\xE9couvrez les nouveaux v\xE9hicules disponibles."
+  - multiLanguage:
+    - Manage game settings (Inputs, Language, Graphics, Audio).
+    - "G\xE9rez les param\xE8tres du jeu (Commande, Langue, Graphisme, Audio)."
+  - multiLanguage:
+    - Are you the best in the ranking?
+    - "V\xE9rifiez que vous \xEAtes le meilleur du classement. "
+  - multiLanguage:
+    - Practice with AI on the track of your choice.
+    - "Entra\xEEnez-vous avec des concurrents sur la piste de votre choix."
+  - multiLanguage:
+    - You are alone against the clock. Reach the top of the leaderboard.
+    - "Vous \xEAtes seul contre le chronom\xE8tre. Atteignez le sommet du leaderboard."
+  - multiLanguage:
+    - Win all the Championship and become number 1. The road will not be easy.
+    - "Devenez le num\xE9ro 1 en remportant tous les championnats. "
+  - multiLanguage:
+    - Remap inputs (keyboard, Gamepad).
+    - Changer les commandes (Clavier, manette).
+  - multiLanguage:
+    - Set up graphics options (Quality, VFX,...).
+    - "Changer les options graphiques (Qualit\xE9, VFX,...)."
+  - multiLanguage:
+    - "Modify audio volumes (General, Music,Sf\x03x,...)."
+    - "Modifier les options audio (G\xE9n\xE9ral, Sfx,...)\x03."
+  - multiLanguage:
+    - Access Game Options (Language)
+    - "Choisissez les options g\xE9n\xE9rales de jeu (Langue)"
+  - multiLanguage:
+    - The Dark Cave
+    - La Caverne
+  - multiLanguage:
+    - The Abandoned Factory
+    - "L'usine Abandonn\xE9e"
+  - multiLanguage:
+    - Desert By Night
+    - "La Nuit Dans Le D\xE9sert"
+  - multiLanguage:
+    - Unknown Sector
+    - La Zone Inconnue
+  - multiLanguage:
+    - Blazin Sun
+    - Coucher De Soleil
+  - multiLanguage:
+    - The Ruins Of The Temple
+    - Les Ruines Du Temple
+  - multiLanguage:
+    - Track 07
+    - Track 07
+  - multiLanguage:
+    - Track 08
+    - Track 08
+  - multiLanguage:
+    - Track 09
+    - Track 09
+  - multiLanguage:
+    - Track 10
+    - Track 10
+  - multiLanguage:
+    - Rookie Challenge
+    - Premier Pas
+  - multiLanguage:
+    - Pro Club
+    - Le Tour Des Pros
+  - multiLanguage:
+    - Veteran Tour
+    - "Pilotes Confirm\xE9s"
+  - multiLanguage:
+    - For Champions
+    - Pour Les Champions
+  - multiLanguage:
+    - Legends Only
+    - "L\xE9gendes Seulement"
+  - multiLanguage:
+    - Finish 3rd at the previous Championship
+    - "Terminez 3\xE8me au Championnat pr\xE9c\xE9dent."
+  - multiLanguage:
+    - Finish 3rd at the previous Championship
+    - "Terminez 3\xE8me au Championnat pr\xE9c\xE9dent."
+  - multiLanguage:
+    - Finish 2nd at the previous Championship
+    - "Terminez 2\xE8me au Championnat pr\xE9c\xE9dent."
+  - multiLanguage:
+    - Finish 1st at the previous Championship
+    - "Terminez 1er au Championnat pr\xE9c\xE9dent."
+  - multiLanguage:
+    - "Track unlocked if played in a Championnship.\t"
+    - "Piste d\xE9verrouill\xE9e si jou\xE9e en Championnat."
+  - multiLanguage:
+    - Own
+    - "Ac\x03quis"
+  - multiLanguage:
+    - Already bought!
+    - "D\xE9j\xE0 achet\xE9 !"
+  - multiLanguage:
+    - Resume
+    - Reprendre
+  - multiLanguage:
+    - Restart
+    - Recommencer
+  - multiLanguage:
+    - Resume the race.
+    - Continuer la course.
+  - multiLanguage:
+    - Restart the race.
+    - Recommencer la course.
+  - multiLanguage:
+    - Go back to the main menu.
+    - Retourner au menu principal.
+  - multiLanguage:
+    - Restart?
+    - Recommencer ?
+  - multiLanguage:
+    - Quit Race?
+    - Quitter la course ?
+  - multiLanguage:
+    - Result
+    - "R\xE9sultat"
+  - multiLanguage:
+    - Play
+    - Jouer
+  - multiLanguage:
+    - Delete
+    - Suppr
+  - multiLanguage:
+    - Add
+    - Ajouter
+  - multiLanguage:
+    - Validate
+    - Valider
+  - multiLanguage:
+    - Main Menu
+    - Menu Principal
+  - multiLanguage:
+    - Play Again
+    - Rejouer
+  - multiLanguage:
+    - Go back to the main menu.
+    - Retourner au menu principal.
+  - multiLanguage:
+    - Try to improve your best time.
+    - "Essayer d'am\xE9liorer votre meilleur temps."
+  - multiLanguage:
+    - Championship Result
+    - "R\xE9sultat Championnat"
+  - multiLanguage:
+    - Arcade Result
+    - "R\xE9sultat Arcade"
+  - multiLanguage:
+    - Time Trial Result
+    - "R\xE9sultat Time Trial"
+  - multiLanguage:
+    - Try to improve your position.
+    - "Recommencez la course et am\xE9liorez-vous."
+  - multiLanguage:
+    - Leave the Game
+    - Quitter la partie
+  - multiLanguage:
+    - Next Race
+    - Course Suivante
+  - multiLanguage:
+    - Your Score
+    - Votre Score
+  - multiLanguage:
+    - "Auto-Save\x03"
+    - Sauvegarde Auto
+  - multiLanguage:
+    - Player 1
+    - Joueur 1
+  - multiLanguage:
+    - Player 2
+    - Joueur 2
+  - multiLanguage:
+    - Jane
+    - Jane
+  - multiLanguage:
+    - Aoki
+    - Aoki
+  - multiLanguage:
+    - Polo
+    - Polo
+  - multiLanguage:
+    - Sara
+    - Sara
+  - multiLanguage:
+    - John
+    - John
+  - multiLanguage:
+    - Dan
+    - Dan
+  - multiLanguage:
+    - Goto
+    - Goto
+  - multiLanguage:
+    - Phil
+    - Phil
+  - multiLanguage:
+    - AI name doesn't exist
+    - AI name doesn't exist
+  - multiLanguage:
+    - Loading
+    - Chargement
+  - multiLanguage:
+    - '>> Press any key to continue <<'
+    - '>> Appuyez sur une touche pour continuer <<'
+  - multiLanguage:
+    - Arcade
+    - Arcade
+  - multiLanguage:
+    - Time Trial
+    - Time Trial
+  - multiLanguage:
+    - New
+    - Nouveau
+  - multiLanguage:
+    - Race Result
+    - "R\xE9sultat de la course"
+  - multiLanguage:
+    - Championship Result
+    - "R\xE9sultat du Championnat"
+  - multiLanguage:
+    - Track Demo
+    - "Piste D\xE9mo"
+  - multiLanguage:
+    - Booster Power
+    - "Puissance du booster\x03"
+  - multiLanguage:
+    - '!!! Missile !!!'
+    - '!!! Missile !!!'
+  - multiLanguage:
+    - '!!! Machine Gun !!!'
+    - '!!! Mitrailleuse !!!'
+  - multiLanguage:
+    - '!!! Missile Locked !!!'
+    - "!!! Missile Lock\xE9 !!!"
+  - multiLanguage:
+    - Life
+    - Vie
+  - multiLanguage:
+    - 'Lap:'
+    - 'Tour:'
+  - multiLanguage:
+    - 'Time:'
+    - 'Temps:'
+  - multiLanguage:
+    - 'Pos:'
+    - 'Pos:'
+  - multiLanguage:
+    - Let's Go
+    - "Partez\x03"
+  - multiLanguage:
+    - Easy
+    - Facile
+  - multiLanguage:
+    - Medium
+    - Normal
+  - multiLanguage:
+    - Hard
+    - Difficile
+  - multiLanguage:
+    - 'Rewards:'
+    - "R\xE9compenses:"
+  - multiLanguage:
+    - 'Name:'
+    - 'Nom:'
+  - multiLanguage:
+    - 'Points:'
+    - 'Points:'
+  - multiLanguage:
+    - 'Total Points:'
+    - "Total Points\x03:\x03"
+  - multiLanguage:
+    - Gamepad
+    - Manette
+  - multiLanguage:
+    - Keyboard
+    - Clavier
+  - multiLanguage:
+    - 'Connected:'
+    - "Connect\xE9:"
+  - multiLanguage:
+    - No Gamepad Connected.
+    - "Pas de manette connect\xE9e."
+  - multiLanguage:
+    - P1
+    - P1
+  - multiLanguage:
+    - P2
+    - P2
+  - multiLanguage:
+    - Initialize
+    - Initialisez
+  - multiLanguage:
+    - CONGRATULATIONS
+    - FELICITATIONS
+  - multiLanguage:
+    - 'Price:'
+    - 'Prix:'
+  - multiLanguage:
+    - 'Power-up:
+
+      Press'
+    - 'Power-up:
+
+      Appuyez sur'
+  - multiLanguage:
+    - 'Booster:
+
+      Hold'
+    - 'Booster:
+
+      Maintenez'
+  - multiLanguage:
+    - Tutorial
+    - Tutoriel
+  - multiLanguage:
+    - "New \x03\nBest \nScore"
+    - "Nouveau \nmeilleur \nscore"

@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atlas_Menu_Audio
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 9a2185c5e1ac149d3b9b2f65b5b0cf4a, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: c834cfa4f678340758ff226cac9f3e0c, type: 3}
+  - {fileID: 21300000, guid: 59632af54b6e6496d81c514253dd14f0, type: 3}
+  - {fileID: 21300000, guid: 23f1bd994d8604e13ac40f671c3147c7, type: 3}
+  - {fileID: 21300000, guid: 0320546c5b88d4f18a54a51be84b3961, type: 3}
+  - {fileID: 21300000, guid: 17869acc66f2c41f3995297e1aacf986, type: 3}
+  - {fileID: 21300000, guid: bf003e5f4085a450388efb80c0adaea5, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - AudioSlider_Button_Off
+  - Audio_Slider_Button_Shadow
+  - AudioSlider_Button_Pressed
+  - Audio_Slider
+  - Audio_Slider_Button
+  - AudioSlider_Button_Highlighted
+  m_RenderDataMap: {}
+  m_Tag: Atlas_Menu_Audio
+  m_IsVariant: 0

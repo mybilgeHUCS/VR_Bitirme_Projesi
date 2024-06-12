@@ -1,1 +1,0 @@
-Asseti buraya atıyorum.

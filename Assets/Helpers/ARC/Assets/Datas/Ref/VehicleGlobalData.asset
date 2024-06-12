@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264a1bf44d0304426af8a43ae76bb548, type: 3}
+  m_Name: VehicleGlobalData
+  m_EditorClassIdentifier: 
+  MoreOptions: 0
+  HelpBox: 1
+  tab: 0
+  carParametersList:
+  - name: Wind Hunter
+    bShow: 1
+    Prefab: {fileID: 292987107468116022, guid: 32263de1b73dd47a69b879c0022cfd0f, type: 3}
+    vehicleCategory: 0
+    speed: 50
+    damageResistance: 10
+    boosterPower: 70
+    boosterDuration: 2
+    boosterCooldown: 4
+    coinMultiplier: 1
+    cost: 0
+    isUnlocked: 1
+    speedAI: 50
+    damageResistanceAI: 10
+    boosterPowerAI: 60
+    boosterDurationAI: 2
+    boosterCooldownAI: 0.1
+    prefabScaleMultiplierInMenu: 1
+    bShowInEditor: 1
+  - name: Flying Circus
+    bShow: 1
+    Prefab: {fileID: 292987107468116022, guid: e31bfc26c1de941d8a63ad39bbfd9a28, type: 3}
+    vehicleCategory: 0
+    speed: 50
+    damageResistance: 11
+    boosterPower: 69
+    boosterDuration: 2.1
+    boosterCooldown: 3.8
+    coinMultiplier: 1
+    cost: 0
+    isUnlocked: 1
+    speedAI: 50
+    damageResistanceAI: 10
+    boosterPowerAI: 60
+    boosterDurationAI: 2
+    boosterCooldownAI: 0.1
+    prefabScaleMultiplierInMenu: 1
+    bShowInEditor: 0
+  - name: Blue Parrot
+    bShow: 1
+    Prefab: {fileID: 292987107468116022, guid: e8ac02904d566466a9f1d733c568979d, type: 3}
+    vehicleCategory: 0
+    speed: 49
+    damageResistance: 10
+    boosterPower: 73
+    boosterDuration: 2.2
+    boosterCooldown: 3.7
+    coinMultiplier: 1
+    cost: 0
+    isUnlocked: 1
+    speedAI: 50
+    damageResistanceAI: 10
+    boosterPowerAI: 60
+    boosterDurationAI: 2
+    boosterCooldownAI: 0.1
+    prefabScaleMultiplierInMenu: 1
+    bShowInEditor: 0
+  - name: Shark
+    bShow: 1
+    Prefab: {fileID: 5246781247246507886, guid: d07ec25cf51414876995ba8a6394688e, type: 3}
+    vehicleCategory: 0
+    speed: 51
+    damageResistance: 10
+    boosterPower: 65
+    boosterDuration: 2
+    boosterCooldown: 3.5
+    coinMultiplier: 1
+    cost: 25000
+    isUnlocked: 0
+    speedAI: 50
+    damageResistanceAI: 10
+    boosterPowerAI: 60
+    boosterDurationAI: 2
+    boosterCooldownAI: 0.1
+    prefabScaleMultiplierInMenu: 1
+    bShowInEditor: 0
+  - name: Lucky
+    bShow: 1
+    Prefab: {fileID: 6976001628453705027, guid: ae8a21b884a1e42f284f668fca5e6aec, type: 3}
+    vehicleCategory: 0
+    speed: 50
+    damageResistance: 12
+    boosterPower: 70
+    boosterDuration: 2
+    boosterCooldown: 2.5
+    coinMultiplier: 1
+    cost: 75000
+    isUnlocked: 0
+    speedAI: 50
+    damageResistanceAI: 10
+    boosterPowerAI: 60
+    boosterDurationAI: 2
+    boosterCooldownAI: 0.1
+    prefabScaleMultiplierInMenu: 1
+    bShowInEditor: 0
+  - name: Phoenix
+    bShow: 1
+    Prefab: {fileID: 6326287053275689705, guid: 05ede286361f9473c9970d6f7bf5f325, type: 3}
+    vehicleCategory: 0
+    speed: 52
+    damageResistance: 10
+    boosterPower: 68
+    boosterDuration: 1.8
+    boosterCooldown: 4
+    coinMultiplier: 5
+    cost: 225000
+    isUnlocked: 0
+    speedAI: 50
+    damageResistanceAI: 10
+    boosterPowerAI: 60
+    boosterDurationAI: 2
+    boosterCooldownAI: 0.1
+    prefabScaleMultiplierInMenu: 1
+    bShowInEditor: 0
+  - name: Ehecatl
+    bShow: 1
+    Prefab: {fileID: 807084391811635007, guid: e00d549d74eb249a3b6089cd33eae9df, type: 3}
+    vehicleCategory: 0
+    speed: 50
+    damageResistance: 8
+    boosterPower: 72
+    boosterDuration: 2
+    boosterCooldown: 3.6
+    coinMultiplier: 5
+    cost: 650000
+    isUnlocked: 0
+    speedAI: 50
+    damageResistanceAI: 10
+    boosterPowerAI: 60
+    boosterDurationAI: 2
+    boosterCooldownAI: 0.1
+    prefabScaleMultiplierInMenu: 1
+    bShowInEditor: 0
+  - name: Rose Bird
+    bShow: 1
+    Prefab: {fileID: 3986291882033223593, guid: 985753d7932aa460e85258b8c7f0eb2f, type: 3}
+    vehicleCategory: 0
+    speed: 52
+    damageResistance: 10
+    boosterPower: 69
+    boosterDuration: 2.3
+    boosterCooldown: 3.8
+    coinMultiplier: 5
+    cost: 1250000
+    isUnlocked: 0
+    speedAI: 50
+    damageResistanceAI: 10
+    boosterPowerAI: 60
+    boosterDurationAI: 2
+    boosterCooldownAI: 0.1
+    prefabScaleMultiplierInMenu: 1
+    bShowInEditor: 0
+  currentVehicleDisplayedInTheGarage: 1
+  OrderUsingCustomList: 0
+  customList: 
+  playerNamesList:
+  - paramName: 
+    listID: 0
+    EntryID: 139
+  - paramName: 
+    listID: 0
+    EntryID: 140
+  aiNamesList:
+  - paramName: 
+    listID: 0
+    EntryID: 141
+  - paramName: 
+    listID: 0
+    EntryID: 142
+  - paramName: 
+    listID: 0
+    EntryID: 143
+  - paramName: 
+    listID: 0
+    EntryID: 144
+  - paramName: 
+    listID: 0
+    EntryID: 145
+  - paramName: 
+    listID: 0
+    EntryID: 146
+  - paramName: 
+    listID: 0
+    EntryID: 147
+  - paramName: 
+    listID: 0
+    EntryID: 148
+  aiNameRandom: 1

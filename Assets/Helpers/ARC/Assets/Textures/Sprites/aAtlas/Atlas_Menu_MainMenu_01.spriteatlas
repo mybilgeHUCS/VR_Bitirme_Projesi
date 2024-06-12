@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atlas_Menu_MainMenu_01
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 0a34f9cf0b46d417281681248c83b749, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b0de89e03b8854d08abb45038ef4ef25, type: 3}
+  - {fileID: 21300000, guid: 8ff6a3f0870204e349c5fe4ea0003146, type: 3}
+  - {fileID: 21300000, guid: 45af50835f5c04ed2975a65c0166bf30, type: 3}
+  - {fileID: 21300000, guid: 6133e394a2931427597476c72bde46c1, type: 3}
+  - {fileID: 21300000, guid: 10205c76908c34075a3cba1896b47d5e, type: 3}
+  - {fileID: 21300000, guid: 5084b3ea2d41d4785969be4ffde7e064, type: 3}
+  - {fileID: 21300000, guid: 98c234fb5dc7d41c6a9ff4e6aa6cba5c, type: 3}
+  - {fileID: 21300000, guid: 172dcc4cd8ef74022991b7330e19de00, type: 3}
+  - {fileID: 21300000, guid: b451848c90260418c88647d553ea8041, type: 3}
+  - {fileID: 21300000, guid: 8e0906dc208b24871a611535e45d0c2b, type: 3}
+  - {fileID: 21300000, guid: 463a163e38e6b4c1db2748ed51635b03, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - MainMenu_Logo
+  - MainMenu_Im5_Text
+  - MainMenu_Im4_Text
+  - MainMenu_Background
+  - MainMenu_Image3_Shadow
+  - MainMenu_Im3_Text
+  - MainMenu_Image_03
+  - MainMenu_Image4_Shadow
+  - MainMenu_Image5_Shadow
+  - MainMenu_Image_01_02_Shadow
+  - MainMenu_Im_01_02_Text
+  m_RenderDataMap: {}
+  m_Tag: Atlas_Menu_MainMenu_01
+  m_IsVariant: 0

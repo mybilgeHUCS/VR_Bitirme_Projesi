@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Atlas_Menu_Buttons
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 15f817a366791444394c1a102468ecae, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 53c972b0576ee4e6db0465cf352597ee, type: 3}
+  - {fileID: 21300000, guid: b749de115e26549069d00bf5b3bd4494, type: 3}
+  - {fileID: 21300000, guid: 1e864d41113864917999d535f8a25fe9, type: 3}
+  - {fileID: 21300000, guid: b32a3ff2830a1412fa764c0bb8af9199, type: 3}
+  - {fileID: 21300000, guid: 7049f7139f1c24bf58ad06a49bbe3f1f, type: 3}
+  - {fileID: 21300000, guid: cc574273282914532a317ae730f3fcbf, type: 3}
+  - {fileID: 21300000, guid: 1a3313d537379408c95d7a2686133fae, type: 3}
+  - {fileID: 21300000, guid: 0b4c05d5054a74100a49e46f8f9e4e1c, type: 3}
+  - {fileID: 21300000, guid: f8f9fa364e63248d39e7e685bf941d0f, type: 3}
+  - {fileID: 21300000, guid: 70a6a086210b840d89f7c5ccf97a6404, type: 3}
+  - {fileID: 21300000, guid: 74b43dc6c0c1147168729fc14ec6d120, type: 3}
+  - {fileID: 21300000, guid: 6c6abf3977a064e7da5d47ff19f8b370, type: 3}
+  - {fileID: 21300000, guid: 749462da42bf24a15a644f64b80a4bcf, type: 3}
+  - {fileID: 21300000, guid: 53d7ab0bcc5504a2d9b9780cd891febd, type: 3}
+  - {fileID: 21300000, guid: a26f811bc2b33401a8a98d9418810e81, type: 3}
+  - {fileID: 21300000, guid: aedbcc3bb9af74ad68bb91cc8773fa57, type: 3}
+  - {fileID: 21300000, guid: 0a7ea9cc3a8144fd5af45dd0186b63bc, type: 3}
+  - {fileID: 21300000, guid: a526a9fc9598b43c4a9159a7cfa219f0, type: 3}
+  - {fileID: 21300000, guid: 256bd97d5cc114ed9a531d72f1f318ef, type: 3}
+  - {fileID: 21300000, guid: c9c99b1e79dc64d39be6acc741600936, type: 3}
+  - {fileID: 21300000, guid: 1d06296e0ddc4430c851ab9355b90611, type: 3}
+  - {fileID: 21300000, guid: e6ae848e3cc074db592b39d8fd0a996c, type: 3}
+  - {fileID: 21300000, guid: d336eefe06ce8415e820be7cc70f08b9, type: 3}
+  - {fileID: 21300000, guid: fc03874fb2be94b2086c0992312b58c6, type: 3}
+  - {fileID: 21300000, guid: 2d34269f7c82a4be1b5e8515c3032043, type: 3}
+  - {fileID: 21300000, guid: be0547af2a599478e93572113300cd7b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Button_s_Off
+  - Button_L_Pressed
+  - Button_Triangle_Highlighted_Rev
+  - Button_s_Shadow
+  - Button_Triangle_Pressed
+  - SelectMode_Icon
+  - Button_s_Pressed
+  - Button_Triangle_Shadow
+  - Button_Triangle_Shadow_Rev
+  - Button_L_Large_Off
+  - Button_Triangle_Off_Rev
+  - Button_Back_Triangle
+  - Button_Triangle_Highlighted
+  - Button_Leaderboard_Shadow
+  - Button_s_Highlight
+  - Button_Opacity
+  - Checkbox_Highlighted
+  - Button_Leaderboard_Off
+  - Button_L_Highlighted
+  - Button_Leaderboard_Pressed
+  - Checkbox_Pressed
+  - Button_Triangle_Off
+  - Button_Triangle_Pressed_Rev
+  - Button_Leaderboard_Highlighted
+  - Checkbox_Off
+  - Checkbox_Cross
+  m_RenderDataMap: {}
+  m_Tag: Atlas_Menu_Buttons
+  m_IsVariant: 0

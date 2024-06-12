@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c9cd84280de4dea803850195e3d9f2, type: 3}
+  m_Name: TextModifierDatas
+  m_EditorClassIdentifier: 
+  currentSection: 0
+  currentTextType: 0
+  fontFrom: {fileID: 12800000, guid: d64308f68150842e583286de015061d9, type: 3}
+  fontTMProFrom: {fileID: 0}
+  b_UseFontStyleFrom: 0
+  fontStyleFrom: 0
+  b_UseFontSizeFrom: 0
+  fontSizeFrom: 10
+  b_UseFontColorFrom: 0
+  fontColorFrom: {r: 1, g: 1, b: 1, a: 1}
+  fontTo: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  fontTMProTo: {fileID: 0}
+  b_UseFontStyleTo: 0
+  fontStyleTo: 0
+  b_UseFontSizeTo: 0
+  fontSizeTo: 10
+  b_UseFontColorTo: 0
+  fontColorTo: {r: 1, g: 1, b: 1, a: 1}
